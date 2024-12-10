@@ -91,7 +91,7 @@
 }
 
 .Blog-Hidden-box.active {
-  height: 180px;
+  height: 160px;
   box-shadow: 0 18px 30px 0 #dfdfdf;
 }
 
@@ -143,6 +143,10 @@
     gap: 20px;
   }
 
+  .Blog-Hidden-box.active {
+    height: 120px;
+  }
+
   .Blog-left-round {
     width: 90%;
     max-width: 300px;
@@ -168,6 +172,10 @@
   .Blog-Hidden-box {
     font-size: 20px;
     padding: 10px;
+  }
+
+  .Blog-Hidden-box.active {
+    height: 100px;
   }
 
   .Blog-Hidden-box p {

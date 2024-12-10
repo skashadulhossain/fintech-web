@@ -18,7 +18,7 @@ const Hero = () => {
           <h1>We turn ideas </h1>
           <h2>into reality</h2>
           <p>
-            Every target requires execution. ******** develops high-quality apps, websites, and systems.
+            Every target requires execution. Pn Fintech Software Pvt. Ltd develops high-quality apps, websites, and systems.
           </p>
           <div className="hero-hero-btn-box">
             <button>Lets Connect</button>
