@@ -1,10 +1,11 @@
 :root {
-  --primary-white: rgba(255, 255, 255, 0.8);
+  --primary-white: #fff;
   --primary-black: #000;
   --primary-grey: #73739a;
   --primary-blue: #6d72f6;
   --primary-green: #08ce8a;
   --primary-black2: #1c1c57;
+  --primary-bg-white: #ffffffad;
 }
 
 .about-us-wrapper {
@@ -17,10 +18,10 @@
 
 .about-us {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 2rem;
+  padding: 0 2rem;
   border-radius: 20px;
   height: auto;
   max-width: 90%;
@@ -45,7 +46,7 @@
 .about-us-content {
   flex: 1 1 45%;
   max-width: 100%;
-  padding: 1rem;
+  padding: 3rem 1rem;
 }
 
 .about-us-title {
@@ -75,25 +76,29 @@
 }
 
 .about-us-button {
-  margin-top: 2rem;
-  padding: 0.5rem 1.5rem;
-  background-color: var(--primary-blue);
-  color: var(--primary-white);
   border: none;
-  border-radius: 5px;
-  font-size: 1rem;
+  overflow: none;
+  font-size: 18px;
   cursor: pointer;
+  margin-top: 20px;
+  border-radius: 12px;
+  padding: 15px 2.5rem;
+  transition: 0.3s linear;
+  color: var(--primary-white);
+  background-color: var(--primary-blue);
 }
 
 .about-us-button:hover {
-  background-color: var(--primary-black2);
+  transform: translateY(-5px);
+  background-color: #555ae6;
+  box-shadow: 1px 1px 10px #6d72f6;
 }
 
 .about-us-image {
   flex: 1 1 45%;
   max-width: 100%;
   position: relative;
-  padding: 1rem;
+  padding: 0 1rem;
   text-align: center;
 }
 
@@ -152,7 +157,7 @@
 
 @media (max-width: 768px) {
   .about-us {
-    padding: 1rem;
+    padding: 0 1rem;
   }
 
   .about-us-title {

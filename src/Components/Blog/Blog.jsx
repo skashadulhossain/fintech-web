@@ -77,6 +77,9 @@ const Blog = () => {
     <div className='Blog'>
       <div className="Blog-box">
         <div className="Blog-left">
+          <div className="Blog-left-title">
+            <h1>Our Mission</h1>
+          </div>
           <div className="Blog-left-round">
             {renderActiveComponent()}
           </div>

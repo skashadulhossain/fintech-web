@@ -4,6 +4,7 @@
   --primary-grey: #73739a;
   --primary-blue: #6d72f6;
   --primary-green: #08ce8a;
+  --primary-black2: #1c1c57;
 }
 
 .Blog {
@@ -31,6 +32,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.Blog-left-title {
+  margin-bottom: 4rem;
+}
+
+.Blog-left-title h1 {
+  font-size: 38px;
+  color: var(--primary-black2);
 }
 
 .Blog-left-round {
@@ -61,20 +71,19 @@
 .Blog-right-main {
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .Blog-Hidden-box {
-  padding: 30px 20px;
+  padding: 20px 15px;
   border-radius: 20px;
   border: none;
   background: transparent;
   text-align: left;
-  font-size: 35px;
+  font-size: 26px;
   color: var(--primary-grey);
   font-weight: bolder;
   overflow: hidden;
-  height: 90px;
+  height: 70px;
   display: flex;
   flex-direction: column;
   transition: all 0.3s ease;
@@ -91,7 +100,7 @@
 }
 
 .Blog-Hidden-box.active {
-  height: 160px;
+  height: 120px;
   box-shadow: 0 18px 30px 0 #dfdfdf;
 }
 
@@ -144,7 +153,7 @@
   }
 
   .Blog-Hidden-box.active {
-    height: 120px;
+    height: 80px;
   }
 
   .Blog-left-round {

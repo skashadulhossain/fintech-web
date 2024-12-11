@@ -5,14 +5,13 @@ import cardimg2 from './Image/Card image 2.png';
 import cardimg3 from './Image/Card image 3.png';
 import cardimg4 from './Image/Card image 4.png';
 
-const ServiceCard = ({ icon, image, title, description }) => {
+const ServiceCard = ({ image, title, description }) => {
   return (
     <div className="service-card">
       <div className="image-wrapper">
         <img src={image} alt={title} className="image-icon" />
       </div>
       <div className="content">
-        <div className="icon">{icon}</div>
         <h3 className="title">{title}</h3>
         <p className="description">{description}</p>
       </div>
@@ -24,25 +23,21 @@ const Services1 = () => {
   return (
     <div className="services-container">
       <ServiceCard
-        icon={<i className="fas fa-university"></i>}
         image={cardimg1}
         title="Bank APIs"
         description="Integrate banking into your business workflow with APIs for collection, payouts, cards & more"
       />
       <ServiceCard
-        icon={<i className="fas fa-cog"></i>}
         image={cardimg2}
         title="IT Consulting"
         description="Enhance performance and reduce costs with our digital IT services and solutions"
       />
       <ServiceCard
-        icon={<i className="fas fa-money-bill-alt"></i>}
         image={cardimg3}
         title="Banking - BC Model"
         description="With the objective of ensuring best Financial Inclusion and increasing outreach of the banking and financial Services in Rural India"
       />
       <ServiceCard
-        icon={<i className="fas fa-code"></i>}
         image={cardimg4}
         title="Custom Software Development"
         description="We assist at every stage of the software development life cycle from conceptualization & consulting to development and support."
