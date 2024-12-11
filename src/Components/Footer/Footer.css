@@ -1,0 +1,96 @@
+.footer-container {
+    /* background: url("./img/Group\ 1\ \(3\).png") no-repeat center center / cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    position: relative;
+  }
+  
+  .footer-content {
+    text-align: center;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .footer-copyright {
+    color: var(--primary-black);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+  
+  .footer-contact-btn {
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .footer-contact-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .footer-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .footer-icons i {
+    font-size: 1.5rem;
+    color: var(--primary-grey);
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .footer-icons i:hover {
+    color: var(--primary-blue);
+  }
+  
+  .footer-scroll-top {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: var(--primary-white);
+    border-radius: 50%;
+    padding: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .footer-scroll-top:hover {
+    background-color: var(--primary-blue);
+    color: var(--primary-white);
+  }
+  
+  .footer-scroll-top i {
+    font-size: 1rem;
+    color: var(--primary-black);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-contact-btn {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.9rem;
+    }
+  
+    .footer-icons i {
+      font-size: 1.2rem;
+    }
+  
+    .footer-scroll-top {
+      padding: 0.6rem;
+    }
+  }
+  
