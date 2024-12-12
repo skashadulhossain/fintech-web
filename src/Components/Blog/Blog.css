@@ -9,12 +9,23 @@
 
 .Blog {
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  padding: 20px;
+  padding: 2rem 20px;
   box-sizing: border-box;
+}
+
+.Blog-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.Blog-title h1 {
+  font-size: 38px;
+  color: var(--primary-black2);
+}
+
+.Blog-title p{
+  font-size: 18px;
+  color: var(--primary-grey);
 }
 
 .Blog-box {
@@ -32,15 +43,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.Blog-left-title {
-  margin-bottom: 4rem;
-}
-
-.Blog-left-title h1 {
-  font-size: 38px;
-  color: var(--primary-black2);
 }
 
 .Blog-left-round {

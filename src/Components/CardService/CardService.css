@@ -66,22 +66,32 @@
     background-image: url(./Image/Service\ bg.png);
 }
 
-.CardService-container{
+.CardService-container {
     background-color: #ffffffad;
     border: 1px solid #ffffff80;
     border-radius: 30px;
     padding: 40px 42px 49px 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.CardService-container:hover {
+    transform: translateY(-10px);
+    background-color: var(--primary-blue); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .CardService-img-box{
     margin-bottom: 5rem;
 }
 
-.CardService-img-box img{
+.CardService-img-box img {
     width: 65px;
-    height: 65px;
-    border-radius: 50%;
-    border: 1px solid #73739a;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.CardService-container:hover .CardService-img-box img {
+    transform: scale(1.2);
 }
 
 .CardService-title-box h2{
@@ -93,6 +103,10 @@
 .CardService-title-box p{
     line-height: 26px;
     color: var(--primary-grey);
+}
+
+.CardService-container:hover .CardService-title-box p{
+    color: var(--primary-white);
 }
 
 .CardService-container-item-1{

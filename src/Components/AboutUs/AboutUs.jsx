@@ -1,7 +1,7 @@
 import React from 'react';
 import './AboutUs.css';
 import aboutimg1 from './img/man1.png';
-
+import { PiArrowBendDoubleUpRightBold } from 'react-icons/pi';
 
 const AboutUs = () => {
   return (
@@ -22,7 +22,9 @@ const AboutUs = () => {
           <p className="about-us-description">
           We are the foremost Recharge API provider in India and issue Multi Recharge API to our great consumers. We have a team of specialists and crackerjack professionals. Our panel of experts is proficient to serve excellence to accomplish your business objectives. We the team of Roundpay are here to aid you in meeting the demanding time limit more productively and economically. We have many years of experience and a dependable delivery structure that promises growth and diminishes hurdles. As the preeminent Multi Recharge Company in Lucknow, we've built a reputation for trustworthiness and reliability.
           </p>
-          <button className="about-us-button">more</button>
+          <button className="about-us-button">
+            more <PiArrowBendDoubleUpRightBold />
+          </button>
         </div>
         <div className="about-us-image">
           <img

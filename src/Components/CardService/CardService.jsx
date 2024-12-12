@@ -1,5 +1,11 @@
 import React from 'react';
 import './CardService.css';
+import cardimg1 from './Image/icon 1.png';
+import cardimg2 from './Image/icon 2.png';
+import cardimg3 from './Image/icon 3.png';
+import cardimg4 from './Image/icon 4.png';
+import cardimg5 from './Image/icon 5.png';
+
 
 const CardService = () => {
   return (
@@ -17,7 +23,7 @@ const CardService = () => {
               <div className="CardService-container-item-1">
                 <div className="CardService-container">
                   <div className="CardService-img-box">
-                    <img src="" alt="" />
+                    <img src={cardimg1} alt="" />
                   </div>
                   <div className="CardService-title-box">
                     <h2>Travel Services</h2>
@@ -31,7 +37,7 @@ const CardService = () => {
               <div className="CardService-container-item-2">
                 <div className="CardService-container">
                   <div className="CardService-img-box">
-                    <img src="" alt="" />
+                    <img src={cardimg2} alt="" />
                   </div>
                   <div className="CardService-title-box">
                     <h2>IT Services</h2>
@@ -42,7 +48,7 @@ const CardService = () => {
                 </div>
                 <div className="CardService-container">
                   <div className="CardService-img-box">
-                    <img src="" alt="" />
+                    <img src={cardimg3} alt="" />
                   </div>
                   <div className="CardService-title-box">
                     <h2>VAS Services</h2>
@@ -56,7 +62,7 @@ const CardService = () => {
               <div className="CardService-container-item-3">
                 <div className="CardService-container">
                   <div className="CardService-img-box">
-                    <img src="" alt="" />
+                    <img src={cardimg4} alt="" />
                   </div>
                   <div className="CardService-title-box">
                     <h2>FinTech</h2>
@@ -67,7 +73,7 @@ const CardService = () => {
                 </div>
                 <div className="CardService-container">
                   <div className="CardService-img-box">
-                    <img src="" alt="" />
+                    <img src={cardimg5} alt="" />
                   </div>
                   <div className="CardService-title-box">
                     <h2>BBPS Bill Payment</h2>
