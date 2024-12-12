@@ -1,4 +1,4 @@
-/* Reset and Base Styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,14 +9,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* CSS Variables */
 :root {
   --primary-white: #fff;
   --primary-black: #000;
   --primary-grey: #73739a;
   --primary-blue: #6d72f6;
-
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-blue);
+  border-radius: 6px;
+}
+
+
 
 /* Header Container */
 .header-container {
