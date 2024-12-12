@@ -270,6 +270,22 @@
 }
 
 @media (max-width: 480px){
+  .footer-top-right-container{
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    border-radius: 30px;
+  }
+  .footer-top-right-form-content{
+    margin-bottom: 0px;
+  }
+  .footer-top-right-form-content h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  .footer-top-right-form-content form button {
+    margin: 10px auto;
+  }
   .footer-top-right-img img:last-child{
     display: none;
   }
