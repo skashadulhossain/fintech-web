@@ -3,14 +3,24 @@ import "./Footer.css";
 import logoimg from './Image/Group 36 (1).png';
 import footerbgimg1 from './Image/Group 3.png';
 import footerbgimg2 from './Image/long-haired-girl-watching-through-binoculars (2) 1.png';
-import { FaFacebookF, FaFigma, FaInstagram, FaTelegramPlane } from "react-icons/fa";
+import { FaChevronUp, FaFacebookF, FaFigma, FaInstagram, FaTelegramPlane } from "react-icons/fa";
 import { LuGithub } from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
 
 
 const Footer = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    });
+  };
+
   return (
     <footer className="footer-section">
+      <div className="footer-scroll-btn" onClick={scrollToTop}>
+        <FaChevronUp />
+      </div>
       <div className="footer-main-container">
         <div className="footer-top-container">
           <div className="footer-top-left-container">
