@@ -19,7 +19,7 @@ const Solutions = () => {
           <p>
             Our platform provides diverse VR solutions, including immersive
             virtual tours, interactive training simulations, and social VR
-            experiences
+            experiences.
           </p>
         </div>
         <div className="Solutions-title-btn-box">
@@ -55,9 +55,16 @@ const Solutions = () => {
             </div>
             {activeIndex === index && (
               <div className="accordion-content">
-                <p>
-                  {`Details about ${title}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.`}
-                </p>
+                <p>{`Details about ${title}. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio.`}</p>
+                {index === 0 && (
+                  <p>We pride ourselves on being at the forefront of virtual reality innovation. Our commitment to pushing the boundaries of technology and creativity has established us as leaders in the VR industry. Constantly exploring new possibilities and setting trends in the virtual reality landscape for the next generation with the hope of fun moments.</p>
+                )}
+                {index === 1 && (
+                  <p>We pride ourselves on being at the forefront of virtual reality innovation. Our commitment to pushing the boundaries of technology and creativity has established us as leaders in the VR industry. Constantly exploring new possibilities and setting trends in the virtual reality landscape for the next generation with the hope of fun moments.</p>
+                )}
+                {index === 2 && (
+                  <p>We pride ourselves on being at the forefront of virtual reality innovation. Our commitment to pushing the boundaries of technology and creativity has established us as leaders in the VR industry. Constantly exploring new possibilities and setting trends in the virtual reality landscape for the next generation with the hope of fun moments.</p>
+                )}
               </div>
             )}
           </div>

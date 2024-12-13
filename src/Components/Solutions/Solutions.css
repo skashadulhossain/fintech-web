@@ -88,6 +88,15 @@
     animation: rotate 8s linear infinite alternate;
 }
 
+@keyframes rotate {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(360deg);
+    }
+}
+
 .play-icon {
     width: 40px;
     height: 40px;
@@ -130,7 +139,7 @@
 
 .accordion-content {
     padding: 15px;
-    color: var(--primary-white);
+    color: var(--primary-grey2);
     font-size: 1rem;
     line-height: 1.5;
 }
@@ -140,4 +149,44 @@
     border-radius: 18px;
     color: var(--primary-black2);
     background-color: var(--primary-white);
+}
+
+
+@media (max-width: 1024px){
+    .Solutions-section{
+        height: auto;
+        padding: 3rem 20px;
+        flex-direction: column;
+    }
+    .Solutions-img-container{
+        padding: 18rem 0;
+    }
+    .accordion-item {
+        padding: 14px 22px;
+    }
+}
+
+@media (max-width: 768px){
+    .Solutions-title--box h1 {
+        font-size: 1.8rem;
+    }
+    .Solutions-title--box p {
+        font-size: 0..8rem;
+    }
+    .Solutions-img-container{
+        padding: 14rem 0;
+    }
+} 
+
+@media (max-width: 480px){
+    .Solutions-title-btn-box button {
+        font-size: 16px;
+        padding: 18px 2rem;
+    }
+    .accordion-title {
+        font-size: 1.4rem;
+    }
+    .accordion-icon{
+        padding: 4px 1.2rem;
+    }
 }
