@@ -51,25 +51,6 @@
     justify-content: center;
   }
   
-  .hero-hero-left-title-box {
-    gap: 8px;
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .hero-hero-left-title-box div {
-    width: 30px;
-    height: 2px;
-    background-color: var(--primary-green);
-  }
-  
-  .hero-hero-left-title-box span {
-    font-weight: bold;
-    text-transform: uppercase;
-    color: var(--primary-green);
-  }
-  
   @keyframes slideIn {
     from {
       opacity: 0;
