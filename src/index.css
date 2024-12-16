@@ -3,3 +3,63 @@
 * {
   font-family: "Open Sans", sans-serif;
 }
+
+.page-route-main-container h1 {
+  font-size: 1rem;
+  border-bottom: 2px solid #8084FF;
+  width: fit-content;
+}
+
+.page-route-main-container p {
+  font-size: 0.8rem;
+}
+
+.page-route-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 0.8rem;
+  border-bottom: 1px solid gray;
+  padding-bottom: 18px;
+}
+
+
+.page-options a {
+  height: 100%;
+  background-color: white;
+  text-decoration: none;
+  border: 0.1rem solid gray;
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  font-size: 14px;
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color),
+    0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
+    var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.page-options a:hover {
+  background-color: #f0f0f0; /* Light gray background on hover */
+  box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 0.2), 0 4px 6px -3px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+}
+
+.page-options-active a {
+  background-color: #8084ff;
+  color: white;
+  text-decoration: none;
+  border: 0.1rem solid gray;
+  font-size: 14px;
+  padding: 5px 10px;
+  border-radius: 0.3rem;
+  box-shadow: none;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.page-options-active a:hover {
+  background-color: #6b6ffe; /* Slightly darker blue on hover */
+  color: #e0e0ff; /* Lighter text color on hover */
+}
+
