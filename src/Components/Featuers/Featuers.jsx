@@ -33,7 +33,7 @@ const Featuers = () => {
     <section className="Featuers-section">
       <div className="Featuers-main-container">
         <div className="Featuers-title-box">
-          <h1>Perfect for Productivity Gains in All Industries</h1>
+          <h1>Complete assurance about quality & timely execution</h1>
           <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus excepturi 
           vitae labore veniam perferendis ea neque voluptatum deleniti?</p>
         </div>
