@@ -14,12 +14,12 @@ const Header = () => {
       { title: 'Career', link: '#' }
     ],
     apiServices: [
-      { title: 'Recharge API', link: '#' },
-      { title: 'Travel API', link: '#' },
-      { title: 'Domestic Money Transfer', link: '#' },
-      { title: 'BBPS', link: '#' },
-      { title: 'Payout API', link: '#' },
-      { title: 'Pan Card API', link: '#' }
+      { title: 'Recharge API', link: '/recharge-api' },
+      { title: 'Travel API', link: '/travel-api' },
+      { title: 'Domestic Money Transfer', link: '/dmt' },
+      { title: 'BBPS', link: '/bbps' },
+      { title: 'Payout API', link: '/payout-api' },
+      { title: 'Pan Card API', link: '/pancard-api' }
     ],
     fintech: [
       { title: 'AePS', link: '#' },
