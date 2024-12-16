@@ -1,11 +1,15 @@
 import React from "react";
 import MainLayout from "../../Components/Layout/MainLayout";
+import { apiServices } from "../../js/pageOptions";
+import PageRoutes from "../../Components/PageRoutes";
 
 const PanCardApiPage = () => {
   return (
     <>
       <MainLayout>
-        <div>PanCardApiPage</div>
+        <div>
+          <PageRoutes title="API Services" options={apiServices} />
+        </div>
       </MainLayout>
     </>
   );

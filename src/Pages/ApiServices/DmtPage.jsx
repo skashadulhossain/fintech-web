@@ -1,11 +1,15 @@
 import React from "react";
 import MainLayout from "../../Components/Layout/MainLayout";
+import { apiServices } from "../../js/pageOptions";
+import PageRoutes from "../../Components/PageRoutes";
 
 const DmtPage = () => {
   return (
     <>
       <MainLayout>
-        <div>DmtPage</div>
+        <div>
+          <PageRoutes title="API Services" options={apiServices} />
+        </div>
       </MainLayout>
     </>
   );
