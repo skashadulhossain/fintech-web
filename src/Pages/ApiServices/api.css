@@ -1,0 +1,53 @@
+.api-details {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.api-details h2 {
+  font-weight: 500;
+}
+
+.advantage-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0 18px 0;
+}
+
+.advantage {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.advantage span {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.check-icon {
+  width: 16px;
+  height: 16px;
+  color: red;
+}
+
+.launch-desc {
+  margin-top: 4rem;
+}
+
+.launch-desc h2 {
+  font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  .advantage-container {
+    flex-direction: row;
+  }
+}

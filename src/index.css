@@ -1,12 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 * {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
 .page-route-main-container h1 {
   font-size: 1rem;
-  border-bottom: 2px solid #8084FF;
+  border-bottom: 2px solid #8084ff;
   width: fit-content;
 }
 
@@ -24,7 +26,6 @@
   padding-bottom: 18px;
 }
 
-
 .page-options a {
   height: 100%;
   background-color: white;
@@ -38,12 +39,13 @@
     0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-  transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 .page-options a:hover {
-  background-color: #f0f0f0; /* Light gray background on hover */
-  box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 0.2), 0 4px 6px -3px rgba(0, 0, 0, 0.1); /* Slightly larger shadow */
+  background-color: #f0f0f0;
+  box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 0.2),
+    0 4px 6px -3px rgba(0, 0, 0, 0.1);
 }
 
 .page-options-active a {
@@ -55,11 +57,11 @@
   padding: 5px 10px;
   border-radius: 0.3rem;
   box-shadow: none;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .page-options-active a:hover {
-  background-color: #6b6ffe; /* Slightly darker blue on hover */
-  color: #e0e0ff; /* Lighter text color on hover */
+  background-color: #6b6ffe;
+  color: #e0e0ff;
 }
 

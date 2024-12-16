@@ -5,3 +5,17 @@
   padding: 1rem;
   overflow-y: auto;
 }
+
+@media (min-width: 1024px) { 
+  .main-layout-container {
+    padding: 2rem 4rem;
+  }
+}
+
+@media (min-width: 1536px) { 
+  .main-layout-container {
+    padding: 4rem 8rem;
+  }
+}
+
+
