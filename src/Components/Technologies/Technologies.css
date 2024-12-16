@@ -47,7 +47,6 @@
 .Technologies-section {
   height: 30vh;
   text-align: center;
-  background-color: var(--primary-white);
   overflow: hidden;
   opacity: 0;
   transform: translateY(50px);
@@ -95,7 +94,7 @@
   height: 80%;
   width: max-content;
   align-items: center;
-  animation: scroll 20s linear infinite;
+  animation: scroll 90s linear infinite;
   will-change: transform;
 }
 
