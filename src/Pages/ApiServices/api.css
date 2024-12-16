@@ -43,7 +43,33 @@
 
 .launch-desc h2 {
   font-weight: 500;
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+// Travel API Page
+.travel-container {
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  box-sizing: border-box;
+  margin-top: 1rem;
+}
+
+.travel-img-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.travel-img-container img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 1rem;
 }
 
 @media (min-width: 640px) {
