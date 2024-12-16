@@ -1,0 +1,110 @@
+:root {
+    --primary-white: #fff;
+    --primary-black: #000;
+    --primary-grey: #73739a;
+    --primary-grey2: #fffc;
+    --primary-blue: #6d72f6;
+    --primary-green: #08ce8a;
+    --primary-black2: #1c1c57;
+}
+
+
+
+.Featuers-section{
+    padding: 3rem 20px;
+    background-color: #f8f8f8;
+}
+
+.Featuers-main-container{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.Featuers-title-box{
+    gap: 10px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Featuers-title-box h1{
+    width: 100%;
+    font-size: 36px;
+    max-width: 450px;
+    color: var(--primary-black2);
+}
+
+.Featuers-title-box p{
+    width: 100%;
+    font-size: 16px;
+    max-width: 550px;
+    color: var(--primary-grey);
+}
+
+.Featuers-container{
+    gap: 20px;
+    display: grid;
+    margin-top: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    grid-template-columns: repeat(3,1fr);
+    background-image: url(./Image/Featuers\ bg.png);
+}
+
+.Featuers-content-box{
+    background-color: #ffffffad;
+    border: 1px solid #ffffff80;
+    border-radius: 30px;
+    padding: 40px 42px 49px 40px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.Featuers-content-box:hover {
+    transform: translateY(-10px);
+    background-color: var(--primary-blue); 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.Featuers-content-box:hover p{
+    color: var(--primary-white);
+}
+
+.Featuers-content-box h2{
+    margin-bottom: 20px;
+    color: var(--primary-black2);
+}
+
+.Featuers-content-box p{
+    font-size: 18px;
+    list-style: 28px;
+    color: var(--primary-grey);
+}
+
+
+@media (max-width: 1024px){
+    .Featuers-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .Featuers-title-box h1{
+        font-size: 28px;
+    }
+    .Featuers-container{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 480px){
+    .Featuers-title-box p{
+        max-width: 100%;
+    }
+    .Featuers-content-box{
+        padding: 30px 20px;
+    }
+}
