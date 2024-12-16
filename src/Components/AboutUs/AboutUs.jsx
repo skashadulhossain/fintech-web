@@ -11,12 +11,12 @@ const AboutUs = () => {
           <h1 className="about-us-title">About Us</h1>
           <h2 className="about-us-subtitle">
             We Are happy to <br />
-            <span> introduce you to  <span className="highlight">Pn Software</span></span>
+            <span> introduce you to  <span className="highlight">PN SOFTWARE TECH PVT. LTD</span></span>
             <br />
            
           </h2>
           <p className="about-us-description1">
-            Pn Software is an IT and Recharge services provider company that
+          PN SOFTWARE TECH PVT. LTD is an IT and Recharge services provider company that
             deals with IT market requirements and custom software.
           </p>
           <p className="about-us-description">
@@ -33,8 +33,8 @@ const AboutUs = () => {
             className="image-main"
           />
           <div className="image-overlay">
-            <p>✔ Get 30% off on every 1st month</p>
-            <p>✔ Expert teachers</p>
+            <p>✔ Lorem ipsum dolor sit amet </p>
+            <p>✔ Expert developers</p>
           </div>
         </div>
       </section>

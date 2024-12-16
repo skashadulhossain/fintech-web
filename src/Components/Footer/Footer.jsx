@@ -54,7 +54,7 @@ const Footer = () => {
           <div className="footer-bottom-content">
             <div className="footer-bottom-left-box">
               <img src={logoimg} alt="" />
-              <p>Get comprehensive financial software development from a reliable 
+              <p>Get comprehensive  software development from a reliable 
                 tecnology partner and transform your business today</p>
             </div>
             <div className="footer-bottom-right-box">

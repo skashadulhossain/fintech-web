@@ -29,8 +29,7 @@ const CardService = () => {
                     <h2>Travel Services</h2>
                     <p>"Travel is the only thing you purchase that shapes you wealthy". We 
                       thoroughly vow by this and contemplate in satisfying travel dreams 
-                      that shape you unfailingly wealthy by degrees. Pn Fintech Software 
-                      Pvt. Ltd is selling stupendous episodes over years</p>
+                      that shape you unfailingly wealthy by degrees. PN SOFTWARE TECH PVT. LTD  is selling stupendous episodes over years</p>
                   </div>
                 </div>
               </div>
@@ -54,7 +53,7 @@ const CardService = () => {
                     <h2>VAS Services</h2>
                     <p>VAS is a prevalent telecommunications sector term for non-core services, 
                       or, in essence, all services afar standard voice calls and fax 
-                      transmissions. Here, at Pn Fintech Software Pvt. Ltd we offer 
+                      transmissions. Here, at PN SOFTWARE TECH PVT. LTD we offer 
                       world-class customer support to answer all your queries</p>
                   </div>
                 </div>
@@ -67,7 +66,7 @@ const CardService = () => {
                   <div className="CardService-title-box">
                     <h2>FinTech</h2>
                     <p>Fintech is a budgetary transformation that illustrates a growing folding 
-                      of money superintendence area. Pn Fintech Software Pvt. Ltd specializes 
+                      of money superintendence area. PN SOFTWARE TECH PVT. LTD specializes 
                       in technology development to aid the banking and financial industries.</p>
                   </div>
                 </div>
@@ -79,7 +78,7 @@ const CardService = () => {
                     <h2>BBPS Bill Payment</h2>
                     <p>VAS is a prevalent telecommunications sector term for non-core services, 
                       or, in essence, all services afar standard voice calls and fax 
-                      transmissions. Here, at Pn Fintech Software Pvt. Ltd we offer 
+                      transmissions. Here, at PN SOFTWARE TECH PVT. LTDwe offer 
                       world-class customer support to answer all your queries</p>
                   </div>
                 </div>
