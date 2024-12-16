@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.css"; 
-import logoimg from './Image/Group 36 (1).png';
+import logoimg from './Image/Logo img.png';
 import footerbgimg1 from './Image/Group 3.png';
 import footerbgimg2 from './Image/long-haired-girl-watching-through-binoculars (2) 1.png';
 import { FaChevronUp, FaFacebookF, FaFigma, FaInstagram, FaTelegramPlane } from "react-icons/fa";
