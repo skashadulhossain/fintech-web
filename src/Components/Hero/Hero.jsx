@@ -15,7 +15,7 @@ const Hero = () => {
             <div></div>
             <span>---</span>
           </div>
-          <h1>We turn ideas </h1>
+          <h1>hello world </h1>
           <h2>into reality</h2>
           <p>
             Every target requires execution. Pn Fintech Software Pvt. Ltd develops high-quality apps, websites, and systems.
