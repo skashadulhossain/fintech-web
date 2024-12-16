@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { IoIosArrowDown } from 'react-icons/io';
-import logoimg from './Image/Group 36 (1).png';
+import logoimg from './Image/Logo img.png';
 import './Header.css';
 
 const Header = () => {
