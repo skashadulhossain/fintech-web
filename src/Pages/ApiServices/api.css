@@ -271,7 +271,7 @@
 
 .bg-rock,
 .process .item .cont:hover {
-  background-color: #635AD9;
+  background-color: #635ad9;
   padding: 1rem;
   border-radius: 12px;
 }
@@ -295,7 +295,7 @@
 }
 
 .serviceBox-payout {
-  color: #635AD9;
+  color: #635ad9;
   font-family: "Zen Maru Gothic", sans-serif;
   text-align: center;
   padding: 30px 35px 40px;
@@ -371,7 +371,10 @@
 
 .section-title-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid with a minimum column size */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(300px, 1fr)
+  ); /* Responsive grid with a minimum column size */
   gap: 2rem; /* Space between grid items */
   padding: 1rem; /* Optional padding for the grid container */
 }
@@ -382,6 +385,63 @@
   padding: 2rem 0 2rem 0;
 }
 
+.main-why-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2rem 0 2rem 0;
+}
+
+.why-img-div {
+  width: 100%;
+  height: 100%;
+}
+
+.why-img-div img {
+  width: 100%;
+  height: auto;
+}
+
+.why-option-div {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+}
+
+.why-btn-div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.why-btn-div-button {
+  background-color: white;
+  border: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.why-btn-div-active-button {
+  background-color: #635ad9;
+  color: white;
+  border: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
+
+.why-line {
+  width: 1px;
+  height: 100%;
+  background-color: gray;
+}
 
 @media only screen and (max-width: 990px) {
   .serviceBox {

@@ -3,6 +3,7 @@ import MainLayout from "../../Components/Layout/MainLayout";
 import { apiServices } from "../../js/pageOptions";
 import PageRoutes from "../../Components/PageRoutes";
 import { Check, ChevronRight, Earth } from "lucide-react";
+import WhyPayoutSelect from "../../Components/PayoutComponents/WhyPayoutSelect";
 
 const way = [
   { logo: "/images/login.png", title: "Login" },
@@ -118,7 +119,6 @@ const PayoutApiPage = () => {
                 </div>
               ))}
             </div>
-
             <section className="service-wrap style3 ptb-100 bg-rock">
               <div className="container">
                 <div className="section-title style1">
@@ -199,6 +199,69 @@ const PayoutApiPage = () => {
                     </p>
                   </div>
                 </div>
+              </div>
+            </section>
+
+            <section>
+              <div className="bbps-two-div">
+                <div style={{ paddingTop: "4rem" }} className="bbps-details">
+                  <div>
+                    <div>
+                      <img
+                        src="/images/developers.webp"
+                        alt="img"
+                        loading="lazy"
+                        className=""
+                      />
+                    </div>
+                  </div>
+                  <div className="">
+                    <h3>Build for Developers</h3>
+                    <div className="custom-underline"></div>
+                    <div style={{ marginTop: "1.5rem" }}>
+                      <h2>Easy Integration For Developers</h2>
+                      <ul style={{ marginLeft: "1rem" }} className="advantage">
+                        <li>
+                          Just pass some parameters and payout will made to
+                          defined Bank Account/VPA in Realtime
+                        </li>
+                        <li>
+                          Encryption/Decryption functions defined in source
+                          codes. Make your platform and payments secure with
+                          Encryption/Decryption
+                        </li>
+                        <li>Best support for integration</li>
+                      </ul>
+
+                      <div className="contact-buttons">
+                        <button>Contact US</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  gap: "0.5rem",
+                }}
+              >
+                <h1 style={{ textAlign: "center" }}>What does Payouts do?</h1>
+                <div className="custom-underline"></div>
+                <p style={{ marginTop: "1rem" }}>
+                  Initiate ecommerce refunds, send vendor payments, distribute
+                  game winnings and much more with Payouts
+                </p>
+              </div>
+
+              <div>
+                <WhyPayoutSelect />
               </div>
             </section>
           </div>
