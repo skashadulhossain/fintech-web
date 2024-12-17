@@ -7,8 +7,11 @@ const BbpsPage = () => {
   return (
     <>
       <MainLayout>
-        <div>
-          <PageRoutes title="API Services" options={apiServices} />
+        <div className="main-container">
+          <div className="page-routes-nav-container">
+            <PageRoutes title="API Services" options={apiServices} />
+          </div>
+          <div className="api-details"></div>
         </div>
       </MainLayout>
     </>
