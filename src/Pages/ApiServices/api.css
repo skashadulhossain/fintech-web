@@ -261,6 +261,137 @@
   font-size: 1.2rem;
 }
 
+.counter-wrap,
+.ct-heading,
+.sec-title4,
+.service-wrap.style3 .container {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-rock,
+.process .item .cont:hover {
+  background-color: #635AD9;
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.ptb-100 {
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+
+.service-wrap.style3 .container .service-shape-one {
+  position: absolute;
+  top: 100px;
+  right: -10px;
+  z-index: -1;
+}
+.service-wrap.style3 .container .service-shape-two {
+  position: absolute;
+  bottom: 100px;
+  left: -35px;
+  z-index: -1;
+}
+
+.serviceBox-payout {
+  color: #635AD9;
+  font-family: "Zen Maru Gothic", sans-serif;
+  text-align: center;
+  padding: 30px 35px 40px;
+  border-radius: 0 80px;
+  border: 2px dashed #fff;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 30px;
+}
+.serviceBox-payout:before {
+  content: "";
+  background: #fff;
+  border-radius: 0 70px;
+  box-shadow: 5px 5px 12px rgba(0, 0, 0, 0.3);
+  transform: translateX(-50%) translateY(-50%);
+  position: absolute;
+  width: calc(100% - 15px);
+  height: calc(100% - 15px);
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}
+.serviceBox-payout .service-icon {
+  font-size: 45px;
+  margin: 0 auto 15px;
+}
+.serviceBox-payout .title {
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 0 0 12px;
+}
+.serviceBox-payout .description {
+  color: #444;
+  font-size: 14px;
+  line-height: 22px;
+}
+.serviceBox-payout.yellow {
+  color: #d38a0c;
+  border-color: #d38a0c;
+}
+.serviceBox-payout.yellow:after {
+  background-color: #d38a0c;
+  height: 130px;
+  width: 100px;
+  border-radius: 0 0 0 80px;
+  top: auto;
+  bottom: -9px;
+}
+.serviceBox-payout.purple {
+  color: #8455d0;
+  border-color: #8455d0;
+}
+.serviceBox-payout.purple:after {
+  background-color: #8455d0;
+  top: auto;
+  bottom: -9px;
+  left: auto;
+  right: -9px;
+}
+.serviceBox-payout.red {
+  color: #cd4b4c;
+  border-color: #cd4b4c;
+}
+.serviceBox-payout.red:after {
+  background-color: #cd4b4c;
+  width: 100px;
+  height: 130px;
+  border-radius: 0 85px 0 0;
+  left: auto;
+  right: -9px;
+}
+
+.section-title-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid with a minimum column size */
+  gap: 2rem; /* Space between grid items */
+  padding: 1rem; /* Optional padding for the grid container */
+}
+
+.section-title h2 {
+  text-align: center;
+  color: white;
+  padding: 2rem 0 2rem 0;
+}
+
+
+@media only screen and (max-width: 990px) {
+  .serviceBox {
+    margin: 0 0 30px;
+  }
+  .serviceBox-payout {
+    margin: 0 10px 30px;
+  }
+}
+
 @media (min-width: 640px) {
   .advantage-container {
     flex-direction: row;
