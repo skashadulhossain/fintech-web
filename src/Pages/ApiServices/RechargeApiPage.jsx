@@ -10,7 +10,7 @@ const RechargeApiPage = () => {
     <>
       <MainLayout>
         <div className="main-container">
-          <div>
+          <div className="page-routes-nav-container">
             <PageRoutes title="API Services" options={apiServices} />
           </div>
           <div className="api-details">
