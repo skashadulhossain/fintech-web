@@ -9,8 +9,10 @@ const TravelApiPage = () => {
   return (
     <>
       <MainLayout>
-        <div>
-          <PageRoutes title="API Services" options={apiServices} />
+        <div className="main-container">
+        <div className="page-routes-nav-container">
+            <PageRoutes title="API Services" options={apiServices} />
+          </div>
           <div className="travel-container">
             <div className="travel-img-container">
               <img src="/images/rail.jpg" alt="rail" loading="lazy" />
@@ -110,7 +112,7 @@ const TravelApiPage = () => {
                 </div>
               </div>
             </div>
-            <div className="api-details">
+            <div style={{marginTop: "1.5rem"}} className="api-details">
               <h2>Why PN Software Tech Pvt. Ltd?</h2>
               <p>
                 As a leading provider of IRCTC API solutions, we deliver
