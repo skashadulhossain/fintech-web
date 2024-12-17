@@ -3,14 +3,24 @@ import "./api.css";
 import MainLayout from "../../Components/Layout/MainLayout";
 import { apiServices } from "../../js/pageOptions";
 import PageRoutes from "../../Components/PageRoutes";
-import { Check } from "lucide-react";
+import { Check, ChevronRight } from "lucide-react";
 
 const TravelApiPage = () => {
   return (
     <>
       <MainLayout>
+        <div className="header-div">
+          <div className="header">
+            {/* <h1>keyword research</h1> */}
+            <div className="header-nav">
+              API Services{" "}
+              <ChevronRight style={{ width: "18px", height: "18px" }} />{" "}
+              Travel API
+            </div>
+          </div>
+        </div>
         <div className="main-container">
-        <div className="page-routes-nav-container">
+          <div className="page-routes-nav-container">
             <PageRoutes title="API Services" options={apiServices} />
           </div>
           <div className="travel-container">
@@ -112,7 +122,7 @@ const TravelApiPage = () => {
                 </div>
               </div>
             </div>
-            <div style={{marginTop: "1.5rem"}} className="api-details">
+            <div style={{ marginTop: "1.5rem" }} className="api-details">
               <h2>Why PN Software Tech Pvt. Ltd?</h2>
               <p>
                 As a leading provider of IRCTC API solutions, we deliver

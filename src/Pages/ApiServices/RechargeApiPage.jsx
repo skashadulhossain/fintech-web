@@ -3,12 +3,22 @@ import MainLayout from "../../Components/Layout/MainLayout";
 import PageRoutes from "../../Components/PageRoutes";
 import { apiServices } from "../../js/pageOptions";
 import "./api.css";
-import { Check } from "lucide-react";
+import { Check, ChevronRight } from "lucide-react";
 
 const RechargeApiPage = () => {
   return (
     <>
       <MainLayout>
+        <div className="header-div">
+          <div className="header">
+            {/* <h1>keyword research</h1> */}
+            <div className="header-nav">
+              API Services{" "}
+              <ChevronRight style={{ width: "18px", height: "18px" }} />{" "}
+              Recharge API
+            </div>
+          </div>
+        </div>
         <div className="main-container">
           <div className="page-routes-nav-container">
             <PageRoutes title="API Services" options={apiServices} />

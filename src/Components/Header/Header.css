@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -21,15 +20,13 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #caccf5 50%, #8084FF 100%);
+  background: linear-gradient(to bottom, #caccf5 50%, #8084ff 100%);
   border-radius: 6px;
 }
 
-::-webkit-scrollbar-thumb:hover{
+::-webkit-scrollbar-thumb:hover {
   background: linear-gradient(to bottom, #b3b5f8 50%, #5a5ff0 100%);
 }
-
-
 
 /* Header Container */
 .header-container {
@@ -42,6 +39,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  z-index: 99999;
 }
 
 /* Logo Styling */
@@ -52,8 +50,8 @@ body {
   transition: 0.3s linear;
 }
 
-.header-logo-box img:hover{
-    transform: scale(1.1);
+.header-logo-box img:hover {
+  transform: scale(1.1);
 }
 
 /* Navigation Links Container */
@@ -194,12 +192,12 @@ body {
     transform: translateY(-20px);
     opacity: 0;
   }
-   
+
   .header-links-box.active {
     display: flex;
     transform: translateY(0);
     opacity: 1;
-   }
+  }
 
   .hamburger-menu {
     display: flex;
