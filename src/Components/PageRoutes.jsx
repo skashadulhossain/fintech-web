@@ -8,6 +8,7 @@ const PageRoutes = ({ title, options }) => {
   return (
     <div className="page-route-main-container">
       <h1 className="">{title}</h1>
+      <div className="custom-underline"></div>
       {/* <p>
         Click on a link below to navigate to the respective API service page.
       </p> */}
