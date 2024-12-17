@@ -9,12 +9,35 @@
 }
 
 .AboutHero-sectiion {
+    position:relative;
+}
+
+.AboutHero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
+    min-height: 1183px;
+    inset: -130px 0 auto;
+}
+  
+.AboutHero-bg img {
+    max-width: 67%;
+    transition: transform 0.5s ease-in-out;
+}
+  
+.AboutHero-sectiion:hover .AboutHero-bg img {
+    transform: scale(1.05); 
+}
+
+.AboutHero-main-container {
     height: 55vh;
     display: flex;
-    text-align: center;
+    text-align:center;
+    position: relative;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 }
 
 .AboutHero-title-box {

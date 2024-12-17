@@ -11,10 +11,6 @@ const Hero = () => {
       </div>
       <div className="hero-hero-container">
         <div className="hero-hero-left-container">
-          <div className="hero-hero-left-title-box">
-            <div></div>
-            <span>---</span>
-          </div>
           <h1>We turn ideas </h1>
           <h2>into reality</h2>
           <p>
