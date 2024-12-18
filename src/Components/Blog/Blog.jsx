@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import '../Blog/Blog.css';
-import Blog1img from './Image/Blog1 img.png';
-import Blog2img from './Image/Blog2 img.png';
-import Blog3img from './Image/Blog3 img.png';
-import Blog4img from './Image/Saly-1.png';
-import Blog5img from './Image/Saly-2.png';
-import Blog6img from './Image/Saly-3.png';
-import Blog7img from './Image/Blog2 img.png';
+import Blog1img from './Image/focus.png';
+import Blog2img from './Image/satisfaction.png';
+import Blog3img from './Image/file (1).png';
+import Blog4img from './Image/achivment.png';
+import Blog5img from './Image/compresive.png';
+import Blog6img from './Image/support.png';
+import Blog7img from './Image/file.png';
 
 // Blog Components
 const Blog1 = () => (

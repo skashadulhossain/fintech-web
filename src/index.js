@@ -17,6 +17,8 @@ import DmtPage from "./Pages/ApiServices/DmtPage";
 import BbpsPage from "./Pages/ApiServices/BbpsPage";
 import PayoutApiPage from "./Pages/ApiServices/PayoutApiPage";
 import PanCardApiPage from "./Pages/ApiServices/PanCardApiPage";
+import ContactUs from "./Pages/ContactUs/ContactUs";
+import Blogs from "./Pages/Blog/Blogs";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -29,7 +31,8 @@ const router = createBrowserRouter(
       <Route path="/bbps" element={<BbpsPage />} />
       <Route path="/payout-api" element={<PayoutApiPage />} />
       <Route path="/pancard-api" element={<PanCardApiPage />} />
-      <Route path="Contact" element={<Contact />} />
+      <Route path="Blog" element={<Blogs/>} />
+      <Route path="Contact" element={<ContactUs/>} />
     </Route>
   )
 );

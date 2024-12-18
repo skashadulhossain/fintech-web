@@ -1,7 +1,7 @@
 import React from 'react';
 import './Hero.css';
-import herobg from './Image/Ellipse 9 (3).png';
-import heroimg from './Image/Group 35 (1).png';
+import herobg from './Image/hero bg.png';
+import heroimg from './Image/heroimage1.png';
 
 const Hero = () => {
   return (
