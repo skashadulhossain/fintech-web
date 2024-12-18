@@ -4,28 +4,28 @@ import './Featuers.css';
 const Featuers = () => {
   const features = [
     {
-      title: "Transparency",
-      description: "We prioritize openness and honesty, ensuring clear communication and accountability in all our services and interactions."
+      title: "Bank APIs",
+      description: "Our Bank APIs provide seamless integration for banking services, enabling businesses to offer secure and efficient financial transactions through their platforms."
     },
     {
-      title: "Innovation",
-      description: "Dedicated to pioneering the latest VR technologies, continuously pushing boundaries to deliver immersive experiences."
+      title: "Utility APIs",
+      description: "We offer Utility APIs that allow businesses to integrate various utility services like electricity, water, and gas bill payments into their applications, enhancing user convenience."
     },
     {
-      title: "Excellence",
-      description: "VR FZ is committed to delivering the highest quality VR experiences, maintaining rigorous standards of performance creativity."
+      title: "IT Service and Solution",
+      description: "We specialize in providing IT services and solutions, including software development, system integration, and IT consulting, to help businesses optimize their technology infrastructure."
     },
     {
-      title: "Team Work",
-      description: "We believe in the power of collaboration, with our dedicated team working together to  exceptional and innovative VR solutions."
+      title: "Banking - BC Model",
+      description: "Our Banking BC Model offers a reliable framework for businesses to provide banking services, such as account opening, fund transfers, and loan disbursements, through a business correspondent model."
     },
     {
-      title: "Communication",
-      description: "Effective and transparent communication is at the heart of VR FZ, ensuring we understand and meet our clients' needs efficiently."
+      title: "Fintech",
+      description: "We offer innovative Fintech solutions that combine technology and finance to create more efficient, transparent, and accessible financial services for businesses and consumers."
     },
     {
-      title: "Growth",
-      description: "We are committed to fostering continuous growth and innovation, driving progress in the VR industry."
+      title: "Travel Services",
+      description: "Our Travel Services APIs enable businesses to integrate booking systems, flight and hotel reservations, and travel packages into their platforms, enhancing the travel experience for customers."
     },
   ];
 
@@ -33,9 +33,8 @@ const Featuers = () => {
     <section className="Featuers-section">
       <div className="Featuers-main-container">
         <div className="Featuers-title-box">
-          <h1>Complete assurance about quality & timely execution</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Temporibus excepturi 
-          vitae labore veniam perferendis ea neque voluptatum deleniti?</p>
+          <h1>Core Services</h1>
+          <p>At PN SOFTWARE TECH PVT. LTD., we provide a wide range of innovative services designed to meet the diverse needs of businesses across various industries. Our solutions are built to streamline operations, enhance customer experience, and drive growth. Explore our core services below to learn how we can help your business succeed.</p>
         </div>
         <div className="Featuers-container">
           {features.map((feature, index) => (

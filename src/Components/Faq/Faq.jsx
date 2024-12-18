@@ -4,44 +4,37 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
 
 const Faq1 = () => (
   <div className="Faq1-content">
-    <p>No, you do not need special equipment to use VR FZ's services. While using VR-enabled 
-      devices such as VR headsets provides the most immersive experience, many of our VR 
-      solutions can also be accessed via smartphones and web browsers.</p>
+    <p>No, you do not need special equipment to use PN SOFTWARE TECH's services. While using VR-enabled devices such as VR headsets provides the most immersive experience, many of our solutions can also be accessed via smartphones and web browsers.</p>
   </div>
 );
+
 const Faq2 = () => (
   <div className="Faq1-content">
-    <p>A VR website is an online platform designed to provide an immersive, interactive 
-      experience using Virtual Reality technology. You can navigate, explore, and interact 
-      with content in 3D environments.</p>
+    <p>PN SOFTWARE TECH provides a wide range of services, including API integrations, IT solutions, fintech services, and custom software development. Our offerings are designed to help businesses optimize their operations and provide enhanced services to their customers.</p>
   </div>
 );
+
 const Faq3 = () => (
   <div className="Faq1-content">
-    <p>For the best experience, you’ll need a VR headset (e.g., Oculus, HTC Vive, or 
-      PlayStation VR). However, many VR websites also support desktop and mobile devices 
-      with limited interactive features.</p>
+    <p>Our services can be accessed through web platforms, mobile apps, or by integrating our APIs into your existing systems. We offer flexible solutions to suit various business needs and ensure a seamless user experience across all devices.</p>
   </div>
 );
+
 const Faq4 = () => (
   <div className="Faq1-content">
-    <p>VR websites work best with browsers supporting Web XR or Web VR, such as Chrome, 
-      Firefox Reality, or Edge. Some features may be limited in other browsers.</p>
+    <p>We have successfully worked with clients across different industries, including banking, fintech, travel, and utilities. Some of our notable projects include custom API integrations, multi-recharge systems, and IT solutions for business growth.</p>
   </div>
 );
+
 const Faq5 = () => (
   <div className="Faq1-content">
-    <p>Ensure that your browser supports VR. You may need to enable Web XR settings or use 
-      a browser extension. While using VR-enabled devices such as VR headsets provides the
-       most immersive experience, many of our VR solutions can also be accessed via 
-       smartphones and web browsers.</p>
+    <p>Our services benefit industries such as finance, banking, travel, retail, and utilities. We provide tailored solutions to meet the unique needs of each industry, helping businesses streamline their operations and enhance customer satisfaction.</p>
   </div>
 );
+
 const Faq6 = () => (
   <div className="Faq1-content">
-    <p>No, you do not need special equipment to use VR FZ's services. While using VR-enabled 
-      devices such as VR headsets provides the most immersive experience, many of our VR 
-      solutions can also be accessed via smartphones and web browsers.</p>
+    <p>Getting started with our services is easy! Simply reach out to our team through the contact form or call us directly. We will assess your business needs and recommend the best solutions to help you achieve your goals efficiently.</p>
   </div>
 );
 
@@ -77,19 +70,18 @@ const Faq = () => {
         <div className="Faq-title-container">
           <h1>Your Questions Answered</h1>
           <p>
-            Addresses common queries to provide quick answers and support for
-            better understanding of our services and offerings.
+            We understand that you may have some questions. Here are answers to the most frequently asked questions to help you better understand our services and how we can assist you.
           </p>
         </div>
         <div className="Faq-tab-container">
           <div className="Faq-tab-btn-container">
             {[
-              { id: 'Faq1', text: "Do I need special equipment to use VR FZ's?" },
-              { id: 'Faq2', text: 'What services does VR FZ offer?' },
-              { id: 'Faq3', text: "How can I access VR FZ's VR experiences?" },
-              { id: 'Faq4', text: 'Can you provide examples of your previous?' },
-              { id: 'Faq5', text: "What industries benefit from VR FZ's services?" },
-              { id: 'Faq6', text: 'How do I get started with VR FZ?' },
+              { id: 'Faq1', text: "Do I need special equipment to use PN SOFTWARE TECH's services?" },
+              { id: 'Faq2', text: 'What services does PN SOFTWARE TECH offer?' },
+              { id: 'Faq3', text: 'How can I access PN SOFTWARE TECH’s services?' },
+              { id: 'Faq4', text: 'Can you provide examples of your previous work?' },
+              { id: 'Faq5', text: 'What industries benefit from PN SOFTWARE TECH’s services?' },
+              { id: 'Faq6', text: 'How do I get started with PN SOFTWARE TECH?' },
             ].map((faq) => (
               <button
                 key={faq.id}

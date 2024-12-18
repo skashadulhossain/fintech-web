@@ -8,8 +8,8 @@ import { FaFacebookF, FaInstagram, FaTwitter } from 'react-icons/fa';
 const TeamMember = () => {
   const teamMembers = [
     {
-      name: "James Milner",
-      role: "VR Specialist",
+      name: "Alice Green",
+      role: "Founder & CEO",
       imgSrc: cardimg1,
       socialLinks: {
         facebook: "#",
@@ -18,8 +18,8 @@ const TeamMember = () => {
       },
     },
     {
-      name: "Sophia Williams",
-      role: "AR Developer",
+      name: "John Smith",
+      role: "Lead Developer",
       imgSrc: cardimg2,
       socialLinks: {
         facebook: "#",
@@ -28,8 +28,8 @@ const TeamMember = () => {
       },
     },
     {
-      name: "Liam Johnson",
-      role: "Game Designer",
+      name: "Emma Brown",
+      role: "Creative Director",
       imgSrc: cardimg3,
       socialLinks: {
         facebook: "#",
@@ -43,9 +43,8 @@ const TeamMember = () => {
     <section className="TeamMember-section">
       <div className="TeamMember-container">
         <div className="TeamMember-title-container">
-          <h1>Expert Team Members</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem 
-            laborum vel quia voluptate aspernatur earum enim odit sunt ad a?</p>
+          <h1>Meet Our Dedicated Team</h1>
+          <p>Our team consists of highly skilled professionals with a passion for innovation and excellence. Together, we work tirelessly to bring you the best solutions in the industry.</p>
         </div>
         <div className="TeamMember-card-container">
           {teamMembers.map((member, index) => (
