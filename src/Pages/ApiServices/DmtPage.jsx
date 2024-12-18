@@ -1,9 +1,42 @@
 import React from "react";
 import "./api.css";
 import MainLayout from "../../Components/Layout/MainLayout";
-import { apiServices } from "../../js/pageOptions";
-import PageRoutes from "../../Components/PageRoutes";
-import { Check, ChevronRight } from "lucide-react";
+import { Check } from "lucide-react";
+
+const dmtServices = [
+  {
+    title: "Simple Onboarding",
+    desc: "Easy registration process for distributors and retailers.",
+  },
+  {
+    title: "High Commission",
+    desc: "Lucrative commission structure for both distributors and retailers.",
+  },
+  {
+    title: "Cash Deposit Facility",
+    desc: "Available through AXIS CDM for hassle-free transactions.",
+  },
+  {
+    title: "24/7 Auto Billing",
+    desc: "Instant and automated billing, ensuring round-the-clock service.",
+  },
+  {
+    title: "Extensive Bank Network",
+    desc: "Supports IMPS and NEFT transactions with over 400 banks.",
+  },
+  {
+    title: "Auto Refunds",
+    desc: "No OTP required for refunds, simplifying the process further.",
+  },
+  {
+    title: "Account Flexibility",
+    desc: "Services can be used even without a bank account.",
+  },
+  {
+    title: "Extended Accessibility",
+    desc: "Available beyond banking hours, including Sundays and public holidays.",
+  },
+];
 
 const DmtPage = () => {
   return (
@@ -29,78 +62,15 @@ const DmtPage = () => {
                 <div>
                   <h2>DMT Distributor Services</h2>
                   <div className="advantage-two">
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
+                    {dmtServices.map((ser, id) => (
+                      <span key={id}>
+                        <span>
+                          <Check className="check-icon" />
+                        </span>
+                        <span style={{ fontWeight: 600 }}>{ser.title}:</span>
+                        {ser.desc}
                       </span>
-                      <span style={{ fontWeight: 600 }}>
-                        Simple Onboarding:
-                      </span>
-                      Easy registration process for distributors and retailers.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>High Commission:</span>
-                      Lucrative commission structure for both distributors and
-                      retailers.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>
-                        Cash Deposit Facility:
-                      </span>
-                      Available through AXIS CDM for hassle-free transactions.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>
-                        24/7 Auto Billing:
-                      </span>
-                      Instant and automated billing, ensuring round-the-clock
-                      service.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>
-                        Extensive Bank Network:
-                      </span>
-                      Supports IMPS and NEFT transactions with over 400 banks.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>Auto Refunds:</span>
-                      No OTP required for refunds, simplifying the process
-                      further.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>
-                        Account Flexibility:
-                      </span>
-                      Services can be used even without a bank account.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>
-                        Extended Accessibility:
-                      </span>
-                      Available beyond banking hours, including Sundays and
-                      public holidays.
-                    </span>
+                    ))}
                   </div>
                 </div>
                 <div>
@@ -134,7 +104,7 @@ const DmtPage = () => {
                 />
               </div>
               <div>
-                <h2 style={{ marginBottom: "2rem" }}>
+                <h2 style={{ margin: "1.5rem 0 1.5rem 0" }}>
                   Money Transfer Features
                 </h2>
                 <div className="dmt-card">
