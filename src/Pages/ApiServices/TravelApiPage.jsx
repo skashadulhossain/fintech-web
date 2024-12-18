@@ -8,7 +8,7 @@ import { Check, ChevronRight } from "lucide-react";
 const TravelApiPage = () => {
   return (
     <>
-      <MainLayout>
+      <MainLayout pageTitle="Travel API">
         <div className="main-container">
           <div className="travel-container">
             <div className="travel-img-container">

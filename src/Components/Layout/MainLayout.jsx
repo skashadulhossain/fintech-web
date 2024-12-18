@@ -6,7 +6,7 @@ import { apiServices } from "../../js/pageOptions";
 import PageRoutes from "../PageRoutes";
 import { ChevronRight } from "lucide-react";
 
-const MainLayout = ({ children }) => {
+const MainLayout = ({ pageTitle = "", children }) => {
   return (
     <>
       <Header />
@@ -15,8 +15,8 @@ const MainLayout = ({ children }) => {
           {/* <h1>keyword research</h1> */}
           <div className="header-nav">
             API Services{" "}
-            <ChevronRight style={{ width: "18px", height: "18px" }} /> Pan Card
-            API
+            <ChevronRight style={{ width: "18px", height: "18px" }} />{" "}
+            {pageTitle}
           </div>
         </div>
       </div>

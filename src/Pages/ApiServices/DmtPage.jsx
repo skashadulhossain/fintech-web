@@ -8,7 +8,7 @@ import { Check, ChevronRight } from "lucide-react";
 const DmtPage = () => {
   return (
     <>
-      <MainLayout>
+      <MainLayout pageTitle="Domestic Money Transfer">
         <div className="main-container">
           <div className="api-details">
             <div>

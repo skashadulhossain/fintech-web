@@ -8,7 +8,7 @@ import { Check, ChevronRight } from "lucide-react";
 const RechargeApiPage = () => {
   return (
     <>
-      <MainLayout>
+      <MainLayout pageTitle="Recharge API">
         <div className="main-container">
           <div className="api-details">
             <h2>Overview</h2>

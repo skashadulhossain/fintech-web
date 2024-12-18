@@ -23,7 +23,7 @@ const bbpsServices = [
 const BbpsPage = () => {
   return (
     <>
-      <MainLayout>
+      <MainLayout pageTitle="BBPS">
         <div className="main-container">
           <div className="api-details">
             <div className="bbps-first-div">

@@ -64,9 +64,8 @@ const benefits = [
 const PanCardApiPage = () => {
   return (
     <>
-      <MainLayout>
+      <MainLayout pageTitle="PAN Card Verification API">
         <div className="main-container">
-        
           <div className="api-details">
             <div>
               <div className="pan-header-card-one">
@@ -87,7 +86,11 @@ const PanCardApiPage = () => {
                     src="/images/pan-card.jpg"
                     alt=""
                     loading="lazy"
-                    style={{ borderRadius: "10px" }}
+                    style={{
+                      borderRadius: "10px",
+                      width: "100%",
+                      height: "auto",
+                    }}
                   />
                 </div>
                 <div className="advantage-container">
@@ -158,7 +161,11 @@ const PanCardApiPage = () => {
                     src="/images/pan-photo.jpg"
                     alt=""
                     loading="lazy"
-                    style={{ borderRadius: "10px" }}
+                    style={{
+                      borderRadius: "10px",
+                      width: "100%",
+                      height: "auto",
+                    }}
                   />
                 </div>
               </div>
@@ -169,7 +176,11 @@ const PanCardApiPage = () => {
                     src="/images/pan-verify.jpg"
                     alt=""
                     loading="lazy"
-                    style={{ borderRadius: "10px" }}
+                    style={{
+                      borderRadius: "10px",
+                      width: "100%",
+                      height: "auto",
+                    }}
                   />
                 </div>
                 <div className="advantage-container">
@@ -225,7 +236,11 @@ const PanCardApiPage = () => {
                     src="/images/pan-benefit.jpg"
                     alt=""
                     loading="lazy"
-                    style={{ borderRadius: "10px" }}
+                    style={{
+                      borderRadius: "10px",
+                      width: "100%",
+                      height: "auto",
+                    }}
                   />
                 </div>
               </div>

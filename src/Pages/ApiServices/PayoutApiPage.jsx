@@ -15,7 +15,7 @@ const way = [
 const PayoutApiPage = () => {
   return (
     <>
-      <MainLayout>
+      <MainLayout pageTitle="Payout API">
         <div className="main-container">
           <div className="api-details">
             <div className="payout-div-one">
@@ -93,7 +93,12 @@ const PayoutApiPage = () => {
                 </div>
               </div>
               <div>
-                <img src="/images/integration.png" alt="" loading="lazy" />
+                <img
+                  src="/images/integration.png"
+                  alt=""
+                  loading="lazy"
+                  style={{ width: "100%", height: "auto" }}
+                />
               </div>
             </div>
             <div className="offbit">
@@ -199,6 +204,7 @@ const PayoutApiPage = () => {
                         alt="img"
                         loading="lazy"
                         className=""
+                        style={{ width: "100%", height: "auto" }}
                       />
                     </div>
                   </div>
