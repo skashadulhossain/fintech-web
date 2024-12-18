@@ -18,6 +18,9 @@ const MainLayout = ({ pageTitle = "", children }) => {
             <ChevronRight style={{ width: "18px", height: "18px" }} />{" "}
             {pageTitle}
           </div>
+          <div>
+            <img src="/images/globe.webp" alt="gif" loading="lazy"/>
+          </div>
         </div>
       </div>
       <div className="main-layout-container">
