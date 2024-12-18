@@ -103,15 +103,14 @@ const BbpsPage = () => {
                   </div>
                 </div>
               </div>
-              <div>
-                <div>
-                  <img
-                    src="/images/BBPS.webp"
-                    alt="img"
-                    loading="lazy"
-                    className=""
-                  />
-                </div>
+              <div style={{ width: "100%" }}>
+                <img
+                  src="/images/BBPS.webp"
+                  alt="img"
+                  loading="lazy"
+                  className=""
+                  style={{ width: "100%", height: "auto" }}
+                />
               </div>
             </div>
 
@@ -132,28 +131,28 @@ const BbpsPage = () => {
                     </p>
                   </div>
                 </div>
-                <div>
-                  <div>
-                    <img
-                      src="/images/BBPS_Partners.webp"
-                      alt="img"
-                      loading="lazy"
-                      className=""
-                    />
-                  </div>
+
+                <div style={{ width: "100%" }}>
+                  <img
+                    src="/images/BBPS_Partners.webp"
+                    alt="img"
+                    loading="lazy"
+                    className=""
+                    style={{ width: "100%", height: "auto" }}
+                  />
                 </div>
               </div>
               <div style={{ paddingTop: "4rem" }} className="bbps-details">
-                <div>
-                  <div>
-                    <img
-                      src="/images/BBPS_Billers.webp"
-                      alt="img"
-                      loading="lazy"
-                      className=""
-                    />
-                  </div>
+                <div style={{ width: "100%" }}>
+                  <img
+                    src="/images/BBPS_Billers.webp"
+                    alt="img"
+                    loading="lazy"
+                    className=""
+                    style={{ width: "100%", height: "auto" }}
+                  />
                 </div>
+
                 <div className="">
                   <h3>BILLERS</h3>
                   <div className="custom-underline"></div>
@@ -209,12 +208,13 @@ const BbpsPage = () => {
                   </p>
                 </div>
 
-                <div>
+                <div style={{ width: "100%" }}>
                   <img
                     src="/images/biller-img-1.webp"
                     alt="img"
                     loading="lazy"
                     className=""
+                    style={{ width: "100%", height: "auto" }}
                   />
                 </div>
               </div>

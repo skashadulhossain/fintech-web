@@ -159,6 +159,7 @@
 /* BBPS CSS */
 .bbps-first-div {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: flex-start;
   gap: 2rem;
@@ -166,7 +167,7 @@
 
 .bbps-two-div {
   /* background-color: #ECF8FF; */
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 8px;
   margin: 4rem 0 4rem 0;
   /* margin-top: 1.75rem; */
@@ -174,6 +175,7 @@
 
 .bbps-details {
   display: flex;
+  flex-direction: column-reverse;
   justify-content: center;
   align-items: center;
   gap: 2rem;
@@ -487,6 +489,9 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
   }
+  .bbps-details {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -498,6 +503,9 @@
     flex-direction: row;
   }
   .dmt-container {
+    flex-direction: row;
+  }
+  .bbps-first-div {
     flex-direction: row;
   }
 }
