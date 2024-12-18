@@ -20,6 +20,29 @@ const bbpsServices = [
   { title: "LPG Cylinder Booking", link: "#" },
 ];
 
+const benefits = [
+  {
+    title: "Anytime, Anywhere Bill Payment",
+    desc: "Customers can pay bills at any time with ease, even on weekends or holidays.",
+  },
+  {
+    title: "One-Stop Solution",
+    desc: "Simplifies all recurring bill payments on a single platform.",
+  },
+  {
+    title: "Instant Payment Confirmation",
+    desc: "Receive real-time payment updates and transaction status.",
+  },
+  {
+    title: "Secure and Reliable Transactions",
+    desc: "Built with advanced security protocols to ensure safe and error-free payments.",
+  },
+  {
+    title: "Customer-Friendly",
+    desc: "Convenient and unified system that includes simplified consumer redressal processes.",
+  },
+];
+
 const BbpsPage = () => {
   return (
     <>
@@ -48,57 +71,19 @@ const BbpsPage = () => {
                 <div className="advantage-container">
                   <div style={{ marginTop: "1rem" }}>
                     <h3>Key Benefits of BBPS API</h3>
-                    <div className="advantage">
-                      <span>
-                        <span>
-                          <Check className="check-icon" />
+                    <div className="advantage-two">
+                      {benefits.map((ser, id) => (
+                        <span key={id}>
+                          <span>
+                            <Check className="check-icon" />
+                          </span>
+
+                          <span className="title-desc-container">
+                            <span className="title-text">{ser.title}:</span>
+                            {ser.desc}
+                          </span>
                         </span>
-                        <span style={{ fontWeight: 600 }}>
-                          Anytime, Anywhere Bill Payment:
-                        </span>
-                        Customers can pay bills at any time with ease, even on
-                        weekends or holidays.
-                      </span>
-                      <span>
-                        <span>
-                          <Check className="check-icon" />
-                        </span>
-                        <span style={{ fontWeight: 600 }}>
-                          One-Stop Solution:
-                        </span>
-                        Simplifies all recurring bill payments on a single
-                        platform.
-                      </span>
-                      <span>
-                        <span>
-                          <Check className="check-icon" />
-                        </span>
-                        <span style={{ fontWeight: 600 }}>
-                          Instant Payment Confirmation:
-                        </span>
-                        Receive real-time payment updates and transaction
-                        status.
-                      </span>
-                      <span>
-                        <span>
-                          <Check className="check-icon" />
-                        </span>
-                        <span style={{ fontWeight: 600 }}>
-                          Secure and Reliable Transactions:
-                        </span>
-                        Built with advanced security protocols to ensure safe
-                        and error-free payments.
-                      </span>
-                      <span>
-                        <span>
-                          <Check className="check-icon" />
-                        </span>
-                        <span style={{ fontWeight: 600 }}>
-                          Customer-Friendly:
-                        </span>
-                        Convenient and unified system that includes simplified
-                        consumer redressal processes.
-                      </span>
+                      ))}
                     </div>
                   </div>
                 </div>

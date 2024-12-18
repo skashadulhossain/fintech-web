@@ -1,9 +1,30 @@
 import React from "react";
 import "./api.css";
 import MainLayout from "../../Components/Layout/MainLayout";
-import { apiServices } from "../../js/pageOptions";
-import PageRoutes from "../../Components/PageRoutes";
-import { Check, ChevronRight } from "lucide-react";
+import { Check } from "lucide-react";
+
+const irctcApi = [
+  {
+    title: "Easy Ticket Booking",
+    desc: "Quickly book train tickets for your customers with minimal effort.",
+  },
+  {
+    title: "Comprehensive Features",
+    desc: "Access a wide range of services, including train ticket booking, live train tracking, and PNR status checks.",
+  },
+  {
+    title: "Secure and Reliable",
+    desc: "Equipped with the latest security features to ensure safe and uninterrupted transactions.",
+  },
+  {
+    title: "Single Wallet System",
+    desc: "Manage all transactions conveniently through a single wallet linked to your account.",
+  },
+  {
+    title: "Affordable Pricing",
+    desc: "Our budget-friendly API solutions are designed to boost your profitability.",
+  },
+];
 
 const TravelApiPage = () => {
   return (
@@ -29,55 +50,22 @@ const TravelApiPage = () => {
             <div className="advantage-container">
               <div>
                 <h4>Why Choose Our IRCTC API?</h4>
-                <div className="advantage">
-                  <span>
-                    <span>
-                      <Check className="check-icon" />
+                <div className="advantage-two">
+                  {irctcApi.map((el, id) => (
+                    <span key={id}>
+                      <span>
+                        <Check className="check-icon" />
+                      </span>
+                      {el.title ? (
+                        <span className="title-desc-container">
+                          <span className="title-text">{el.title}:</span>
+                          {el.desc}
+                        </span>
+                      ) : (
+                        el.desc
+                      )}
                     </span>
-                    <span style={{ fontWeight: 600 }}>
-                      Easy Ticket Booking:
-                    </span>
-                    Quickly book train tickets for your customers with minimal
-                    effort.
-                  </span>
-                  <span>
-                    <span>
-                      <Check className="check-icon" />
-                    </span>
-                    <span style={{ fontWeight: 600 }}>
-                      Comprehensive Features:
-                    </span>
-                    Access a wide range of services, including train ticket
-                    booking, live train tracking, and PNR status checks.
-                  </span>
-                  <span>
-                    <span>
-                      <Check className="check-icon" />
-                    </span>
-                    <span style={{ fontWeight: 600 }}>
-                      Secure and Reliable:
-                    </span>
-                    Equipped with the latest security features to ensure safe
-                    and uninterrupted transactions.
-                  </span>
-                  <span>
-                    <span>
-                      <Check className="check-icon" />
-                    </span>
-                    <span style={{ fontWeight: 600 }}>
-                      Single Wallet System:
-                    </span>
-                    Manage all transactions conveniently through a single wallet
-                    linked to your account.
-                  </span>
-                  <span>
-                    <span>
-                      <Check className="check-icon" />
-                    </span>
-                    <span style={{ fontWeight: 600 }}>Affordable Pricing:</span>
-                    Our budget-friendly API solutions are designed to boost your
-                    profitability.
-                  </span>
+                  ))}
                 </div>
               </div>
             </div>

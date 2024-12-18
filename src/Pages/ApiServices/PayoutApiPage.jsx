@@ -1,8 +1,6 @@
 import React from "react";
 import MainLayout from "../../Components/Layout/MainLayout";
-import { apiServices } from "../../js/pageOptions";
-import PageRoutes from "../../Components/PageRoutes";
-import { Check, ChevronRight, Earth } from "lucide-react";
+import { Check, Earth } from "lucide-react";
 import WhyPayoutSelect from "../../Components/PayoutComponents/WhyPayoutSelect";
 
 const way = [
@@ -10,6 +8,33 @@ const way = [
   { logo: "/images/beneficiary.png", title: "Add beneficiary" },
   { logo: "/images/details.png", title: "Enter Details" },
   { logo: "/images/atm.png", title: "Initiate Payout" },
+];
+
+const buisnessArr = [
+  {
+    title: "Multi-Account Settlements:",
+    desc: "With Roundpay Payout API merchants can easily settle payments to multiple bank accounts.",
+  },
+  {
+    title: "Real-Time Updates:",
+    desc: "Merchant gets access to Real-time Transaction reports.",
+  },
+  {
+    title: "A Combination Of 3 Robust APIs:",
+    desc: "Roundpay Payout has 3 Inclusive APIs for Adding Beneficiary, Payout processing and Payout Enquiry.",
+  },
+  {
+    title: "Developer-Friendly APIs:",
+    desc: "Easy API Integration, gives merchants a complete payout solution for vendors, customers, and partners.",
+  },
+  {
+    title: "Multichannel Payment Options:",
+    desc: "Roundpay Payout API has options for Multichannel payment partners.",
+  },
+  {
+    title: "Multiple Payment Modes:",
+    desc: "NEFT , RTGS, IMPS , UPI, PPI Wallet",
+  },
 ];
 
 const PayoutApiPage = () => {
@@ -27,64 +52,21 @@ const PayoutApiPage = () => {
                 </h2>
                 <div>
                   <div className="advantage-two">
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
+                    {buisnessArr.map((ser, id) => (
+                      <span key={id}>
+                        <span>
+                          <Check className="check-icon" />
+                        </span>
+                        {ser.title ? (
+                          <span className="title-desc-container">
+                            <span className="title-text">{ser.title}:</span>
+                            {ser.desc}
+                          </span>
+                        ) : (
+                          ser.desc
+                        )}
                       </span>
-                      <span style={{ fontWeight: 600 }}>
-                        Multi-Account Settlements:
-                      </span>
-                      With Roundpay Payout API merchants can easily settle
-                      payments to multiple bank accounts.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>
-                        Real-Time Updates:
-                      </span>
-                      Merchant gets access to Real-time Transaction reports.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>
-                        A Combination Of 3 Robust APIs:
-                      </span>
-                      Roundpay Payout has 3 Inclusive APIs for Adding
-                      Beneficiary, Payout processing and Payout Enquiry.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>
-                        Developer-Friendly APIs:
-                      </span>
-                      Easy API Integration, gives merchants a complete payout
-                      solution for vendors, customers, and partners.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>
-                        Multichannel Payment Options:
-                      </span>
-                      Roundpay Payout API has options for Multichannel payment
-                      partners.
-                    </span>
-                    <span>
-                      <span>
-                        <Check className="check-icon" />
-                      </span>
-                      <span style={{ fontWeight: 600 }}>
-                        Multiple Payment Modes:
-                      </span>
-                      NEFT , RTGS, IMPS , UPI, PPI Wallet
-                    </span>
+                    ))}
                   </div>
 
                   <div className="contact-buttons">

@@ -67,12 +67,16 @@
   margin-top: 1rem;
 }
 
-.advantage span {
+.advantage > span {
   font-size: 14px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
+}
+
+.advantage > span > span:first-child {
+  display: flex;
+  align-items: center;
 }
 
 .advantage-two {
@@ -82,12 +86,25 @@
   margin-top: 1rem;
 }
 
-.advantage-two span {
+.advantage-two > span {
   font-size: 14px;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   gap: 0.5rem;
+}
+
+.advantage-two > span > span:first-child {
+  display: flex;
+  align-items: center;
+}
+
+.advantage-two > span > .title-desc-container {
+  display: inline;
+}
+
+.advantage-two > span .title-text {
+  font-weight: 600;
+  margin-right: 0.25rem;
 }
 
 .check-icon {
@@ -467,7 +484,7 @@
 }
 
 .img-div img {
-  width: 100;
+  width: 100%;
   height: auto;
 }
 
@@ -523,13 +540,13 @@
   .main-why-div {
     flex-direction: row;
   }
-}
-
-@media (min-width: 1536px) {
   .pan-card-div-one {
     flex-direction: row;
   }
   .pan-card-div-one-rev {
     flex-direction: row;
   }
+}
+
+@media (min-width: 1536px) {
 }

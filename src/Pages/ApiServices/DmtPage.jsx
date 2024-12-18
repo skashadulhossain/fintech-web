@@ -67,8 +67,14 @@ const DmtPage = () => {
                         <span>
                           <Check className="check-icon" />
                         </span>
-                        <span style={{ fontWeight: 600 }}>{ser.title}:</span>
-                        {ser.desc}
+                        {ser.title ? (
+                          <span className="title-desc-container">
+                            <span className="title-text">{ser.title}:</span>
+                            {ser.desc}
+                          </span>
+                        ) : (
+                          ser.desc
+                        )}
                       </span>
                     ))}
                   </div>

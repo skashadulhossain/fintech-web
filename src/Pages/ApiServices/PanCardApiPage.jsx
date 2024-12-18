@@ -68,7 +68,7 @@ const PanCardApiPage = () => {
         <div className="main-container">
           <div className="api-details">
             <div>
-              <div className="pan-header-card-one">
+              <div className="pan-header-card-one" style={{ width: "100%" }}>
                 <h1 style={{ textAlign: "center" }}>
                   PAN Card Verification API
                 </h1>
@@ -81,7 +81,7 @@ const PanCardApiPage = () => {
 
               {/* ONE */}
               <div className="pan-card-div-one">
-                <div className="img-div">
+                <div className="img-div" style={{ width: "100%" }}>
                   <img
                     src="/images/pan-card.jpg"
                     alt=""
@@ -135,7 +135,7 @@ const PanCardApiPage = () => {
               </div>
               {/* TWO */}
               <div className="pan-card-div-one-rev">
-                <div className="advantage-container">
+                <div className="advantage-container" style={{ width: "100%" }}>
                   <div>
                     <div className="pan-card-main-header">
                       <h2 style={{ marginBottom: "10px" }}>
@@ -143,20 +143,26 @@ const PanCardApiPage = () => {
                       </h2>
                       <div className="custom-underline"></div>
                     </div>
-                    <div className="advantage">
-                      {verifyApi.map((el, id) => (
+                    <div className="advantage-two">
+                      {verifyApi.map((ser, id) => (
                         <span key={id}>
                           <span>
                             <Check className="check-icon" />
                           </span>
-                          <span style={{ fontWeight: 600 }}>{el.title}:</span>
-                          {el.desc}
+                          {ser.title ? (
+                            <span className="title-desc-container">
+                              <span className="title-text">{ser.title}:</span>
+                              {ser.desc}
+                            </span>
+                          ) : (
+                            ser.desc
+                          )}
                         </span>
                       ))}
                     </div>
                   </div>
                 </div>
-                <div className="img-div">
+                <div className="img-div" style={{ width: "100%" }}>
                   <img
                     src="/images/pan-photo.jpg"
                     alt=""
@@ -171,7 +177,7 @@ const PanCardApiPage = () => {
               </div>
               {/* THREE */}
               <div className="pan-card-div-one">
-                <div className="img-div">
+                <div className="img-div" style={{ width: "100%" }}>
                   <img
                     src="/images/pan-verify.jpg"
                     alt=""
@@ -183,7 +189,7 @@ const PanCardApiPage = () => {
                     }}
                   />
                 </div>
-                <div className="advantage-container">
+                <div className="advantage-container" style={{ width: "100%" }}>
                   <div>
                     <div className="pan-card-main-header">
                       <h2 style={{ marginBottom: "10px" }}>
@@ -210,7 +216,7 @@ const PanCardApiPage = () => {
               </div>
               {/* FOUR */}
               <div className="pan-card-div-one-rev">
-                <div className="advantage-container">
+                <div className="advantage-container" style={{ width: "100%" }}>
                   <div>
                     <div className="pan-card-main-header">
                       <h2 style={{ marginBottom: "10px" }}>
@@ -218,20 +224,26 @@ const PanCardApiPage = () => {
                       </h2>
                       <div className="custom-underline"></div>
                     </div>
-                    <div className="advantage">
-                      {benefits.map((el, id) => (
-                        <span key={id}>
-                          <span>
-                            <Check className="check-icon" />
-                          </span>
-                          <span style={{ fontWeight: 600 }}>{el.title}:</span>
-                          {el.desc}
+                    <div className="advantage-two">
+                    {benefits.map((ser, id) => (
+                      <span key={id}>
+                        <span>
+                          <Check className="check-icon" />
                         </span>
-                      ))}
-                    </div>
+                        {ser.title ? (
+                          <span className="title-desc-container">
+                            <span className="title-text">{ser.title}:</span>
+                            {ser.desc}
+                          </span>
+                        ) : (
+                          ser.desc
+                        )}
+                      </span>
+                    ))}
+                  </div>
                   </div>
                 </div>
-                <div className="img-div">
+                <div className="img-div" style={{ width: "100%" }}>
                   <img
                     src="/images/pan-benefit.jpg"
                     alt=""
