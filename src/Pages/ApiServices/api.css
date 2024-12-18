@@ -375,8 +375,8 @@
     auto-fit,
     minmax(300px, 1fr)
   ); /* Responsive grid with a minimum column size */
-  gap: 2rem; /* Space between grid items */
-  padding: 1rem; /* Optional padding for the grid container */
+  gap: 2rem;
+  padding: 1rem;
 }
 
 .section-title h2 {
@@ -443,6 +443,43 @@
   background-color: gray;
 }
 
+/* Pan Card Page CSS */
+.pan-header-card-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pan-card-div-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0 3rem 0;
+}
+
+.pan-card-div-one-rev {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 3rem 0 3rem 0;
+}
+
+.img-div img {
+  width: 100;
+  height: auto;
+}
+
+.pan-card-main-header p {
+  padding: 0.5rem 0 0.5rem 0;
+  font-size: 14px;
+}
+
 @media only screen and (max-width: 990px) {
   .serviceBox {
     margin: 0 0 30px;
@@ -470,6 +507,15 @@
 
 @media (min-width: 1280px) {
   .advantage-container-two {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1536px) {
+  .pan-card-div-one {
+    flex-direction: row;
+  }
+  .pan-card-div-one-rev {
     flex-direction: row;
   }
 }
