@@ -1,22 +1,61 @@
+
 .main-layout-container {
+  margin-top: 240px;
   min-height: 100vh;
   height: 100%;
   width: 100%;
   padding: 1rem;
-  overflow-y: auto;
+  display: flex;
+  gap: 2rem;
+  position: relative; /* Ensure proper stacking context */
 }
 
-@media (min-width: 1024px) { 
+
+.children-container {
+  width: 100%;
+  height: 100%;
+}
+
+.page-routes-nav-container {
+  width: 350px;
+  position: sticky; /* Changed from relative */
+  top: 30px; /* Adjust this value based on your header height */
+  align-self: start;
+  height: calc(100vh - 240px); /* Subtract header and footer height */
+  overflow-y: auto; /* Allow scrolling if content is too long */
+  display: none;
+}
+
+.page-route-main-container {
+  background-color: #ecf8ff;
+  padding: 1rem;
+  border-radius: 10px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.page-route-main-container h1 {
+  font-size: 1rem;
+  width: fit-content;
+}
+
+.page-route-main-container p {
+  font-size: 0.8rem;
+}
+
+@media (min-width: 1024px) {
   .main-layout-container {
     padding: 2rem 4rem;
   }
+  .page-routes-nav-container {
+   display: block;
+  }
 }
 
-@media (min-width: 1536px) { 
+@media (min-width: 1536px) {
   .main-layout-container {
     padding: 4rem 8rem;
   }
 }
-
-
-

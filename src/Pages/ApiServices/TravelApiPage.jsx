@@ -9,20 +9,7 @@ const TravelApiPage = () => {
   return (
     <>
       <MainLayout>
-        <div className="header-div">
-          <div className="header">
-            {/* <h1>keyword research</h1> */}
-            <div className="header-nav">
-              API Services{" "}
-              <ChevronRight style={{ width: "18px", height: "18px" }} />{" "}
-              Travel API
-            </div>
-          </div>
-        </div>
         <div className="main-container">
-          <div className="page-routes-nav-container">
-            <PageRoutes title="API Services" options={apiServices} />
-          </div>
           <div className="travel-container">
             <div className="travel-img-container">
               <img src="/images/rail.jpg" alt="rail" loading="lazy" />

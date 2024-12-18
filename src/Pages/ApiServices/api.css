@@ -106,19 +106,9 @@
 }
 
 .main-container {
-  margin-top: 240px;
   width: 100%;
   display: flex;
   gap: 2rem;
-}
-
-.page-routes-nav-container {
-  width: 350px;
-  position: relative;
-  top: 0;
-  align-self: start;
-  max-height: 100vh;
-  overflow-y: auto;
 }
 
 /* Travel API Page */
