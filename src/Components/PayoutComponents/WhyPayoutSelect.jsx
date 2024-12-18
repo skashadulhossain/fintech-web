@@ -34,7 +34,7 @@ const whyDo = [
 
 const WhyPayoutSelect = () => {
   const [selectedObj, setselectedObj] = useState(whyDo[0]);
-  console.log("selectedObj", selectedObj);
+  // console.log("selectedObj", selectedObj);
 
   return (
     <>

@@ -196,39 +196,36 @@ const PayoutApiPage = () => {
 
             <section>
               <div className="bbps-two-div">
-                <div style={{ paddingTop: "4rem" }} className="bbps-details">
-                  <div>
-                    <div>
-                      <img
-                        src="/images/developers.webp"
-                        alt="img"
-                        loading="lazy"
-                        className=""
-                        style={{ width: "100%", height: "auto" }}
-                      />
-                    </div>
-                  </div>
-                  <div className="">
-                    <h3>Build for Developers</h3>
-                    <div className="custom-underline"></div>
-                    <div style={{ marginTop: "1.5rem" }}>
-                      <h2>Easy Integration For Developers</h2>
-                      <ul style={{ marginLeft: "1rem" }} className="advantage">
-                        <li>
-                          Just pass some parameters and payout will made to
-                          defined Bank Account/VPA in Realtime
-                        </li>
-                        <li>
-                          Encryption/Decryption functions defined in source
-                          codes. Make your platform and payments secure with
-                          Encryption/Decryption
-                        </li>
-                        <li>Best support for integration</li>
-                      </ul>
+                <div>
+                  <img
+                    src="/images/developers.webp"
+                    alt="img"
+                    loading="lazy"
+                    className=""
+                    style={{ width: "100%", height: "auto" }}
+                  />
+                </div>
 
-                      <div className="contact-buttons">
-                        <button>Contact US</button>
-                      </div>
+                <div className="">
+                  <h3>Build for Developers</h3>
+                  <div className="custom-underline"></div>
+                  <div style={{ marginTop: "1.5rem" }}>
+                    <h2>Easy Integration For Developers</h2>
+                    <ul style={{ marginLeft: "1rem" }} className="advantage">
+                      <li>
+                        Just pass some parameters and payout will made to
+                        defined Bank Account/VPA in Realtime
+                      </li>
+                      <li>
+                        Encryption/Decryption functions defined in source codes.
+                        Make your platform and payments secure with
+                        Encryption/Decryption
+                      </li>
+                      <li>Best support for integration</li>
+                    </ul>
+
+                    <div className="contact-buttons">
+                      <button>Contact US</button>
                     </div>
                   </div>
                 </div>
