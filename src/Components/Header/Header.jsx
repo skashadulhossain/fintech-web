@@ -22,12 +22,12 @@ const Header = () => {
       { title: 'Pan Card API', link: '/pancard-api' }
     ],
     fintech: [
-      { title: 'AePS', link: '#' },
-      { title: 'POS', link: '#' },
-      { title: 'Mini ATM', link: '#' },
-      { title: 'Indo Nepal Money Transfer', link: '#' },
-      { title: 'Prepaid Card', link: '#' },
-      { title: 'Pan Card - UTI', link: '#' }
+      { title: 'AePS', link: '/aeps' },
+      { title: 'POS', link: '/pos' },
+      { title: 'Mini ATM', link: '/matm' },
+      { title: 'Indo Nepal Money Transfer', link: '/indo-nepal' },
+      { title: 'Prepaid Card', link: '/prepaid-card' },
+      { title: 'Pan Card - UTI', link: '/pan-uti' }
     ],
     itServices: [
       { title: 'Software Development', link: '#' },
@@ -116,13 +116,13 @@ const Header = () => {
         
         {/* Navigation Links */}
         <div className={`header-links-box ${menuOpen ? 'active' : ''}`}>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
           {renderDropdownTrigger('About', 'about')}
           {renderDropdownTrigger('API Service', 'apiServices')}
           {renderDropdownTrigger('FinTech', 'fintech')}
           {renderDropdownTrigger('IT Service', 'itServices')}
           {renderDropdownTrigger('Vas Service', 'vasServices')}
-          <a href="#">Blog</a>
+          <a href="/blog">Blog</a>
           <a href="#">Contact</a>
         </div>
         

@@ -19,6 +19,12 @@ import PayoutApiPage from "./Pages/ApiServices/PayoutApiPage";
 import PanCardApiPage from "./Pages/ApiServices/PanCardApiPage";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import Blogs from "./Pages/Blog/Blogs";
+import AepsPage from "./Pages/FinTech/AepsPage";
+import PosPage from "./Pages/FinTech/PosPage";
+import MatmPage from "./Pages/FinTech/MatmPage";
+import IndoNepalPage from "./Pages/FinTech/IndoNepalPage";
+import PrepaidCardPage from "./Pages/FinTech/PrepaidCardPage";
+import PanUtiPage from "./Pages/FinTech/PanUtiPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -31,6 +37,12 @@ const router = createBrowserRouter(
       <Route path="/bbps" element={<BbpsPage />} />
       <Route path="/payout-api" element={<PayoutApiPage />} />
       <Route path="/pancard-api" element={<PanCardApiPage />} />
+      <Route path="/aeps" element={<AepsPage />} />
+      <Route path="/pos" element={<PosPage />} />
+      <Route path="/matm" element={<MatmPage />} />
+      <Route path="/indo-nepal" element={<IndoNepalPage />} />
+      <Route path="/prepaid-card" element={<PrepaidCardPage />} />
+      <Route path="/pan-uti" element={<PanUtiPage />} />
       <Route path="Blog" element={<Blogs/>} />
       <Route path="Contact" element={<ContactUs/>} />
     </Route>
