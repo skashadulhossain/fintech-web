@@ -1,12 +1,12 @@
 import React from "react";
-import MainLayout from "../../Components/Layout/MainLayout";
+import OtherLayout from "../../Components/Layout/OtherLayout";
 
 const PosPage = () => {
   return (
     <>
-      <MainLayout>
+      <OtherLayout>
         <div>PosPage</div>
-      </MainLayout>
+      </OtherLayout>
     </>
   );
 };

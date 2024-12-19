@@ -1,12 +1,12 @@
 import React from "react";
-import MainLayout from "../../Components/Layout/MainLayout";
+import OtherLayout from "../../Components/Layout/OtherLayout";
 
 const PanUtiPage = () => {
   return (
     <>
-      <MainLayout>
+      <OtherLayout>
         <div>PanUtiPage</div>
-      </MainLayout>
+      </OtherLayout>
     </>
   );
 };

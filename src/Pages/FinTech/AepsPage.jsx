@@ -1,12 +1,12 @@
 import React from "react";
-import MainLayout from "../../Components/Layout/MainLayout";
+import OtherLayout from "../../Components/Layout/OtherLayout";
 
 const AepsPage = () => {
   return (
     <>
-      <MainLayout>
+      <OtherLayout>
         <div>AepsPage</div>
-      </MainLayout>
+      </OtherLayout>
     </>
   );
 };

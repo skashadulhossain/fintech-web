@@ -1,12 +1,12 @@
 import React from "react";
-import MainLayout from "../../Components/Layout/MainLayout";
+import OtherLayout from "../../Components/Layout/OtherLayout";
 
 const MatmPage = () => {
   return (
     <>
-      <MainLayout>
+      <OtherLayout>
         <div>MatmPage</div>
-      </MainLayout>
+      </OtherLayout>
     </>
   );
 };
