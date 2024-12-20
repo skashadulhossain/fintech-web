@@ -181,6 +181,28 @@
   padding: 2.5rem 0 2.5rem 0;
 }
 
+.protect-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.protect-section-div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #635ad9;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.protect-section-div:hover {
+
+  background-color: #635ad9db;
+
+}
+
 @media (min-width: 1280px) {
   .aeps-div-two {
     flex-direction: row;
