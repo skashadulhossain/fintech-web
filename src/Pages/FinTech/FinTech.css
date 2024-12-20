@@ -55,20 +55,79 @@
   width: 100%;
   height: 100%;
   display: grid;
-  grid-template-columns: repeat(
-    auto-fit,
-    minmax(300px, 1fr)
-  );
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 3rem;
   padding: 3rem 0 3rem 0;
 }
 
 .features-card {
   width: 100%;
-display: flex;
-flex-direction: column;
-gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
   /* height: 100%; */
+}
+
+.pos-div-one {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.pos-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.grid-pos-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.main-pos-content-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.main-pos-img-div {
+  position: relative;
+}
+
+.pos-img-div {
+  background-color: #635ad9;
+  padding: 12px;
+  border-radius: 100%;
+  width: 85px;
+  height: 85px;
+}
+
+.pos-index {
+  background-color: rgb(54, 48, 48);
+  color: white;
+  text-align: center;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pos-content {
+  margin-top: 1rem;
+  text-align: center;
 }
 
 @media (min-width: 1280px) {
@@ -85,5 +144,9 @@ gap: 0.5rem;
   }
   .aeps-div-four-sub {
     flex-direction: row;
+  }
+  .pos-div-one {
+    flex-direction: row;
+    padding: 5rem 0 5rem 0;
   }
 }

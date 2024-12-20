@@ -340,7 +340,6 @@ const AepsPage = () => {
                       style={{
                         width: "56px",
                         height: "56px",
-                        borderRadius: "100px",
                       }}
                     />
                   </div>
