@@ -198,11 +198,67 @@
 }
 
 .protect-section-div:hover {
-
   background-color: #635ad9db;
-
 }
 
+/* PAN UTI Page CSS */
+.pan-uti-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.uti-heading {
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.uti-heading-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.uti-main-details-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.uti-details-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.uti-details-img-div {
+  background-color: #635AD9;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+
+.uti-details-img-div > div {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 100%;
+  padding: 0.4rem;
+}
+
+@media (min-width: 640px) { 
+  .uti-details-img-div > div {
+    width: 75px;
+    height: 75px;
+    padding: 0.8rem;
+  }
+}
 @media (min-width: 1280px) {
   .aeps-div-two {
     flex-direction: row;
@@ -223,6 +279,9 @@
     padding: 5rem 0 5rem 0;
   }
   .new-innp-section {
+    padding: 5rem 0 5rem 0;
+  }
+  .uti-heading {
     padding: 5rem 0 5rem 0;
   }
 }
