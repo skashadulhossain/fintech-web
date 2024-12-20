@@ -157,6 +157,30 @@
   max-width: 52rem;
 }
 
+/* Indo Nepal Page CSS */
+.in-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem;
+}
+
+.in-content p {
+  text-align: center;
+}
+
+.new-innp-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
 @media (min-width: 1280px) {
   .aeps-div-two {
     flex-direction: row;
@@ -174,6 +198,9 @@
   }
   .pos-div-one {
     flex-direction: row;
+    padding: 5rem 0 5rem 0;
+  }
+  .new-innp-section {
     padding: 5rem 0 5rem 0;
   }
 }
