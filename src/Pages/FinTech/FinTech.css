@@ -130,6 +130,33 @@
   text-align: center;
 }
 
+/* Mobile ATM Page CSS */
+.matm-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.matm-heading p {
+  text-align: center;
+  max-width: 50rem;
+}
+
+.matm-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.matm-content p {
+  text-align: center;
+  max-width: 52rem;
+}
+
 @media (min-width: 1280px) {
   .aeps-div-two {
     flex-direction: row;
