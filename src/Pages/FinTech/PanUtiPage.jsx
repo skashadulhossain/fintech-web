@@ -28,6 +28,29 @@ const routing = [
   },
 ];
 
+const apps = [
+  {
+    title: "Efficiency",
+    desc: "Experience a streamlined application process with minimal processing time.",
+    icon: "/images/settings.png",
+  },
+  {
+    title: "Convenience",
+    desc: "Apply online effortlessly from anywhere—your home or office.",
+    icon: "/images/smartphone.png",
+  },
+  {
+    title: "Transparency",
+    desc: "Track your application status in real-time for complete clarity.",
+    icon: "/images/statistics.png",
+  },
+  {
+    title: "Security",
+    desc: "Your personal and financial details remain protected throughout.",
+    icon: "/images/vpn.png",
+  },
+];
+
 const PanUtiPage = () => {
   return (
     <>
@@ -133,7 +156,62 @@ const PanUtiPage = () => {
         </section>
 
         <section>
-          
+          <div className="pan-app-details">
+            <h2>
+              Why Choose PN Software Tech Pvt. Ltd. for PAN Card Application?
+            </h2>
+            <div className="custom-underline"></div>
+            <p>
+              PN Software Tech Pvt. Ltd. provides a seamless, secure, and
+              efficient platform for PAN card applications, offering numerous
+              benefits tailored to your needs.
+            </p>
+          </div>
+
+          <div className="pan-app-card-div">
+            {apps.map((app, id) => (
+              <div key={id} className="pan-app-card">
+                <div className="pan-app-img-div">
+                  <img
+                    src={app.icon}
+                    alt="PN Software Pvt. Ltd."
+                    loading="lazy"
+                  />
+                </div>
+                <div style={{ textAlign: "center", marginTop: "1.5rem" }}>
+                  <h3>{app.title}</h3>
+                  <p style={{ marginTop: "0.5rem" }}>{app.desc}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <section>
+          <div className="aeps-div-three">
+            <div style={{ width: "100%" }}>
+              <img
+                src="/images/uti-pan-card.jpg"
+                alt="img"
+                loading="lazy"
+                className=""
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  borderRadius: "10px",
+                }}
+              />
+            </div>
+            <div className="uti-main-details-div">
+              <p>
+                Obtaining a PAN card has never been easier. With PN Software
+                Tech Pvt. Ltd.'s user-friendly platform, secure payment options,
+                and real-time tracking, the process is quick and hassle-free.
+                Apply today and enjoy a seamless, efficient experience for
+                getting your PAN card promptly.
+              </p>
+            </div>
+          </div>
         </section>
       </OtherLayout>
     </>

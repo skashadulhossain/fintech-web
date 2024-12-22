@@ -239,7 +239,7 @@
 }
 
 .uti-details-img-div {
-  background-color: #635AD9;
+  background-color: #635ad9;
   border-radius: 100%;
   padding: 0.5rem;
 }
@@ -252,13 +252,56 @@
   padding: 0.4rem;
 }
 
-@media (min-width: 640px) { 
+.pan-app-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pan-app-details p {
+  text-align: center;
+  max-width: 55rem;
+}
+
+.pan-app-card-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 3rem 0 5rem 0;
+}
+
+.pan-app-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pan-app-img-div img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.pan-app-card {
+  background-color: rgb(240, 249, 250);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.pan-app-card:hover {
+  background-color: rgb(222, 244, 246);
+}
+
+@media (min-width: 640px) {
   .uti-details-img-div > div {
     width: 75px;
     height: 75px;
     padding: 0.8rem;
   }
 }
+
 @media (min-width: 1280px) {
   .aeps-div-two {
     flex-direction: row;
