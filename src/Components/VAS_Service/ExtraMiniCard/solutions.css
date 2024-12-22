@@ -1,0 +1,171 @@
+:root {
+  --primary-white: #fff;
+  --primary-black: #000;
+  --primary-grey: #73739a;
+  --primary-grey2: #fffc;
+  --primary-blue: #6d72f6;
+  --primary-green: #08ce8a;
+  --primary-black2: #1c1c57;
+}
+
+.long-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  /* background-color: #f9f9f9;
+  border: 1px solid #ddd; */
+  border-radius: 8px;
+}
+
+.long-container h1 {
+  color: var(--primary-blue);
+  font-size: 24px;
+}
+
+.long-container h2 {
+  color: var(--primary-blue);
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+.long-container hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+
+.long-container p {
+  line-height: 2rem;
+  color: var(--primary-grey);
+  margin: 10px 0;
+}
+
+.long-container ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  color: #666;
+}
+
+.long-container ul li {
+  margin: 5px 0;
+}
+.long-box-blur{
+  background: url('https://fintect-qfoqi8eee-sk-ashadul-hossains-projects.vercel.app/static/media/Ellipse%209%20(3).5abd938acb2e90f40872.png');
+  position: absolute;
+  background-size: cover;
+  width: 1200px;
+  height: 1000px;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  rotate: 180deg;
+  }
+.button-long-container {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.whatsapp {
+  background-color: #25D366;
+}
+
+.telegram {
+  background-color: #0088cc;
+}
+
+.skype {
+  background-color: #00aff0;
+}
+
+.long-long-container{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  /* gap: 50px; */
+}
+.long-long-container ul li{
+  line-height: 40px;
+}
+.long-box-img{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+}
+
+
+.long-container {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  padding: 20px;
+  background: #e2ecff8a;
+  backdrop-filter: blur(10px);
+  /* border: 1px solid #ddd; */
+  /* border-radius: 8px; */
+  position: relative;
+  z-index: 1;
+}
+
+/* h1 {
+  color: #333;
+  font-size: 24px;
+} */
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ddd;
+  margin: 10px 0;
+}
+.long-sim-box{
+  display: flex;
+  gap: 20px;
+}
+
+.long-sim-img{
+  flex: 1 1 30%;
+}
+
+.long-sim-img img{
+  width: 100%;
+  max-width: 550px;
+}
+
+.content-box{
+  flex: 1 1 70%;
+}
+
+/* .content-box {
+  margin-top: 20px;
+  padding: 20px;
+  /* background-color: #fff; */
+  /* border: 1px solid #ccc; */
+  /* border-radius: 8px; */
+  /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+/* }  */
+
+
+@media (max-width: 1024px){
+  .long-sim-box{
+    flex-direction: column;
+  }
+  .long-sim-img img{
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 768px){
+  .long-long-container {
+    flex-direction: column;
+  }
+}

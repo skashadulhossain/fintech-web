@@ -14,12 +14,12 @@ const Header = () => {
       { title: 'Career', link: '#' }
     ],
     apiServices: [
-      { title: 'Recharge API', link: '/recharge-api' },
-      { title: 'Travel API', link: '/travel-api' },
-      { title: 'Domestic Money Transfer', link: '/dmt' },
-      { title: 'BBPS', link: '/bbps' },
-      { title: 'Payout API', link: '/payout-api' },
-      { title: 'Pan Card API', link: '/pancard-api' }
+      { title: 'Recharge API', link: '/RechargeApi' },
+      { title: 'Travel API', link: '/TravelApi' },
+      { title: 'Domestic Money Transfer', link: '/DmtPage' },
+      { title: 'BBPS', link: '/BbpsPage' },
+      { title: 'Payout API', link: '/PayoutApi' },
+      { title: 'Pan Card API', link: '/PanCardApi' }
     ],
     fintech: [
       { title: 'AePS', link: '#' },
@@ -30,19 +30,19 @@ const Header = () => {
       { title: 'Pan Card - UTI', link: '#' }
     ],
     itServices: [
-      { title: 'Software Development', link: '#' },
+      { title: 'Software Development', link: '/SoftwareDevelopment' },
       { title: 'MLM Software', link: '#' },
-      { title: 'Recharge Application', link: '#' },
-      { title: 'Digital Marketing', link: '#' },
-      { title: 'Blockchain Development', link: '#' }
+      { title: 'Recharge Application', link: '/RechargeApplication' },
+      { title: 'Digital Marketing', link: '/DigitalMarketing' },
+      { title: 'Blockchain Development', link: '/Blockchain' }
     ],
     vasServices: [
-      { title: 'Long/Short Code', link: '#' },
-      { title: 'Bulk SMS', link: '#' },
-      { title: 'Sim Hosting', link: '#' },
-      { title: 'HLR Lookup', link: '#' },
-      { title: 'Pincode Finder', link: '#' },
-      { title: 'IFSC Finder', link: '#' }
+      { title: 'Long/Short Code', link: '/Solutions' },
+      { title: 'Bulk SMS', link: '/BulkSMS' },
+      { title: 'Sim Hosting', link: '/Solutions' },
+      { title: 'HLR Lookup', link: '/OperatorFinder' },
+      { title: 'Pincode Finder', link: '/OperatorFinder' },
+      { title: 'IFSC Finder', link: '/OperatorFinder' }
     ]
   };
 
@@ -111,19 +111,19 @@ const Header = () => {
       <div className="header-container">
         {/* Logo */}
         <div className="header-logo-box">
-          <img src={logoimg} alt="Logo" />
+          <a href="/"><img src={logoimg} alt="Logo" /></a>
         </div>
         
         {/* Navigation Links */}
         <div className={`header-links-box ${menuOpen ? 'active' : ''}`}>
-          <a href="#">Home</a>
+          <a href="/">Home</a>
           {renderDropdownTrigger('About', 'about')}
           {renderDropdownTrigger('API Service', 'apiServices')}
           {renderDropdownTrigger('FinTech', 'fintech')}
           {renderDropdownTrigger('IT Service', 'itServices')}
           {renderDropdownTrigger('Vas Service', 'vasServices')}
-          <a href="#">Blog</a>
-          <a href="#">Contact</a>
+          <a href="/Blog">Blog</a>
+          <a href="/Contact">Contact</a>
         </div>
         
         {/* Hamburger Menu Icon */}

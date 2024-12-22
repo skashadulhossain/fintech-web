@@ -10,7 +10,6 @@ import {
 } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import About from "./Pages/About/About";
-import Contact from "./Components/Contact/Contact";
 import RechargeApiPage from "./Pages/ApiServices/RechargeApiPage";
 import TravelApiPage from "./Pages/ApiServices/TravelApiPage";
 import DmtPage from "./Pages/ApiServices/DmtPage";
@@ -19,20 +18,36 @@ import PayoutApiPage from "./Pages/ApiServices/PayoutApiPage";
 import PanCardApiPage from "./Pages/ApiServices/PanCardApiPage";
 import ContactUs from "./Pages/ContactUs/ContactUs";
 import Blogs from "./Pages/Blog/Blogs";
+import BulkSMS from "./Components/VAS_Service/BulkSMS/BulkSMS";
+import Solutions from "./Components/VAS_Service/ExtraMiniCard/solutions";
+import OperatorFinder from "./Components/VAS_Service/Finder/OperatorFinder";
+import Blockchain from "./Components/IT_Service/Blockchain/Blockchain";
+import DigitalMarketing from "./Components/IT_Service/DigitalMarketing/DigitalMarketing";
+import SoftwareDevelopment from "./Components/IT_Service/SoftwareDevelopment/SoftwareDevelopment";
+import RechargeApplication from "./Components/IT_Service/RechargeApplication/RechargeApplication";
+import SubscribePopup from "./Components/SubscribePopup/SubscribePopup";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
-      <Route path="/recharge-api" element={<RechargeApiPage />} />
-      <Route path="/travel-api" element={<TravelApiPage />} />
-      <Route path="/dmt" element={<DmtPage />} />
-      <Route path="/bbps" element={<BbpsPage />} />
-      <Route path="/payout-api" element={<PayoutApiPage />} />
-      <Route path="/pancard-api" element={<PanCardApiPage />} />
-      <Route path="Blog" element={<Blogs/>} />
-      <Route path="Contact" element={<ContactUs/>} />
+      <Route path="/RechargeApi" element={<RechargeApiPage />} />
+      <Route path="/TravelApi" element={<TravelApiPage />} />
+      <Route path="/DmtPage" element={<DmtPage />} />
+      <Route path="/BbpsPage" element={<BbpsPage />} />
+      <Route path="/PayoutApi" element={<PayoutApiPage />} />
+      <Route path="/PanCardApi" element={<PanCardApiPage />} />
+      <Route path="/Blog" element={<Blogs />} />
+      <Route path="Contact" element={<ContactUs />} />
+      <Route path="/BulkSMS" element={<BulkSMS />} />
+      <Route path="/Solutions" element={<Solutions />} />
+      <Route path="/OperatorFinder" element={<OperatorFinder />} />
+      <Route path="/Blockchain" element={<Blockchain />} />
+      <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
+      <Route path="/SoftwareDevelopment" element={<SoftwareDevelopment />} />
+      <Route path="/RechargeApplication" element={<RechargeApplication />} />
+      <Route path="/SubscribePopup" element={<SubscribePopup />} />
     </Route>
   )
 );
