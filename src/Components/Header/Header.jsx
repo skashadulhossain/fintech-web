@@ -22,12 +22,12 @@ const Header = () => {
       { title: 'Pan Card API', link: '/PanCardApi' }
     ],
     fintech: [
-      { title: 'AePS', link: '/aeps' },
-      { title: 'POS', link: '/pos' },
-      { title: 'Mini ATM', link: '/matm' },
-      { title: 'Indo Nepal Money Transfer', link: '/indo-nepal' },
-      { title: 'Prepaid Card', link: '/prepaid-card' },
-      { title: 'Pan Card - UTI', link: '/pan-uti' }
+      { title: 'AePS', link: '/AepsPage' },
+      { title: 'POS', link: '/PosPage' },
+      { title: 'Mini ATM', link: '/MatmPage' },
+      { title: 'Indo Nepal Money Transfer', link: '/IndoNepal' },
+      { title: 'Prepaid Card', link: '/PrepaidCard' },
+      { title: 'Pan Card - UTI', link: '/PanUtiPage' }
     ],
     itServices: [
       { title: 'Software Development', link: '/SoftwareDevelopment' },
@@ -122,8 +122,8 @@ const Header = () => {
           {renderDropdownTrigger('FinTech', 'fintech')}
           {renderDropdownTrigger('IT Service', 'itServices')}
           {renderDropdownTrigger('Vas Service', 'vasServices')}
-          <a href="/blog">Blog</a>
-          <a href="#">Contact</a>
+          <a href="/Blog">Blog</a>
+          <a href="/Contact">Contact</a>
         </div>
         
         {/* Hamburger Menu Icon */}

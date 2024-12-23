@@ -38,14 +38,6 @@ const router = createBrowserRouter(
     <Route path="/" element={<App />}>
       <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
-      <Route path="/recharge-api" element={<RechargeApiPage />} />
-      <Route path="/travel-api" element={<TravelApiPage />} />
-      <Route path="/dmt" element={<DmtPage />} />
-      
-      <Route path="/payout-api" element={<PayoutApiPage />} />
-      <Route path="/pancard-api" element={<PanCardApiPage />} />
-      <Route path="Blog" element={<Blogs/>} />
-      <Route path="Contact" element={<ContactUs/>} />
       <Route path="/RechargeApi" element={<RechargeApiPage />} />
       <Route path="/TravelApi" element={<TravelApiPage />} />
       <Route path="/DmtPage" element={<DmtPage />} />
@@ -53,7 +45,7 @@ const router = createBrowserRouter(
       <Route path="/PayoutApi" element={<PayoutApiPage />} />
       <Route path="/PanCardApi" element={<PanCardApiPage />} />
       <Route path="/Blog" element={<Blogs />} />
-      <Route path="/Contact" element={<ContactUs />} />
+      <Route path="Contact" element={<ContactUs />} />
       <Route path="/BulkSMS" element={<BulkSMS />} />
       <Route path="/Solutions" element={<Solutions />} />
       <Route path="/OperatorFinder" element={<OperatorFinder />} />
