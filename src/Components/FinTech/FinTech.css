@@ -1,0 +1,330 @@
+.aeps-div-two {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.aeps-div-three {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.aeps-div-two-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.aeps-div-four {
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.aeps-div-four-sub {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+
+.aeps-div-five-sub {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.features-container {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  padding: 3rem 0 3rem 0;
+}
+
+.features-card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  /* height: 100%; */
+}
+
+.pos-div-one {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.pos-steps {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.grid-pos-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.main-pos-content-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.main-pos-img-div {
+  position: relative;
+}
+
+.pos-img-div {
+  background-color: #635ad9;
+  padding: 12px;
+  border-radius: 100%;
+  width: 85px;
+  height: 85px;
+}
+
+.pos-index {
+  background-color: rgb(54, 48, 48);
+  color: white;
+  text-align: center;
+  border-radius: 100%;
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.pos-content {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+/* Mobile ATM Page CSS */
+.matm-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.matm-heading p {
+  text-align: center;
+  max-width: 50rem;
+}
+
+.matm-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.matm-content p {
+  text-align: center;
+  max-width: 52rem;
+}
+
+/* Indo Nepal Page CSS */
+.in-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 2rem;
+}
+
+.in-content p {
+  text-align: center;
+}
+
+.new-innp-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.protect-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.protect-section-div {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background-color: #635ad9;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+}
+
+.protect-section-div:hover {
+  background-color: #635ad9db;
+}
+
+/* PAN UTI Page CSS */
+.pan-uti-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.uti-heading {
+  padding: 2.5rem 0 2.5rem 0;
+}
+
+.uti-heading-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.uti-main-details-div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.uti-details-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.uti-details-img-div {
+  background-color: #635ad9;
+  border-radius: 100%;
+  padding: 0.5rem;
+}
+
+.uti-details-img-div > div {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 100%;
+  padding: 0.4rem;
+}
+
+.pan-app-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.pan-app-details p {
+  text-align: center;
+  max-width: 55rem;
+}
+
+.pan-app-card-div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 3rem 0 5rem 0;
+}
+
+.pan-app-img-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pan-app-img-div img {
+  width: 4rem;
+  height: 4rem;
+}
+
+.pan-app-card {
+  background-color: rgb(240, 249, 250);
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+}
+
+.pan-app-card:hover {
+  background-color: rgb(222, 244, 246);
+}
+
+@media (min-width: 640px) {
+  .uti-details-img-div > div {
+    width: 75px;
+    height: 75px;
+    padding: 0.8rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .aeps-div-two {
+    flex-direction: row;
+    padding: 5rem 0 5rem 0;
+  }
+  .aeps-div-three {
+    flex-direction: row;
+    padding: 5rem 0 5rem 0;
+  }
+  .aeps-div-four {
+    padding: 5rem 0 5rem 0;
+  }
+  .aeps-div-four-sub {
+    flex-direction: row;
+  }
+  .pos-div-one {
+    flex-direction: row;
+    padding: 5rem 0 5rem 0;
+  }
+  .new-innp-section {
+    padding: 5rem 0 5rem 0;
+  }
+  .uti-heading {
+    padding: 5rem 0 5rem 0;
+  }
+}

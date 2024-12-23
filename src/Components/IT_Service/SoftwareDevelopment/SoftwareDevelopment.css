@@ -36,48 +36,13 @@
     align-items: center;
 }
 
-.SoftwareDevelopment-left-img-box{
-    position: relative;
-}
-
 .SoftwareDevelopment-left-img-box img{
-    width: 105px;
-    height: 105px;
-    position: relative;
-    padding: 25px 20px 20px;
-}
-
-.SoftwareDevelopment-left-img-box a::before{
-    content: "";
-    top: 50%;
-    left: 50%;
-    width: 140px;
-    height: 140px;
-    position: absolute;
-    transform: translate(-50%,-50%);
+    width: 75px;
+    height: 75px;
 }
 
 .left-box-item-2{
     margin-left: 40px;
-}
-
-.left-icon-1{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(./Image/icon\ bg\ 1.webp);
-}
-.left-icon-2{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(./Image/icon\ bg\ 2.webp);
-}
-.left-icon-3{
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: url(./Image/icon\ bg\ 3.webp);
 }
 
 .SoftwareDevelopment-left-title-box h2{

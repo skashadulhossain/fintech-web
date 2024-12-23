@@ -39,7 +39,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 999;
+  z-index: 99900;
 }
 
 /* Logo Styling */

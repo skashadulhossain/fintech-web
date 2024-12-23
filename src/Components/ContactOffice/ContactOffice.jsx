@@ -1,8 +1,11 @@
 import React from 'react';
 import './ContactOffice.css';
-import { FaGlobeAmericas, FaMapSigns, FaPhoneAlt, FaStreetView } from 'react-icons/fa';
+import { FaPhoneAlt } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 import { IoMdTime } from 'react-icons/io';
+import icon1 from './Image/Browser.png';
+import icon2 from './Image/Card.png';
+import icon3 from './Image/Preferences.png';
 
 const ContactOffice = () => {
   return (
@@ -11,7 +14,7 @@ const ContactOffice = () => {
     <section className="ContactOffice-section">
         <div className="ContactOffice-containr">
             <div className="ContactOffice-card-box">
-                <FaMapSigns className='ContactOffice-card-icon-box' />
+                <img src={icon1} alt="" className='ContactOffice-card-icon-box' />
                 <h2>Kolkata Office</h2>
                 <ul>
                     <li><FaLocationDot /> 701712 kolkata, India</li>
@@ -20,7 +23,7 @@ const ContactOffice = () => {
                 </ul>
             </div>
             <div className="ContactOffice-card-box">
-                <FaStreetView className='ContactOffice-card-icon-box' />
+                <img src={icon2} alt="" className='ContactOffice-card-icon-box' />
                 <h2>UAE Office</h2>
                 <ul>
                     <li><FaLocationDot /> 701712 kolkata, India</li>
@@ -29,7 +32,7 @@ const ContactOffice = () => {
                 </ul>
             </div>
             <div className="ContactOffice-card-box">
-                <FaGlobeAmericas className='ContactOffice-card-icon-box' />
+                <img src={icon3} alt="" className='ContactOffice-card-icon-box-1' />
                 <h2>Qatar Office</h2>
                 <ul>
                     <li><FaLocationDot /> 701712 kolkata, India</li>
