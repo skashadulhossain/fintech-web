@@ -43,6 +43,55 @@ const services = [
   },
 ];
 
+const strategies = [
+  {
+    title: "Matrix Plan",
+    desc: "An organized distributor plan designed to encourage the recruitment of additional members down the line.",
+    icon: "/images/plans/plan-1.webp",
+  },
+  {
+    title: "Generation Plan",
+    desc: "Ideal for companies dealing in consumable goods, offering a robust structure for sustainable growth.",
+    icon: "/images/plans/plan-2.webp",
+  },
+  {
+    title: "Binary Plan",
+    desc: "A simplified network model where distributors build under two initial members, creating balanced growth.",
+    icon: "/images/plans/plan-3.webp",
+  },
+  {
+    title: "Board Plan",
+    desc: "A critical compensation plan focusing on business services development and leadership within the network.",
+    icon: "/images/plans/plan-4.webp",
+  },
+  {
+    title: "Hybrid Plan",
+    desc: "A versatile and successful plan widely adopted for its adaptability and quality response.",
+    icon: "/images/plans/plan-5.webp",
+  },
+  {
+    title: "Unilevel Plan",
+    desc: "A straightforward plan with unlimited width, perfect for ease of use and scalability.",
+    icon: "/images/plans/plan-6.webp",
+  },
+  {
+    title: "Repurchase Plan",
+    desc: "Facilitates direct marketing of goods or services, streamlining customer interactions and repeat purchases.",
+    icon: "/images/plans/plan-7.webp",
+  },
+  {
+    title: "Stair Step/Orbit Plan",
+    desc: "One of the oldest MLM strategies, also known as the Stair Step Breakaway Plan, focusing on incremental growth.",
+    icon: "/images/plans/plan-8.webp",
+  },
+  {
+    title: "Investment Plan",
+    desc: "A software solution tailored to simplify database management systems for better financial planning.",
+    icon: "/images/plans/plan-9.webp",
+  },
+];
+
+
 const MlmPage = () => {
   return (
     <>
@@ -144,6 +193,31 @@ const MlmPage = () => {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        <section className="mlm-startegy-container padding-layout">
+          <div className="mlm-startegy-details">
+            <h2>MLM Business Strategy</h2>
+            <div className="custom-underline"></div>
+            <p>
+              Empowering your business with the tools and guidance needed for
+              online success.
+            </p>
+          </div>
+
+          <div className="mlm-startegy-card-container">
+            {strategies.map((startegy, id) => (
+              <div className="mlm-startegy-card" key={id}>
+                <div className="mlm-img-div">
+                  <img src={startegy.icon} alt="PN Software Tech Pvt. Ltd." />
+                </div>
+                <div className="mlm-content">
+                  <h3 className="mlm-title">{startegy.title}</h3>
+                  <p className="mlm-desc">{startegy.desc}</p>
+                </div>
+              </div>
+            ))}
           </div>
         </section>
       </main>
