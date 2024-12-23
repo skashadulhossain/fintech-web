@@ -1,7 +1,10 @@
 import React from 'react';
 import './ContactForm.css';
 import { FaGlobeAmericas, FaPhoneAlt, FaRegClock } from 'react-icons/fa';
-import { IoMailOpen } from 'react-icons/io5';
+import icon1 from './Image/phone icon.png';
+import icon2 from './Image/message icon.png';
+import icon3 from './Image/location icon.png';
+import icon4 from './Image/Clock icon.png';
 
 const ContactForm = () => {
   return (
@@ -25,7 +28,7 @@ const ContactForm = () => {
             <div className="ContactForm-content-container">
               <div className="ContactForm-content-box">
                 <div className="ContactForm-icon-box">
-                  <FaPhoneAlt className="ContactForm-icon" />
+                <img src={icon1} alt=""  className="ContactForm-icon-img" />
                 </div>
                 <div className="ContactForm-title-box">
                   <h3>Call Us</h3>
@@ -36,7 +39,7 @@ const ContactForm = () => {
               </div>
               <div className="ContactForm-content-box">
                 <div className="ContactForm-icon-box">
-                  <IoMailOpen className="ContactForm-icon" />
+                  <img src={icon2} alt=""  className="ContactForm-icon-img" />
                 </div>
                 <div className="ContactForm-title-box">
                   <h3>Message</h3>
@@ -46,7 +49,7 @@ const ContactForm = () => {
               </div>
               <div className="ContactForm-content-box">
                 <div className="ContactForm-icon-box">
-                  <FaGlobeAmericas className="ContactForm-icon" />
+                  <img src={icon3} alt=""  className="ContactForm-icon-img" />
                 </div>
                 <div className="ContactForm-title-box">
                   <h3>Our Location</h3>
@@ -55,7 +58,7 @@ const ContactForm = () => {
               </div>
               <div className="ContactForm-content-box">
                 <div className="ContactForm-icon-box">
-                  <FaRegClock className="ContactForm-icon" />
+                <img src={icon4} alt=""  className="ContactForm-icon-img" />
                 </div>
                 <div className="ContactForm-title-box">
                   <h3>Working Hours</h3>

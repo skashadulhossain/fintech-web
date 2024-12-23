@@ -84,7 +84,7 @@
 }
 
 .ContactForm-content-box{
-    gap: 12px;
+    gap: 18px;
     display: flex;
     margin-left: 50px;
     padding: 24px 12px;
@@ -92,13 +92,9 @@
     border-bottom: 1px solid #f1f1f1;
 }
 
-.ContactForm-icon{
-    width: 54px;
-    height: 54px;
-    padding: 12px;
-    border-radius: 50%;
-    color: var(--primary-white);
-    background-color: var(--primary-blue);
+.ContactForm-icon-img{
+    width: 65px;
+    height: 65px;
 }
 
 .ContactForm-content-box h3{

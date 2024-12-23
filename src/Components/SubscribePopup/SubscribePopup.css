@@ -49,7 +49,7 @@
 }
 
 .SubscribePopups-popup-modal-content {
-    background-color: var(--primary-white);
+    background: linear-gradient(to bottom, #E3E4FF 80%, #8084FF 100%);
     backdrop-filter: blur(1px);
     padding: 30px 20px;
     border-radius: 50px;
@@ -88,11 +88,40 @@
 }
 
 .SubscribePopups-popup-inp-box input {
+    width: 100%;
     border: none;
     outline: none;
     padding: 12px 20px;
     border-radius: 22px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+}
+
+.SubscribePopups-popup-icon-box{
+    position: relative;
+}
+
+.SubscribePopups-popup-icon-box input{
+    padding-left: 35px;
+}
+
+.SubscribePopups-popup-icon-box svg{
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: var(--primary-blue);
+}
+
+.SubscribePopups-popup-inp-box-2{
+    display: flex;
+    gap: 10px;
+}
+
+.SubscribePopups-popup-inp-min-box{
+    flex: 1 1 100%;
+}
+
+.SubscribePopups-popup-inp-box-2 label{
+    font-size: 12px;
 }
 
 .SubscribePopups-popup-btn-box {
@@ -150,5 +179,14 @@
     100% {
         transform: translateY(0) translateX(0);
         opacity: 0.6;
+    }
+}
+
+@media (max-width: 480px){
+    .SubscribePopups-popup-title-box h2{
+        font-size: 18px;
+    }
+    .SubscribePopups-popup-inp-box-2{
+        flex-direction: column;
     }
 }

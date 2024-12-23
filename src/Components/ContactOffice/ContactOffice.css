@@ -29,9 +29,15 @@
 }
 
 .ContactOffice-card-icon-box{
-    font-size: 38px;
+    width: 55px;
+    height: 55px;
     margin-bottom: 20px;
-    color: var(--primary-black2);
+}
+
+.ContactOffice-card-icon-box-1{
+    width: 85px;
+    height: 85px;
+    margin-bottom: 20px;
 }
 
 .ContactOffice-card-box h2{
@@ -47,6 +53,10 @@
     color: #444444;
     display: flex;
     align-items: center;
+}
+
+.ContactOffice-card-box ul li svg{
+    color: var(--primary-blue);
 }
 
 @media (max-width: 768px){
