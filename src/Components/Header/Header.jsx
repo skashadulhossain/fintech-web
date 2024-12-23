@@ -10,7 +10,7 @@ const Header = () => {
 
   const dropdownContent = {
     about: [
-      { title: 'Overview', link: '#' },
+      { title: 'Overview', link: '/About' },
       { title: 'Career', link: '#' }
     ],
     apiServices: [

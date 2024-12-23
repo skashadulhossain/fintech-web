@@ -28,3 +28,7 @@
 .header-links-box.active a{
     color: var(--primary-black2);
 }
+
+.Blogs-container .hamburger-menu .line{
+    background-color: var(--primary-white);
+}

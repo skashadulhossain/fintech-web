@@ -45,6 +45,32 @@
   font-size: 0.8rem;
 }
 
+
+.header-div-container .header-links-box a{
+  color: var(--primary-white);
+}
+
+.header-div-container .header-links-box a:hover{
+  color: var(--primary-blue);
+}
+
+.header-div-container .dropdown-content a{
+  color: var(--primary-grey);
+}
+
+.header-div-container .dropdown-content a:hover{
+  color: var(--primary-blue);
+}
+
+.header-links-box.active a{
+  color: var(--primary-black2);
+}
+
+.header-div-container .hamburger-menu .line{
+  background-color: var(--primary-white);
+}
+
+
 @media (min-width: 1024px) {
   .main-layout-container {
     padding: 2rem 4rem;

@@ -9,6 +9,8 @@ import { ChevronRight } from "lucide-react";
 const MainLayout = ({ pageTitle = "", children }) => {
   return (
     <>
+
+    <div className="header-div-container">
       <Header />
       <div className="header-div">
         <div className="header">
@@ -30,6 +32,8 @@ const MainLayout = ({ pageTitle = "", children }) => {
         <div className="children-container">{children}</div>
       </div>
       <Footer />
+    </div>
+
     </>
   );
 };

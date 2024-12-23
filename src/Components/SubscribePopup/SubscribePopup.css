@@ -19,14 +19,40 @@
     backdrop-filter: blur(4px);
     justify-content: center;
     align-items: center;
-    z-index: 1000;
+    z-index: 99999;
+    overflow: hidden; 
+}
+
+.SubscribePopups-popup-modal::before {
+    content: '';
+    position: absolute;
+    width: 150%;
+    height: 150%;
+    background: radial-gradient(circle, rgba(109, 114, 246, 0.6), transparent 60%);
+    animation: floatingGlow 6s infinite alternate ease-in-out;
+    top: -50%;
+    left: -50%;
+    z-index: -1;
+}
+
+.SubscribePopups-popup-modal::after {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: rgba(8, 117, 206, 0.6);
+    border-radius: 50%;
+    animation: floatCircle 8s infinite ease-in-out;
+    top: 20%;
+    right: 15%;
+    z-index: -1;
 }
 
 .SubscribePopups-popup-modal-content {
     background-color: var(--primary-white);
     backdrop-filter: blur(1px);
     padding: 30px 20px;
-    border-radius: 20px;
+    border-radius: 50px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     max-width: 500px;
     width: 100%;
@@ -50,68 +76,42 @@
     color: #ff0000;
 }
 
-.SubscribePopups-popup-img-box {
-    display: flex;
-    margin-top: 30px;
-    align-items: center;
-    justify-content: center;
-}
-
-.SubscribePopups-popup-img-box img {
-    width: 85px;
-    height: 85px;
-    padding: 15px;
-    border-radius: 20px;
-    background-color: #cbcdfb;
-}
-
 .SubscribePopups-popup-title-box {
-    margin-top: 14px;
+    margin: 24px 0 30px 0;
 }
 
-.SubscribePopups-popup-title-box p {
-    width: 100%;
-    max-width: 400px;
-    font-size: 14px;
-    color: #6f6f6f;
-    margin: 8px auto 30px auto;
+.SubscribePopups-popup-inp-box {
+    gap: 12px;
+    display: flex;
+    margin-bottom: 25px;
+    flex-direction: column;
 }
 
-.SubscribePopups-popup-btn-box {
-    position: relative;
-    width: 100%;
-    height: 60px;
-    margin: 0 auto;
-    max-width: 420px;
-}
-
-.SubscribePopups-popup-btn-box input {
-    width: 100%;
-    height: 100%;
+.SubscribePopups-popup-inp-box input {
     border: none;
     outline: none;
-    border-radius: 30px;
-    padding: 0 9rem 0 20px;
+    padding: 12px 20px;
+    border-radius: 22px;
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
 }
 
+.SubscribePopups-popup-btn-box {
+    text-align: center;
+}
+
 .SubscribePopups-popup-btn-box button {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+    border: none;
+    cursor: pointer;
     padding: 16px 2rem;
     border-radius: 30px;
     transition: 0.3s linear;
-    background-color: var(--primary-blue);
     color: var(--primary-white);
-    border: none;
-    cursor: pointer;
+    background-color: var(--primary-blue);
 }
 
 .SubscribePopups-popup-btn-box button:hover {
     box-shadow: 0px 0px 6px #494edd;
 }
-
 
 /* Animation from the top */
 @keyframes slideInFromTop {
@@ -122,5 +122,33 @@
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+
+/* Keyframes for glowing background */
+@keyframes floatingGlow {
+    0% {
+        transform: scale(1) translate(0, 0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.5) translate(10%, 10%);
+        opacity: 0.4;
+    }
+}
+
+/* Keyframes for floating circle */
+@keyframes floatCircle {
+    0% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translateY(-30px) translateX(20px);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+        opacity: 0.6;
     }
 }
