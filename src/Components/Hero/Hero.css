@@ -94,6 +94,7 @@
     overflow: none;
     font-size: 20px;
     cursor: pointer;
+    font-weight: 400;
     padding: 24px 10px;
     border-radius: 12px;
     transition: 0.3s linear;
@@ -138,7 +139,7 @@
   
   .hero-hero-right-container img {
     position: absolute; /* Use absolute positioning for precise control */
-    right: -180px; /* Move the image further to the right */
+    right: -80px; /* Move the image further to the right */
     top: 50%; /* Center the image vertically */
     transform: translateY(-50%); /* Adjust for vertical centering */
     width: 135%; /* Increase the image size */
@@ -148,6 +149,12 @@
   }
   
   
+  @media (max-width: 1300px){
+    .hero-hero-right-container img {
+      width: 100%; 
+      right: 0px;
+    }
+  }
   @media (max-width: 1024px) {
     .hero-hero-section{
       height: auto;
@@ -180,9 +187,14 @@
       padding: 20px 10px;
     }
   
+    .hero-hero-right-container{
+      justify-content: center;
+    }
+
     .hero-hero-right-container img {
       width: 100%; 
       max-width: 550px;
+      position: relative;
       transform: translateX(0); 
     }
 

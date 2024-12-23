@@ -28,6 +28,8 @@ import cardimg25 from './Image/Element 18.png';
 import cardimg26 from './Image/Element 26.png';
 import cardimg27 from './Image/Element 19.png';
 import cardimg28 from './Image/Element 15.png';
+import { LuIdCard } from 'react-icons/lu';
+import { FaArrowRightLong } from 'react-icons/fa6';
 // import bgimg1 from './Image/Blog bg 1.jpg';
 // import bgimg2 from './Image/Blog bg 2.jpg';
 // import bgimg3 from './Image/Blog bg 3.jpg';
@@ -234,10 +236,16 @@ const Blog2 = () => {
               <div className="Blog2-card-img-box">
                 <img src={post.image} alt={`Blog post ${post.id}`} />
               </div>
+              <div className="Blog2-card-date-box">
+                <LuIdCard size={24} />
+                <span>November 19, 2024</span>
+              </div>
               <div className="Blog2-card-title-box">
                 <h3>{post.title}</h3>
                 <p>{post.description}</p>
-                <button>read more...</button>
+                <div className="Blog2-card-btn-box">
+                  <FaArrowRightLong className="Blog2-card-btn-icon-box" />
+                </div>
               </div>
             </div>
           ))}

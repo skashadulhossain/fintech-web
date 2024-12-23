@@ -1,9 +1,19 @@
+/* Root Color Variables */
+:root {
+  --primary-white: #fff;
+  --primary-black: #000;
+  --primary-grey: #73739a;
+  --primary-blue: #6d72f6;
+  --primary-green: #08ce8a;
+  --primary-black2: #1c1c57;
+}
+
 /* BlogHeader Container */
 .BlogHeader-container {
   position: relative;
   height: 60vh; /* Default height */
-
-  background-image: url('./Img/2560x1080.png');
+  background-color: var(--primary-blue);
+  background-image: url('./Img/Background-1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -67,8 +77,7 @@
 
 @media (max-width: 1024px) {
   .BlogHeader-container {
-    height: 45vh; /* Adjust height for laptops */
-    margin-top: 60px;
+    height: 50vh; /* Adjust height for laptops */
   }
   .BlogHeader-text {
     font-size: 3rem;
@@ -77,8 +86,7 @@
 
 @media (max-width: 768px) {
   .BlogHeader-container {
-    height: 35vh; /* Adjust height for tablets */
-    margin-top: 50px;
+    height: 50vh; /* Adjust height for tablets */
   }
   .BlogHeader-text {
     font-size: 2.5rem;
@@ -87,8 +95,7 @@
 
 @media (max-width: 576px) {
   .BlogHeader-container {
-    height: 30vh; /* Adjust height for smaller devices */
-    margin-top: 40px;
+    height: 50vh; /* Adjust height for smaller devices */
   }
   .BlogHeader-text {
     font-size: 2rem;
@@ -96,10 +103,6 @@
 }
 
 @media (max-width: 375px) {
-  .BlogHeader-container {
-    height: 25vh; /* Adjust height for very small screens */
-    margin-top: 30px;
-  }
   .BlogHeader-text {
     font-size: 1.8rem;
   }

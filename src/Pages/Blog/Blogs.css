@@ -1,0 +1,30 @@
+:root {
+    --primary-white: #fff;
+    --primary-black: #000;
+    --primary-grey: #73739a;
+    --primary-grey2: #f5f5f5;
+    --primary-blue: #6d72f6;
+    --primary-green: #08ce8a;
+    --primary-black2: #1c1c57;
+}
+
+
+.Blogs-container .header-links-box a{
+    color: var(--primary-white);
+}
+
+.Blogs-container .header-links-box a:hover{
+    color: var(--primary-blue);
+}
+
+.Blogs-container .dropdown-content a{
+    color: var(--primary-grey);
+}
+
+.Blogs-container .dropdown-content a:hover{
+    color: var(--primary-blue);
+}
+
+.header-links-box.active a{
+    color: var(--primary-black2);
+}

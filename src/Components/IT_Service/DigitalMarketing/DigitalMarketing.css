@@ -1,0 +1,51 @@
+.DigitalMarketing{
+    padding: 10px 50px;
+}
+.DigitalMarketing header h1 {
+    color: var(--primary-blue);
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+ .DigitalMarketing header p{
+    /* font-weight: bolder; */
+    line-height: 30px;
+    color:var(--primary-grey);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  .DigitalMarketing-flex-box{
+    display: flex;
+    gap: 50px;
+  }
+
+  .DigitalMarketing-flex-box img{
+    width: 600px;
+  }
+
+  .DigitalMarketing-flex-box p{
+    color: var(--primary-grey);
+  }
+  .DigitalMarketing-flex-box h3{
+    color: var(--primary-grey);
+  }
+  .DigitalMarketing-flex-box ul li{
+    color: var(--primary-grey);
+  }
+
+  @media (max-width: 1024px){
+    .DigitalMarketing {
+      padding: 20px;
+    }
+    .DigitalMarketing-flex-box{
+      align-items: center;
+      flex-direction: column;
+    }
+    .DigitalMarketing-flex-box img{
+      width: 100%;
+      max-width: 550px;
+    }
+    
+  .DigitalMarketing-flex-box p{
+    text-align: justify;
+  }
+  }

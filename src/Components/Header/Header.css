@@ -39,7 +39,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  z-index: 99999;
+  z-index: 999;
 }
 
 /* Logo Styling */
@@ -102,6 +102,7 @@ body {
   position: absolute;
   top: 100%;
   left: 0;
+  text-align: left;
   min-width: 200px;
   background-color: var(--primary-white);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);

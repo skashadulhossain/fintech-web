@@ -1,0 +1,203 @@
+:root {
+    --primary-white: #fff;
+    --primary-black: #000;
+    --primary-grey: #73739a;
+    --primary-grey2: #f5f5f5;
+    --primary-blue: #6d72f6;
+    --primary-green: #08ce8a;
+    --primary-black2: #1c1c57;
+}
+
+
+
+
+.RechargeApplication-section{
+    padding: 3rem 0px;
+}
+
+.RechargeApplication-container-1{
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px;
+}
+
+.RechargeApplication-title-box{
+    text-align: center;
+}
+
+.RechargeApplication-title-box h1{
+    font-size: 32px;
+    margin-bottom: 12px;
+    color: var(--primary-blue);
+}
+
+.RechargeApplication-title-box p{
+    width: 100%;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.RechargeApplication-pragraph-box{
+    margin-top: 30px;
+}
+
+.RechargeApplication-pragraph-box p{
+    margin: 12px 0;
+    list-style: 24px;
+}
+
+.RechargeApplication-btn-box{
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.RechargeApplication-btn-box button{
+    gap: 8px;
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s linear;
+}
+
+.RechargeApplication-btn-box button svg{
+    font-size: 18px;
+}
+
+.RechargeApplication-btn-box button:nth-child(1){
+    background-color: var(--primary-green);
+}
+.RechargeApplication-btn-box button:nth-child(1):hover{
+    outline: 3px solid #71f0c4;
+}
+.RechargeApplication-btn-box button:nth-child(2){
+    background-color: #35a9fc;
+}
+.RechargeApplication-btn-box button:nth-child(2):hover{
+    outline: 3px solid #7ac5fb;
+}
+.RechargeApplication-btn-box button:nth-child(3){
+    background-color: #35c0fc;
+}
+.RechargeApplication-btn-box button:nth-child(3):hover{
+    outline: 3px solid #81d9ff;
+}
+
+
+.RechargeApplication-container-2{
+    gap: 30px;
+    display: flex;
+    margin: 3rem 0;
+    padding: 40px 30px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./Image/app-bg.webp);
+}
+
+.RechargeApplication-left-content{
+    flex: 1 1 100%;
+}
+
+.RechargeApplication-left-content h3{
+    gap: 8px;
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    color: var(--primary-white);
+}
+
+.RechargeApplication-left-content h3 svg{
+    color: var(--primary-blue);
+}
+
+.RechargeApplication-left-content p{
+    font-size: 15px;
+    line-height: 22px;
+    margin-bottom: 3.5rem;
+    color: var(--primary-grey2);
+}
+
+.RechargeApplication-img-box{
+    display: flex;
+    flex: 1 1 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.RechargeApplication-img-box img{
+    width: 100%;
+    max-width: 650px;
+}
+
+
+.RechargeApplication-container-3{
+    padding: 0 20px;
+}
+
+.RechargeApplication-top-title-box{
+    text-align: center;
+}
+
+.RechargeApplication-top-title-box span{
+    font-weight: bold;
+    color: var(--primary-blue);
+}
+
+.RechargeApplication-top-title-box h1{
+    font-size: 32px;
+    margin: 20px 0 10px 0;
+}
+
+.RechargeApplication-content-box{
+    gap: 22px;
+    display: flex;
+    margin-top: 3.5rem;
+}
+
+.RechargeApplication-contemt-img-box{
+    flex: 1 1 100%;
+}
+
+.RechargeApplication-contemt-img-box img{
+    width: 100%;
+    max-width: 650px;
+}
+
+.RechargeApplication-list-box{
+    flex: 1 1 100%;
+}
+
+.RechargeApplication-list-box li{
+    gap: 7px;
+    display: flex;
+    list-style: none;
+    line-height: 38px;
+    align-items: center;
+}
+
+.RechargeApplication-list-box li svg{
+    color: var(--primary-blue);
+}
+
+@media (max-width: 1024px){
+    .RechargeApplication-container-2,
+    .RechargeApplication-content-box{
+        flex-direction: column;
+    }
+    .RechargeApplication-contemt-img-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px){
+    .RechargeApplication-pragraph-box p{
+        text-align: justify;
+    }
+}

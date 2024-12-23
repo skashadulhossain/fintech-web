@@ -1,0 +1,213 @@
+:root {
+    --primary-white: #fff;
+    --primary-black: #000;
+    --primary-grey: #73739a;
+    --primary-grey2: #f5f5f5;
+    --primary-blue: #6d72f6;
+    --primary-green: #08ce8a;
+    --primary-black2: #1c1c57;
+}
+
+
+.SoftwareDevelopment-section{
+    padding: 3rem 0px;
+}
+
+.SoftwareDevelopment-content-container{
+    gap: 20px;
+    display: flex;
+    padding: 0 20px;
+}
+
+.SoftwareDevelopment-content-left-box{
+    flex: 1 1 100%;
+}
+
+.SoftwareDevelopment-content-left-box h1{
+    font-size: 32px;
+    margin-bottom: 2rem;
+    color: var(--primary-blue);
+}
+
+.SoftwareDevelopment-left-box{
+    gap: 35px;
+    display: flex;
+    margin: 25px 0;
+    align-items: center;
+}
+
+.SoftwareDevelopment-left-img-box{
+    position: relative;
+}
+
+.SoftwareDevelopment-left-img-box img{
+    width: 105px;
+    height: 105px;
+    position: relative;
+    padding: 25px 20px 20px;
+}
+
+.SoftwareDevelopment-left-img-box a::before{
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: 140px;
+    height: 140px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.left-box-item-2{
+    margin-left: 40px;
+}
+
+.left-icon-1{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./Image/icon\ bg\ 1.webp);
+}
+.left-icon-2{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./Image/icon\ bg\ 2.webp);
+}
+.left-icon-3{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url(./Image/icon\ bg\ 3.webp);
+}
+
+.SoftwareDevelopment-left-title-box h2{
+    font-size: 22px;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.SoftwareDevelopment-left-title-box p{
+    font-size: 16px;
+    color: #575555;
+}
+
+.SoftwareDevelopment-left-btn-box{
+    display: flex;
+    gap: 10px;
+}
+
+.SoftwareDevelopment-left-btn-box button{
+    gap: 8px;
+    display: flex;
+    padding: 12px 20px;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s linear;
+}
+
+.SoftwareDevelopment-left-btn-box button svg{
+    font-size: 18px;
+}
+
+.SoftwareDevelopment-left-btn-box button:nth-child(1){
+    background-color: var(--primary-green);
+}
+.SoftwareDevelopment-left-btn-box button:nth-child(1):hover{
+    outline: 3px solid #71f0c4;
+}
+.SoftwareDevelopment-left-btn-box button:nth-child(2){
+    background-color: #35a9fc;
+}
+.SoftwareDevelopment-left-btn-box button:nth-child(2):hover{
+    outline: 3px solid #7ac5fb;
+}
+.SoftwareDevelopment-left-btn-box button:nth-child(3){
+    background-color: #35c0fc;
+}
+.SoftwareDevelopment-left-btn-box button:nth-child(3):hover{
+    outline: 3px solid #81d9ff;
+}
+
+.SoftwareDevelopment-right-img-box{
+    flex: 1 1 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.SoftwareDevelopment-right-img-box img{
+    width: 100%;
+    max-width: 650px;
+}
+
+
+
+.SoftwareDevelopment-card-container{
+    gap: 22px;
+    display: grid;
+    margin-top: 3rem;
+    padding: 3rem 20px;
+    background-color: #f8f8f8;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.SoftwareDevelopment-card-box{
+    border-radius: 30px;
+    transition: 0.3s linear;
+    padding: 40px 42px 49px 40px;
+    background-color: #ffffffad;
+    border: 1px solid #ffffff80;
+}
+
+.SoftwareDevelopment-icon-box{
+    width: 85px;
+    height: 85px;
+    display: flex;
+    font-size: 38px;
+    align-items: center;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    justify-content: center;
+    color: var(--primary-white);
+    background-color: var(--primary-blue);
+}
+
+.SoftwareDevelopment-title-box h3{
+    margin-bottom: 10px;
+}
+
+.SoftwareDevelopment-card-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 1024px){
+    .SoftwareDevelopment-content-container{
+        flex-direction: column;
+    }
+    .SoftwareDevelopment-card-container {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 768px){
+    .SoftwareDevelopment-card-container {
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+
+@media (max-width: 480px){
+    .SoftwareDevelopment-content-left-box h1{
+        text-align: center;
+    }
+    .SoftwareDevelopment-left-box {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+    .left-box-item-2{margin-left: 0px;}
+    .SoftwareDevelopment-left-btn-box{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
