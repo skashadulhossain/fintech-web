@@ -26,6 +26,12 @@ import DigitalMarketing from "./Components/IT_Service/DigitalMarketing/DigitalMa
 import SoftwareDevelopment from "./Components/IT_Service/SoftwareDevelopment/SoftwareDevelopment";
 import RechargeApplication from "./Components/IT_Service/RechargeApplication/RechargeApplication";
 import SubscribePopup from "./Components/SubscribePopup/SubscribePopup";
+import AepsPage from "./Components/FinTech/AepsPage";
+import PosPage from "./Components/FinTech/PosPage";
+import MatmPage from "./Components/FinTech/MatmPage";
+import IndoNepalPage from "./Components/FinTech/IndoNepalPage";
+import PrepaidCardPage from "./Components/FinTech/PrepaidCardPage";
+import PanUtiPage from "./Components/FinTech/PanUtiPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -48,6 +54,12 @@ const router = createBrowserRouter(
       <Route path="/SoftwareDevelopment" element={<SoftwareDevelopment />} />
       <Route path="/RechargeApplication" element={<RechargeApplication />} />
       <Route path="/SubscribePopup" element={<SubscribePopup />} />
+      <Route path="/AepsPage" element={<AepsPage />} />
+      <Route path="/PosPage" element={<PosPage />} />
+      <Route path="/MatmPage" element={<MatmPage />} />
+      <Route path="/IndoNepal" element={<IndoNepalPage />} />
+      <Route path="/PrepaidCard" element={<PrepaidCardPage />} />
+      <Route path="/PanUtiPage" element={<PanUtiPage />} />
     </Route>
   )
 );

@@ -22,12 +22,12 @@ const Header = () => {
       { title: 'Pan Card API', link: '/PanCardApi' }
     ],
     fintech: [
-      { title: 'AePS', link: '#' },
-      { title: 'POS', link: '#' },
-      { title: 'Mini ATM', link: '#' },
-      { title: 'Indo Nepal Money Transfer', link: '#' },
-      { title: 'Prepaid Card', link: '#' },
-      { title: 'Pan Card - UTI', link: '#' }
+      { title: 'AePS', link: '/AepsPage' },
+      { title: 'POS', link: '/PosPage' },
+      { title: 'Mini ATM', link: '/MatmPage' },
+      { title: 'Indo Nepal Money Transfer', link: '/IndoNepal' },
+      { title: 'Prepaid Card', link: '/PrepaidCard' },
+      { title: 'Pan Card - UTI', link: '/PanUtiPage' }
     ],
     itServices: [
       { title: 'Software Development', link: '/SoftwareDevelopment' },
