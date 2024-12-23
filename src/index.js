@@ -32,6 +32,7 @@ import MatmPage from "./Components/FinTech/MatmPage";
 import IndoNepalPage from "./Components/FinTech/IndoNepalPage";
 import PrepaidCardPage from "./Components/FinTech/PrepaidCardPage";
 import PanUtiPage from "./Components/FinTech/PanUtiPage";
+import MlmPage from "./Pages/MlmPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -52,6 +53,7 @@ const router = createBrowserRouter(
       <Route path="/Blockchain" element={<Blockchain />} />
       <Route path="/DigitalMarketing" element={<DigitalMarketing />} />
       <Route path="/SoftwareDevelopment" element={<SoftwareDevelopment />} />
+      <Route path="/MLMSoftware" element={<MlmPage />} />
       <Route path="/RechargeApplication" element={<RechargeApplication />} />
       <Route path="/SubscribePopup" element={<SubscribePopup />} />
       <Route path="/AepsPage" element={<AepsPage />} />

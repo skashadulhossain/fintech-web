@@ -1,0 +1,137 @@
+.mlm-main-container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+.padding-layout {
+  padding: 1rem 1rem 4rem 1rem;
+}
+
+.mlm-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mlm-grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0 2rem 0;
+}
+
+.mlm-grid-card {
+  width: auto;
+  background-color: rgb(228, 243, 245);
+  padding: 2rem 1rem 2rem 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.mlm-content {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.mlm-content .mlm-title {
+  font-size: 16px;
+  margin-top: 0.5rem;
+}
+
+.mlm-content .mlm-desc {
+  font-size: 14px;
+  margin-top: 0.5rem;
+}
+
+.mlm-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(22, 42, 48, 0.8);
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  backdrop-filter: blur(3px);
+}
+
+.mlm-overlay .mlm-title {
+  transform: translateY(-50px);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  margin-bottom: 1rem;
+  font-size: 18px;
+}
+
+.mlm-overlay .mlm-desc {
+  transform: translateX(50px);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+  font-size: 14px;
+}
+
+.mlm-grid-card:hover .mlm-overlay {
+  transform: translateX(0);
+}
+
+.mlm-grid-card:hover .mlm-overlay .mlm-title {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.mlm-grid-card:hover .mlm-overlay .mlm-desc {
+  transform: translateX(0);
+  opacity: 1;
+  transition-delay: 0.1s;
+}
+
+.mlm-img-div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mlm-img-div img {
+  width: 70px;
+  height: 70px;
+}
+
+@media (min-width: 640px) {
+  .mlm-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .mlm-main-container {
+    flex-direction: row;
+  }
+  .padding-layout {
+    padding: 5rem 2rem 5rem 2rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .padding-layout {
+    padding: 4rem 8rem;
+  }
+}
