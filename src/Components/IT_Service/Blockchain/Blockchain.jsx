@@ -3,6 +3,7 @@ import "./Blockchain.css"; // CSS file for styling
 import img5 from './img/icon-5.webp'
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
+import { FaSkype, FaTelegram, FaWhatsapp } from "react-icons/fa";
 
 const Blockchain = () => {
     const services = [
@@ -99,7 +100,7 @@ const Blockchain = () => {
         padding: "40px 20px",
         fontFamily: "Arial, sans-serif",
         textAlign: "center",
-        backgroundColor: "#f1f1f1",
+        backgroundColor: "#f8f8f8",
       };
     
       const gridStyle = {
@@ -111,12 +112,12 @@ const Blockchain = () => {
       };
     
       const cardStyle = {
-        backgroundColor: "#fff",
-        // border: "1px solid #ddd",
-        borderRadius: "8px",
-        padding: "20px",
-        // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+        backgroundColor: "#ffffffad",
+        border: "1px solid #ffffff80",
+        borderRadius: "30px",
+        padding: "40px 42px 49px 40px",
         textAlign: "left",
+        transition: "transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease",
       };
     
       const iconContainerStyle = {
@@ -197,11 +198,13 @@ const Blockchain = () => {
             So connect with us now to get the best in-class blockchain services at affordable rates with dedicated managers to take care of your entire project! Or book a free consultation session with us now!
             </p>
             <div className="button-group">
-                    <button className="whatsapp">WhatsApp</button>
-                    <button className="telegram">Telegram</button>
-                    <button className="skype">Skype</button>
-                </div>
+              <div className="SoftwareDevelopment-left-btn-box">
+                <button><FaWhatsapp /></button>
+                <button><FaTelegram /></button>
+                <button><FaSkype /></button>
+              </div>
             </div>
+          </div>
         </div>
       </div>
 

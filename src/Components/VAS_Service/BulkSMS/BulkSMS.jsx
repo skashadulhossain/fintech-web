@@ -2,6 +2,7 @@ import React from 'react'
 import './BulkSMS.css'
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
+import { FaSkype, FaTelegram, FaWhatsapp } from 'react-icons/fa';
 
 
 const BulkSMS = () => {
@@ -35,9 +36,11 @@ const BulkSMS = () => {
                     of your items and business. So there is a simple answer for every one of the business visionaries to advance their new items over the market with the assistance of Bulk SMS Technology.
                 </p>
                 <div className="button-group">
-                    <button className="whatsapp">WhatsApp</button>
-                    <button className="telegram">Telegram</button>
-                    <button className="skype">Skype</button>
+                    <div className="SoftwareDevelopment-left-btn-box">
+                        <button><FaWhatsapp /></button>
+                        <button><FaTelegram /></button>
+                        <button><FaSkype /></button>
+                    </div>
                 </div>
             </div>
         </div>

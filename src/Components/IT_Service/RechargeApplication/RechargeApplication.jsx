@@ -34,9 +34,9 @@ const RechargeApplication = () => {
             We are leading brand in Mobile Recharge Software</p>
         </div>
         <div className="RechargeApplication-btn-box">
-          <button><FaWhatsapp /> | <span>WhatsApp</span></button>
-          <button><FaTelegram /> | <span>Telegram</span></button>
-          <button><FaSkype /> | <span>Skype</span></button>
+          <button><FaWhatsapp /></button>
+          <button><FaTelegram /></button>
+          <button><FaSkype /></button>
         </div>
       </div>
 

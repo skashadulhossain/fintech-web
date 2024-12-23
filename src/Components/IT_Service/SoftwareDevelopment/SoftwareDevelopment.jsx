@@ -146,9 +146,9 @@ const SoftwareDevelopment = () => {
               </div>
             </div>
             <div className="SoftwareDevelopment-left-btn-box">
-              <button><FaWhatsapp /> | <span>WhatsApp</span></button>
-              <button><FaTelegram /> | <span>Telegram</span></button>
-              <button><FaSkype /> | <span>Skype</span></button>
+              <button><FaWhatsapp /></button>
+              <button><FaTelegram /></button>
+              <button><FaSkype /></button>
             </div>
           </div>
           <div className="SoftwareDevelopment-right-img-box">

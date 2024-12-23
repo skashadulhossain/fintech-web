@@ -2,6 +2,7 @@ import React from 'react'
 import './solutions.css'
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
+import { FaSkype, FaTelegram, FaWhatsapp } from 'react-icons/fa';
 
 
 
@@ -45,9 +46,11 @@ function Solutions() {
                 got in way.
             </p>
             <div className="button-long-container">
-                <button className="whatsapp">WhatsApp</button>
-                <button className="telegram">Telegram</button>
-                <button className="skype">Skype</button>
+              <div className="SoftwareDevelopment-left-btn-box">
+                <button><FaWhatsapp /></button>
+                <button><FaTelegram /></button>
+                <button><FaSkype /></button>
+              </div>
             </div>
 
         </div>
