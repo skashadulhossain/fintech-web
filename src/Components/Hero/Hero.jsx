@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Hero.css';
-import herobg from './Image/hero bg.png';
-import heroimg from './Image/heroimage1.png';
+import herobg from './Image/hero bg.webp';
+import heroimg from './Image/heroimage1.webp';
 import SubscribePopup from '../SubscribePopup/SubscribePopup';
 
 const Hero = () => {
