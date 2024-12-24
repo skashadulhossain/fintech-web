@@ -91,13 +91,15 @@ const strategies = [
   },
 ];
 
-
 const MlmPage = () => {
   return (
     <>
       <Header />
       <main>
         <section className="mlm-main-container padding-layout">
+          <div className="mlm-bg-img-div">
+            <img src="/images/hero.webp" />
+          </div>
           <div style={{ width: "100%" }}>
             <h2>Custom MLM Software Development Company</h2>
             <p style={{ marginTop: "0.5rem" }}>
@@ -134,7 +136,7 @@ const MlmPage = () => {
           </div>
           <div style={{ width: "100%" }}>
             <img
-              src="/images/work.jpg"
+              src="/images/work.webp"
               alt="PN Software Pvt Ltd"
               style={{ width: "100%" }}
             />
@@ -142,6 +144,9 @@ const MlmPage = () => {
         </section>
 
         <section className="mlm-main-grid-container padding-layout">
+        <div className="mlm-bg-img-div">
+            <img src="/images/glow.webp" className="glow-img"/>
+          </div>
           <div>
             <div className="mlm-details">
               <h2>MLM Software Solutions</h2>
