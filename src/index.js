@@ -33,6 +33,10 @@ import IndoNepalPage from "./Components/FinTech/IndoNepalPage";
 import PrepaidCardPage from "./Components/FinTech/PrepaidCardPage";
 import PanUtiPage from "./Components/FinTech/PanUtiPage";
 import MlmPage from "./Pages/MlmPage";
+import PrivacyPolicyPage from "./Pages/Policies/PrivacyPolicyPage";
+import TermPage from "./Pages/Policies/TermPage";
+import DataPolicyPage from "./Pages/Policies/DataPolicyPage";
+import RefundPage from "./Pages/Policies/RefundPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -62,6 +66,10 @@ const router = createBrowserRouter(
       <Route path="/IndoNepal" element={<IndoNepalPage />} />
       <Route path="/PrepaidCard" element={<PrepaidCardPage />} />
       <Route path="/PanUtiPage" element={<PanUtiPage />} />
+      <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+      <Route path="/term-condition" element={<TermPage />} />
+      <Route path="/data-user-policy" element={<DataPolicyPage />} />
+      <Route path="/refund-cancellation-policy" element={<RefundPage />} />
     </Route>
   )
 );

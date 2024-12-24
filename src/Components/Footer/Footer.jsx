@@ -59,11 +59,10 @@ const Footer = () => {
             </div>
             <div className="footer-bottom-right-box">
               <div className="footer-bottom-right-top-box">
-                <a href="#">Privacy</a>
-                <a href="#">Terms of Use</a>
-                <a href="#">Sales and Refunds</a>
-                <a href="#">Legal</a>
-                <a href="#">Site Map</a>
+                <a href="/privacy-policy">Privacy Policy</a>
+                <a href="/term-condition">Terms of Conditions</a>
+                <a href="/data-user-policy">Data Use Policy</a>
+                <a href="/refund-cancellation-policy">Refund & Cancellation</a>
               </div>
               <div className="footer-bottom-right-bottom-box">
                 <h3>Follow us</h3>
