@@ -41,44 +41,54 @@ const SubscribePopup = ({ onClose }) => {
               </h2>
             </div>
             <form>
-              <div className="SubscribePopups-popup-inp-box">
-                <div className="SubscribePopups-popup-icon-box">
-                  <input type="text" placeholder="Name" required />
-                  <FaRegUser />
-                </div>
-                <div className="SubscribePopups-popup-icon-box">
-                  <input type="email" placeholder="Email" required />
-                  <HiOutlineMailOpen />
-                </div>
-                <div className="SubscribePopups-popup-icon-box">
-                  <input type="number" placeholder="Number" required />
-                  <LuPhoneCall />
-                </div>
-                <div className="SubscribePopups-popup-inp-box-2">
-                  <div className='SubscribePopups-popup-inp-min-box'>
-                    <input
-                      type="date"
-                      placeholder="Date"
-                      required
-                      onChange={handleDateChange}
-                    />
-                    <label htmlFor="">Select a weekdays.</label>
-                  </div>
-                  <div className='SubscribePopups-popup-inp-min-box'>
-                    <input
-                      type="time"
-                      placeholder="Time"
-                      required
-                      onChange={handleTimeChange}
-                    />
-                    <label htmlFor="">Select a time between 9 AM and 6 PM.</label>
-                  </div>
-                </div>
-              </div>
-              <div className="SubscribePopups-popup-btn-box">
-                <button>Send Message</button>
-              </div>
-            </form>
+  <div className="SubscribePopups-popup-inp-box">
+    <div className="SubscribePopups-popup-icon-box">
+      <input type="text" placeholder="Name" required />
+      <FaRegUser />
+    </div>
+    <div className="SubscribePopups-popup-icon-box">
+      <input type="email" placeholder="Email" required />
+      <HiOutlineMailOpen />
+    </div>
+    <div className="SubscribePopups-popup-icon-box">
+      <input type="number" placeholder="Number" required />
+      <LuPhoneCall />
+    </div>
+    <div className="SubscribePopups-popup-icon-box">
+      <textarea 
+        placeholder="Message" 
+        required 
+        rows="4"
+        style={{ resize: 'none' }} // Prevents resizing
+      ></textarea>
+      <HiOutlineMailOpen />
+    </div>
+    <div className="SubscribePopups-popup-inp-box-2">
+      <div className='SubscribePopups-popup-inp-min-box'>
+        <input
+          type="date"
+          placeholder="Date"
+          required
+          onChange={handleDateChange}
+        />
+        <label htmlFor="">Select a weekdays.</label>
+      </div>
+      <div className='SubscribePopups-popup-inp-min-box'>
+        <input
+          type="time"
+          placeholder="Time"
+          required
+          onChange={handleTimeChange}
+        />
+        <label htmlFor="">Select a time between 9 AM and 6 PM.</label>
+      </div>
+    </div>
+  </div>
+  <div className="SubscribePopups-popup-btn-box">
+    <button>Send Message</button>
+  </div>
+</form>
+
           </div>
         </div>
       </div>

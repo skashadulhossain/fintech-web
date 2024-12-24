@@ -190,3 +190,35 @@
         flex-direction: column;
     }
 }
+
+
+.SubscribePopups-popup-icon-box textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 12px 20px;
+    border-radius: 22px;
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.2);
+    resize: none; /* Prevents resizing */
+    min-height: 100px; /* Default height */
+    padding-left: 35px; /* Space for the icon */
+}
+
+.SubscribePopups-popup-icon-box textarea::placeholder {
+    color: var(--primary-grey); /* Placeholder color */
+}
+
+.SubscribePopups-popup-icon-box svg {
+    position: absolute;
+    top: 12px; /* Align with input text */
+    left: 12px;
+    color: var(--primary-blue);
+}
+
+@media (max-width: 480px) {
+    .SubscribePopups-popup-icon-box textarea {
+        min-height: 80px; /* Adjust height for smaller screens */
+        padding: 10px 15px;
+        font-size: 14px; /* Smaller font size for readability */
+    }
+}
