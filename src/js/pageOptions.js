@@ -1,10 +1,14 @@
 export const apiServices = [
-  { name: "Recharge API", link: "/RechargeApi" },
-  { name: "Travel API", link: "/TravelApi" },
-  { name: "Domestic Money Transfer", link: "/DmtPage" },
-  { name: "BBPS", link: "/BbpsPage" },
-  { name: "Payout API", link: "/PayoutApi" },
-  { name: "Pan Card API", link: "/PanCardApi" },
+  {
+    name: "Recharge API",
+    link: "/RechargeApi",
+    cover: "/images/api/re-api.png",
+  },
+  { name: "Travel API", link: "/TravelApi", cover: "/images/api/travel-api.webp" },
+  { name: "Domestic Money Transfer", link: "/DmtPage", cover: "/images/api/dmt-api.svg" },
+  { name: "BBPS", link: "/BbpsPage", cover: "/images/api/bbps-api.webp" },
+  { name: "Payout API", link: "/PayoutApi", cover: "/images/api/payout-api.webp" },
+  { name: "Pan Card API", link: "/PanCardApi", cover: "/images/api/pan-api.webp" },
 ];
 
 export const careerArr = [
