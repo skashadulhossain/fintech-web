@@ -3,32 +3,33 @@ import React, { useState } from "react";
 const whyDo = [
   {
     image: "/images/refund.svg",
-    title: "Send Refunds to Customers",
+    title: "Instant Refunds",
     description:
-      "Provide instant refunds to your ecommerce customers directly into their bank accounts.",
+      "Provide immediate refunds to your eCommerce customers directly into their bank accounts.",
   },
   {
     image: "/images/jackpot.webp",
     title: "Disburse Game Winnings",
     description:
-      "With a single click, transfer game winnings to all your players at the same time.",
+      "Transfer game winnings effortlessly to all your players with a single click.",
   },
   {
-    image: "/images/pay-your-emp.webp",
-    title: "Pay Your Employees",
+    image: "/images/balance.png",
+    title: "Employee Salaries",
     description:
-      "Opt for Instant Payouts and free yourself from transferring salaries one by one every month.",
+      "Save time by opting for Instant Payouts to transfer salaries in bulk.",
   },
   {
-    image: "/images/pay-your-venders.webp",
-    title: "Pay Your Vendors",
+    image: "/images/dashboard.webp",
+    title: "Vendor Payments",
     description:
-      "Simplify the process of paying your vendors and business partners on time, with bulk payouts.",
+      "Simplify timely payments to vendors and business partners using bulk payouts.",
   },
   {
-    image: "/images/reimbursement.webp",
-    title: "Reimburse Employee Expenses",
-    description: "Reimburse all your employee expenses at the same time.",
+    image: "/images/expenses.webp",
+    title: "Expense Reimbursements",
+    description:
+      "Reimburse employee expenses quickly and efficiently all at once.",
   },
 ];
 
@@ -40,7 +41,7 @@ const WhyPayoutSelect = () => {
     <>
       <div className="main-why-div">
         <div className="why-img-div">
-          <img src={selectedObj.image} alt="" loading="lazy" />
+          <img src={selectedObj.image} alt="" loading="lazy" style={{}}/>
         </div>
         <div className="why-option-div">
           <div className="why-line"></div>
@@ -49,9 +50,20 @@ const WhyPayoutSelect = () => {
               <button
                 onClick={() => setselectedObj(why)}
                 key={id}
-                className={`${selectedObj.title === why.title ? "why-btn-div-active-button " : "why-btn-div-button"}`}
+                style={{ color: selectedObj.title === why.title ? "white" : "black" }}
+                className={`${
+                  selectedObj.title === why.title
+                    ? "why-btn-div-active-button "
+                    : "why-btn-div-button"
+                }`}
               >
-                <span style={{ fontSize: "20px", fontWeight: 700, marginBottom: "5px" }}>
+                <span
+                  style={{
+                    fontSize: "20px",
+                    fontWeight: 700,
+                    marginBottom: "5px",
+                  }}
+                >
                   {why.title}
                 </span>
                 <span>{why.description}</span>

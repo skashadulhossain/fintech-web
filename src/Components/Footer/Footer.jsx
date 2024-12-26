@@ -1,5 +1,6 @@
 import React from "react";
 import "./Footer.css"; 
+import { Link, Route, Routes } from 'react-router-dom';
 import logoimg from './Image/Logo img.png';
 import { FaChevronUp, FaFacebookF, FaInstagram, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -19,12 +20,14 @@ const Footer = () => {
           <a href="/"><img src={logoimg} alt="" /></a>
           <p>The first free end-to-end analytics service for the site, 
             designed to work with enterprises.</p>
-          <button>Contact Us</button>
+            <Link to="/Contact">
+                <button>Contact Us</button>
+            </Link>
           <div className="footer-left-nav-box">
-            <a href="#">Privacy Policy</a>
-            <a href="#">Terms of Use</a>
-            <a href="#">Sales and Refunds</a>
-            <a href="#">Legal</a>
+            <a href="/PrivacyPolicy">Privacy Policy</a>
+            <a href="/TermCondition">Terms of Use</a>
+            <a href="/RefundCancellationPolicy">Sales and Refunds</a>
+            <a href="/DataUserPolicy">Legal</a>
             <a href="#">Site Map</a>
           </div>
         </div>
