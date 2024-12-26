@@ -2,6 +2,7 @@ import React from "react";
 import "./OperatorFinder.css"; // CSS file for styling
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
+import { FaSkype, FaTelegram, FaWhatsapp } from "react-icons/fa";
 
 const OperatorFinder = () => {
   return (
@@ -43,9 +44,11 @@ const OperatorFinder = () => {
       </section>
 
       <section className="operator-finder-content-in-contact">
-        <button className="whatsapp">WhatsApp</button>
-        <button className="telegram">Telegram</button>
-        <button className="skype">Skype</button>
+        <div className="SoftwareDevelopment-left-btn-box">
+          <button><FaWhatsapp /></button>
+          <button><FaTelegram /></button>
+          <button><FaSkype /></button>
+        </div>
       </section>
     </div>
         
@@ -70,9 +73,11 @@ const OperatorFinder = () => {
                       </div>
 
                     <section className="operator-finder-content-in-contact">
-                      <button className="whatsapp">WhatsApp</button>
-                      <button className="telegram">Telegram</button>
-                      <button className="skype">Skype</button>
+                      <div className="SoftwareDevelopment-left-btn-box">
+                        <button><FaWhatsapp /></button>
+                        <button><FaTelegram /></button>
+                        <button><FaSkype /></button>
+                      </div>
                     </section>
 
                   </div>
