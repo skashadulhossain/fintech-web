@@ -37,12 +37,14 @@ import PrivacyPolicyPage from "./Pages/Policies/PrivacyPolicyPage";
 import TermPage from "./Pages/Policies/TermPage";
 import DataPolicyPage from "./Pages/Policies/DataPolicyPage";
 import RefundPage from "./Pages/Policies/RefundPage";
+import CareerPage from "./Pages/Career/CareerPage";
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<App />}>
       <Route path="/" element={<Home />} />
       <Route path="/About" element={<About />} />
+      <Route path="/Career" element={<CareerPage />} />
       <Route path="/RechargeApi" element={<RechargeApiPage />} />
       <Route path="/TravelApi" element={<TravelApiPage />} />
       <Route path="/DmtPage" element={<DmtPage />} />

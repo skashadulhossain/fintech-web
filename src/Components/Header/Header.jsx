@@ -17,7 +17,7 @@ const Header = () => {
       title: "About",
       items: [
         { title: "Overview", link: "/About" },
-        { title: "Career", link: "#" },
+        { title: "Career", link: "/Career" },
       ],
     },
     {
