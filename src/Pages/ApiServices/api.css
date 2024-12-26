@@ -205,6 +205,15 @@
   gap: 2rem;
 }
 
+.payout-two-div {
+  border-radius: 8px;
+  margin: 5rem 0 5rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .bbps-details {
   display: flex;
   flex-direction: column-reverse;
@@ -547,8 +556,11 @@
   .payout-div-one {
     flex-direction: row;
   }
+  .payout-two-div {
+   flex-direction: row;
+  }
   .bbps-two-div {
-    flex-direction: row;
+    flex-direction: column;
   }
   .main-why-div {
     flex-direction: row;
@@ -562,4 +574,7 @@
 }
 
 @media (min-width: 1536px) {
+  .bbps-two-div {
+    flex-direction: column;
+  }
 }

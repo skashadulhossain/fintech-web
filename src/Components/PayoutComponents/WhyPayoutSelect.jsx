@@ -2,13 +2,13 @@ import React, { useState } from "react";
 
 const whyDo = [
   {
-    image: "/images/multi-emp.webp",
+    image: "/images/refund.svg",
     title: "Send Refunds to Customers",
     description:
       "Provide instant refunds to your ecommerce customers directly into their bank accounts.",
   },
   {
-    image: "/images/disburse-game.webp",
+    image: "/images/jackpot.webp",
     title: "Disburse Game Winnings",
     description:
       "With a single click, transfer game winnings to all your players at the same time.",

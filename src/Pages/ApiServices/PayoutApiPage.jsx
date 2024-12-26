@@ -13,27 +13,27 @@ const way = [
 const buisnessArr = [
   {
     title: "Multi-Account Settlements:",
-    desc: "With Roundpay Payout API merchants can easily settle payments to multiple bank accounts.",
+    desc: "Effortlessly settle payments to multiple bank accounts with PN Software Tech Pvt. Ltd.'s Payout API.",
   },
   {
     title: "Real-Time Updates:",
-    desc: "Merchant gets access to Real-time Transaction reports.",
+    desc: "Access real-time transaction reports for enhanced transparency and control.",
   },
   {
     title: "A Combination Of 3 Robust APIs:",
-    desc: "Roundpay Payout has 3 Inclusive APIs for Adding Beneficiary, Payout processing and Payout Enquiry.",
+    desc: "Includes APIs for Adding Beneficiaries, Payout Processing, and Payout Enquiries, ensuring a seamless experience.",
   },
   {
     title: "Developer-Friendly APIs:",
-    desc: "Easy API Integration, gives merchants a complete payout solution for vendors, customers, and partners.",
+    desc: "Simplified integration for a comprehensive payout solution tailored to vendors, customers, and partners.",
   },
   {
     title: "Multichannel Payment Options:",
-    desc: "Roundpay Payout API has options for Multichannel payment partners.",
+    desc: "Utilize various payment channels supported by PN Software Tech Pvt. Ltd.'s Payout API for greater flexibility.",
   },
   {
     title: "Multiple Payment Modes:",
-    desc: "NEFT , RTGS, IMPS , UPI, PPI Wallet",
+    desc: "Supports NEFT, RTGS, IMPS, UPI, and PPI Wallet for secure and versatile transactions.",
   },
 ];
 
@@ -48,7 +48,7 @@ const PayoutApiPage = () => {
                 <h5>Payout API</h5>
                 <div className="custom-underline"></div>
                 <h2 style={{ margin: "1rem 0 1rem 0" }}>
-                  Simple, Reliable Payouts that Scale with your Business
+                  Simple, Reliable Payouts That Scale with Your Business
                 </h2>
                 <div>
                   <div className="advantage-two">
@@ -105,11 +105,11 @@ const PayoutApiPage = () => {
                         <Earth style={{ width: "28px", height: "28px" }} />
                       </span>
                     </div>
-                    <h3 className="title">Total Freedom</h3>
+                    <h3 className="title">Unrestricted Transactions</h3>
                     <p className="description">
-                      Pay directly from your Pool/Nodal/Current Account, without
-                      blocking funds in your Payment Aggregators account/3rd
-                      party wallet.
+                      Make direct payments from your Pool, Nodal, or Current
+                      Account without locking funds in third-party wallets or
+                      aggregator accounts.
                     </p>
                   </div>
                   <div className="serviceBox-payout">
@@ -118,10 +118,10 @@ const PayoutApiPage = () => {
                         <Earth style={{ width: "28px", height: "28px" }} />
                       </span>
                     </div>
-                    <h3 className="title">Inclusive APIs</h3>
+                    <h3 className="title">Comprehensive API Suite</h3>
                     <p className="description">
-                      3 Inclusive APIs for Adding Beneficiary, Payout
-                      processing, and transaction status.
+                      Utilize 3 powerful APIs for Adding Beneficiaries,
+                      Processing Payouts, and Checking Transaction Status.
                     </p>
                   </div>
                   <div className="serviceBox-payout">
@@ -130,22 +130,10 @@ const PayoutApiPage = () => {
                         <Earth style={{ width: "28px", height: "28px" }} />
                       </span>
                     </div>
-                    <h3 className="title">Easy Payout Scheduling</h3>
+                    <h3 className="title">Flexible Payout Scheduling</h3>
                     <p className="description">
-                      Easily call the Payout API as and when or to schedule
-                      payouts.
-                    </p>
-                  </div>
-
-                  <div className="serviceBox-payout">
-                    <div className="service-icon">
-                      <span>
-                        <Earth style={{ width: "28px", height: "28px" }} />
-                      </span>
-                    </div>
-                    <h3 className="title">IP Whitelisting</h3>
-                    <p className="description">
-                      Whitelisted IP for additional security during payouts.
+                      Trigger payouts instantly or schedule them conveniently
+                      through the API.
                     </p>
                   </div>
 
@@ -155,9 +143,10 @@ const PayoutApiPage = () => {
                         <Earth style={{ width: "28px", height: "28px" }} />
                       </span>
                     </div>
-                    <h3 className="title">Secure Authentication</h3>
+                    <h3 className="title">IP-Based Access Control</h3>
                     <p className="description">
-                      A token-based API access system for enhanced security.
+                      Safeguard transactions with IP whitelisting for secure
+                      access.
                     </p>
                   </div>
 
@@ -167,9 +156,22 @@ const PayoutApiPage = () => {
                         <Earth style={{ width: "28px", height: "28px" }} />
                       </span>
                     </div>
-                    <h3 className="title">Real-time Updates</h3>
+                    <h3 className="title">Advanced Authentication Mechanism</h3>
                     <p className="description">
-                      Get real-time updates of all the Transactions.
+                      Leverage token-based API access for robust security.
+                    </p>
+                  </div>
+
+                  <div className="serviceBox-payout">
+                    <div className="service-icon">
+                      <span>
+                        <Earth style={{ width: "28px", height: "28px" }} />
+                      </span>
+                    </div>
+                    <h3 className="title">Instant Transaction Notifications</h3>
+                    <p className="description">
+                      Receive live updates for all your transactions in real
+                      time.
                     </p>
                   </div>
                 </div>
@@ -177,10 +179,10 @@ const PayoutApiPage = () => {
             </section>
 
             <section>
-              <div className="bbps-two-div">
-                <div>
+              <div className="payout-two-div">
+                <div style={{ width: "100%" }}>
                   <img
-                    src="/images/developers.webp"
+                    src="/images/build-app.jpg"
                     alt="img"
                     loading="lazy"
                     className=""
@@ -188,22 +190,26 @@ const PayoutApiPage = () => {
                   />
                 </div>
 
-                <div className="">
-                  <h3>Build for Developers</h3>
+                <div style={{ width: "100%" }}>
+                  <h3>Designed for Developers</h3>
                   <div className="custom-underline"></div>
                   <div style={{ marginTop: "1.5rem" }}>
-                    <h2>Easy Integration For Developers</h2>
+                    <h2>Effortless Integration</h2>
                     <ul style={{ marginLeft: "1rem" }} className="advantage">
                       <li>
-                        Just pass some parameters and payout will made to
-                        defined Bank Account/VPA in Realtime
+                        Seamlessly process payouts in real-time by simply
+                        passing a few parameters to the API for payments to
+                        specified Bank Accounts or VPAs.
                       </li>
                       <li>
-                        Encryption/Decryption functions defined in source codes.
-                        Make your platform and payments secure with
-                        Encryption/Decryption
+                        Built-in Encryption and Decryption functions in the
+                        source code ensure robust security for your platform and
+                        transactions.
                       </li>
-                      <li>Best support for integration</li>
+                      <li>
+                        Comprehensive assistance to ensure smooth and
+                        hassle-free API integration.
+                      </li>
                     </ul>
 
                     <div className="contact-buttons">

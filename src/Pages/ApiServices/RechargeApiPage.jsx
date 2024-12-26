@@ -4,13 +4,34 @@ import "./api.css";
 import { Check } from "lucide-react";
 
 const advantages = [
-  "A comprehensive recharge structure enables you to recharge for all network operators from a solitary platform.",
-  "Set up your recharge business with elevated commissions.",
-  "Returns the amount automatically within 24 hours in the situation of recharge non-success.",
-  "Extremely shielded and validated APIs.",
-  "Gives giant transaction volume progressing platform.",
-  "Gives immediate operation transaction ID for all the transactions.",
-  "Enables you to approach from anywhere in India the numbers associated to any set.",
+  {
+    title: "Unified Platform",
+    desc: "Recharge for all network operators from a single platform.",
+  },
+  {
+    title: "High Commissions",
+    desc: "Maximize profits with elevated commission rates.",
+  },
+  {
+    title: "Automated Refunds",
+    desc: "Failed recharges are refunded automatically within 24 hours.",
+  },
+  {
+    title: "Secure & Verified APIs",
+    desc: "Enjoy highly protected and validated API integrations.",
+  },
+  {
+    title: "Scalable Transactions",
+    desc: "Supports high-volume transactions with ease.",
+  },
+  {
+    title: "Instant Transaction ID",
+    desc: "Get immediate transaction IDs for seamless operations.",
+  },
+  {
+    title: "Nationwide Reach",
+    desc: "Access recharge services for any network across India.",
+  },
 ];
 
 const rechargeSteps = [
@@ -58,14 +79,21 @@ const RechargeApiPage = () => {
             </p>
             <div className="advantage-container">
               <div>
-                <h2>Advantages of Our Recharge API</h2>
-                <div className="advantage">
-                  {advantages.map((advantage, index) => (
-                    <span key={index}>
+                <h2>Benefits of Using Our Recharge API</h2>
+                <div className="advantage-two">
+                  {advantages.map((ser, id) => (
+                    <span key={id}>
                       <span>
                         <Check className="check-icon" />
                       </span>
-                      {advantage}
+                      {ser.title ? (
+                        <span className="title-desc-container">
+                          <span className="title-text">{ser.title}:</span>
+                          {ser.desc}
+                        </span>
+                      ) : (
+                        ser.desc
+                      )}
                     </span>
                   ))}
                 </div>

@@ -59,7 +59,7 @@ const DmtPage = () => {
                 security, and reliability every time.
               </p>
               <div className="advantage-container-two">
-                <div>
+                <div style={{width: "100%"}}>
                   <h2>DMT Distributor Services</h2>
                   <div className="advantage-two">
                     {dmtServices.map((ser, id) => (
@@ -79,9 +79,9 @@ const DmtPage = () => {
                     ))}
                   </div>
                 </div>
-                <div>
+                <div style={{width: "100%"}}>
                   <img
-                    src="/images/dmt.webp"
+                    src="/images/dmt.svg"
                     alt="img"
                     loading="lazy"
                     className=""

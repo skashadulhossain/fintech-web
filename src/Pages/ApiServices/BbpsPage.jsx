@@ -102,17 +102,19 @@ const BbpsPage = () => {
             <div className="bbps-two-div">
               <div className="bbps-details">
                 <div className="">
-                  <h3>BBPS PARTNERS</h3>
+                  <h3>Becoming an Authorized BBPS Partner</h3>
                   <div className="custom-underline"></div>
                   <div style={{ marginTop: "1rem" }}>
-                    <h4>Easy for you and your customers!</h4>
+                    <h4>
+                      Simplifying Bill Payments for You and Your Customers
+                    </h4>
                     <p style={{ marginTop: "5px" }}>
-                      Once you get listed as an authorized BBPS partner, your
-                      customers will enjoy the ease of hassle-free bill
-                      payments. Also, it's a great opportunity for you to
-                      enhance your customer's trust. BBPS allows you to build
-                      healthy customer relationships, and leverages your
-                      business network.
+                      By getting listed as an authorized BBPS partner, you
+                      provide your customers with the convenience of hassle-free
+                      bill payments. This opportunity not only enhances their
+                      trust in your services but also helps you strengthen
+                      customer relationships. Moreover, BBPS empowers you to
+                      expand your business network and foster long-term growth.
                     </p>
                   </div>
                 </div>
@@ -142,15 +144,18 @@ const BbpsPage = () => {
                   <h3>BILLERS</h3>
                   <div className="custom-underline"></div>
                   <div style={{ marginTop: "1rem" }}>
-                    <h4>
-                      Bill collection more cost-effective with wider reach!
-                    </h4>
+                    <h4>Streamline Bill Collection with Wider Reach!</h4>
                     <p style={{ marginTop: "5px" }}>
-                      No more chasing after bills. With BBPS, you can collect
-                      your bills fast and keep track of all payments. It offers
-                      a wider reach through different channels of payment and
-                      helps you earn your customer's trust.
+                      Say goodbye to chasing after bills. BBPS makes bill
+                      collection faster and more efficient while ensuring you
+                      can track all payments seamlessly. With access to a
+                      broader audience through multiple payment channels, you
+                      can enhance your operations and build trust with your
+                      customers.
                     </p>
+                  </div>
+                  <div className="contact-buttons">
+                    <button>Contact Us</button>
                   </div>
                 </div>
               </div>
@@ -171,31 +176,27 @@ const BbpsPage = () => {
 
                 <div style={{ margin: "2rem 0 2rem 0" }}>
                   <p>
-                    The Bharat Bill Payment System facilitates the instalment of
-                    bills and enhances the security and speed of bill payment.
-                    The administration is accessible in different ways: on the
-                    web and through a system of specialists. A momentary
-                    affirmation is produced for the bill installments. The BBPS
-                    will transition the public from cash to an electronic
-                    payment framework, making it less reliant on money. You can
-                    currently pay utility charges (gas, power, water, and DTH).
+                    The Bharat Bill Payment System (BBPS) revolutionizes bill
+                    payments by providing a secure, fast, and reliable way to
+                    settle utility charges. Accessible both online and through a
+                    vast network of agents, BBPS ensures seamless transactions
+                    with instant payment confirmations.
                   </p>
                   <p style={{ marginTop: "1rem" }}>
-                    It offers unwavering quality and wellbeing for the
-                    exchanges. You can pay your bills utilizing BBPS from
-                    anywhere, whenever. Additionally, it enables you to pay
-                    charges through the systems of operators or on the web. You
-                    have several payment options with instant confirmation of
-                    the payment. You can pay your bill with BBPS using
-                    electronic exchange rather than real money. Subsequently, it
-                    is said to be a major advance towards a paperless money
-                    society.
+                    By enabling electronic payments for services like gas,
+                    electricity, water, and DTH, BBPS reduces dependence on cash
+                    and promotes a paperless, digital society. It offers the
+                    convenience of multiple payment modes, whether online or
+                    through agent networks, empowering users to pay bills
+                    anytime, anywhere. With BBPS, you experience enhanced safety
+                    and reliability for all transactions, marking a significant
+                    step toward a cashless future.
                   </p>
                 </div>
 
                 <div style={{ width: "100%" }}>
                   <img
-                    src="/images/biller-img-1.webp"
+                    src="/images/bbps-api.jpg"
                     alt="img"
                     loading="lazy"
                     className=""
@@ -205,24 +206,27 @@ const BbpsPage = () => {
               </div>
               <div>
                 <h2>
-                  <span style={{ fontWeight: 600 }}>Bharat BillPay</span> - The
-                  One stop destination for all recurring payments:
+                  <span style={{ fontWeight: 600 }}>Bharat BillPay</span> - Your
+                  One-Stop Solution for Recurring Payments:
                 </h2>
                 <div className="custom-underline"></div>
                 <p style={{ marginTop: "1rem" }}>
-                  The Bharat Bill Payment System accepts multiple payment
-                  methods and provides instant payment confirmation via SMS or
-                  receipt with a Be-assured symbol. It offers repetitive
-                  payments of all types, like electricity, telecom, DTH, gas,
-                  and water bills; insurance premiums; loan repayments; cable;
-                  FASTag recharge; education fees; credit card; municipal taxes;
-                  mutual subscription fees; housing society dues; etc., through
-                  a single window. An effective mechanism for handling consumer
-                  complaints has also been put in place to support consumers
-                  regarding any bill-related problems in BBPS. Roundpay is the
-                  most reliable brand among the BBPS API providers in India.
+                  Bharat Bill Payment System (BBPS) simplifies recurring
+                  payments by accepting multiple payment methods and providing
+                  instant payment confirmations via SMS or receipt marked with
+                  the Be-Assured symbol. Whether it's electricity, telecom, DTH,
+                  gas, water bills, insurance premiums, loan repayments, cable,
+                  FASTag recharge, education fees, credit card payments,
+                  municipal taxes, mutual subscription fees, or housing society
+                  dues, BBPS consolidates them all into a single window for your
+                  convenience.
                 </p>
-
+                <p style={{ marginTop: "1rem" }}>
+                  Additionally, BBPS offers an efficient consumer complaint
+                  handling system to resolve bill-related issues promptly.
+                  Experience seamless bill payment solutions with the trusted
+                  reliability of BBPS API services in India.
+                </p>
                 <div className="bbps-links">
                   {bbpsServices.map((service, id) => (
                     <>
