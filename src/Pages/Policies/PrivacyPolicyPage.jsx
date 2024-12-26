@@ -12,75 +12,69 @@ const PrivacyPolicyPage = () => {
         <div className="policy-container">
           <div className="policy-header">
             <h1>Privacy Policy</h1>
-            <span>
+            <p>
               PN SOFTWARE TECH PRIVATE LIMITED. ("Company", "we", "our", or
               "us") is committed to protecting your privacy. This Privacy Policy
               outlines how we collect, use, and safeguard your information when
               you visit our website, <a href="/">www.pnsoftware.org</a> ("Website"). By using
               our website, you agree to the practices described in this Privacy
               Policy. If you do not agree, please do not use the Website.
-            </span>
+            </p>
           </div>
 
           <div className="policy-section">
-            <h2 >1. Information We Collect</h2>
+            <h2>1. Information We Collect</h2>
             <p>We may collect the following types of information from you:</p>
 
-            <h3 style={{ display: "flex", alignItems: "center" }}>
-              <ChevronRight style={{ color: "#8084FF" }} /> 1.1 Personal
-              Information
-            </h3>
-            <p>Information you provide directly to us, such as:</p>
-            <ul>
-              <li>Name</li>
-              <li>Email address</li>
-              <li>Phone number</li>
-              <li>Address</li>
-              <li>
-                Other information provided through forms, registrations, or
-                communication with us
-              </li>
-            </ul>
+            <div className="policy-subsection">
+              <h3>
+                <ChevronRight className="chevron-icon" /> 1.1 Personal Information
+              </h3>
+              <p>Information you provide directly to us, such as:</p>
+              <ul>
+                <li>Name</li>
+                <li>Email address</li>
+                <li>Phone number</li>
+                <li>Address</li>
+                <li>Other information provided through forms, registrations, or communication with us</li>
+              </ul>
+            </div>
 
-            <h3 style={{ display: "flex", alignItems: "center" }}>
-              <ChevronRight style={{ color: "#8084FF" }} />
-              1.2 Non-Personal Information
-            </h3>
-            <p>
-              Automatically collected data when you use our website, including:
-            </p>
-            <ul>
-              <li>IP address</li>
-              <li>Browser type and version</li>
-              <li>Operating system</li>
-              <li>Referring website URLs</li>
-              <li>Pages viewed and the time spent on the Website</li>
-            </ul>
+            <div className="policy-subsection">
+              <h3>
+                <ChevronRight className="chevron-icon" /> 1.2 Non-Personal Information
+              </h3>
+              <p>Automatically collected data when you use our website, including:</p>
+              <ul>
+                <li>IP address</li>
+                <li>Browser type and version</li>
+                <li>Operating system</li>
+                <li>Referring website URLs</li>
+                <li>Pages viewed and the time spent on the Website</li>
+              </ul>
+            </div>
 
-            <h3 style={{ display: "flex", alignItems: "center" }}>
-              <ChevronRight style={{ color: "#8084FF" }} />
-              1.3 Cookies and Tracking Technologies
-            </h3>
-            <p>
-              We use cookies and similar technologies to enhance your
-              experience. Cookies are small data files stored on your device to
-              help us remember preferences and analyse website traffic. You can
-              manage or disable cookies in your browser settings, but some
-              features of the Website may not function properly.
-            </p>
+            <div className="policy-subsection">
+              <h3>
+                <ChevronRight className="chevron-icon" /> 1.3 Cookies and Tracking Technologies
+              </h3>
+              <p>
+                We use cookies and similar technologies to enhance your
+                experience. Cookies are small data files stored on your device to
+                help us remember preferences and analyse website traffic. You can
+                manage or disable cookies in your browser settings, but some
+                features of the Website may not function properly.
+              </p>
+            </div>
           </div>
 
           <div className="policy-section">
             <h2>2. How We Use Your Information</h2>
             <p>We use the collected information for the following purposes:</p>
-
             <ul>
               <li>To provide and improve our services.</li>
               <li>To respond to inquiries and support requests.</li>
-              <li>
-                To send promotional and informational communications (only with
-                your consent).
-              </li>
+              <li>To send promotional and informational communications (only with your consent).</li>
               <li>To analyse website usage and improve user experience.</li>
               <li>To comply with legal obligations and enforce our terms.</li>
             </ul>
@@ -92,32 +86,34 @@ const PrivacyPolicyPage = () => {
               We do not sell, rent, or trade your personal information. However,
               we may share your information in the following circumstances:
             </p>
-
-            <h3 style={{ display: "flex", alignItems: "center" }}>
-              <ChevronRight style={{ color: "#8084FF" }} /> 3.1 With Service
-              Providers
-            </h3>
-            <p>
-              We may share your information with trusted third-party service
-              providers who assist us in operating our website or providing
-              services. These parties are bound by confidentiality obligations.
-            </p>
-            <h3 style={{ display: "flex", alignItems: "center" }}>
-              <ChevronRight style={{ color: "#8084FF" }} /> 3.2 Legal
-              Obligations
-            </h3>
-            <p>
-              We may disclose your information if required to do so by law or in
-              response to legal processes, such as subpoenas or court orders.
-            </p>
-            <h3 style={{ display: "flex", alignItems: "center" }}>
-              <ChevronRight style={{ color: "#8084FF" }} /> 3.3 Business
-              Transfers
-            </h3>
-            <p>
-              In the event of a merger, acquisition, or sale of assets, your
-              information may be transferred as part of the transaction.
-            </p>
+            <div className="policy-subsection">
+              <h3>
+                <ChevronRight className="chevron-icon" /> 3.1 With Service Providers
+              </h3>
+              <p>
+                We may share your information with trusted third-party service
+                providers who assist us in operating our website or providing
+                services. These parties are bound by confidentiality obligations.
+              </p>
+            </div>
+            <div className="policy-subsection">
+              <h3>
+                <ChevronRight className="chevron-icon" /> 3.2 Legal Obligations
+              </h3>
+              <p>
+                We may disclose your information if required to do so by law or in
+                response to legal processes, such as subpoenas or court orders.
+              </p>
+            </div>
+            <div className="policy-subsection">
+              <h3>
+                <ChevronRight className="chevron-icon" /> 3.3 Business Transfers
+              </h3>
+              <p>
+                In the event of a merger, acquisition, or sale of assets, your
+                information may be transferred as part of the transaction.
+              </p>
+            </div>
           </div>
 
           <div className="policy-section">
@@ -137,27 +133,16 @@ const PrivacyPolicyPage = () => {
               Depending on your location, you may have the following rights
               regarding your information:
             </p>
-
             <ul>
               <li>Access and receive a copy of your personal data.</li>
               <li>Request corrections to inaccurate or incomplete data.</li>
-              <li>
-                Request deletion of your data (subject to legal obligations).
-              </li>
-              <li>
-                Withdraw consent for marketing communications at any time.
-              </li>
+              <li>Request deletion of your data (subject to legal obligations).</li>
+              <li>Withdraw consent for marketing communications at any time.</li>
               <li>Opt-out of certain data processing activities.</li>
             </ul>
-
             <p>
-              <span>
-                To exercise these rights, please contact us at
-                <a href="mailto:contact@pnsoftware.org">
-                  contact@pnsoftware.org
-                </a>
-                .
-              </span>
+              To exercise these rights, please contact us at
+              <a href="mailto:contact@pnsoftware.org">contact@pnsoftware.org</a>.
             </p>
           </div>
 
@@ -208,26 +193,9 @@ const PrivacyPolicyPage = () => {
               Privacy Policy, please contact us at:
             </p>
             <p>
-              <strong>Email:</strong>{" "}
-              <a href="mailto:contact@pnsoftware.org">contact@pnsoftware.org</a>
-            </p>
-            <p>
-              <strong>Address:</strong>{" "}
-              WEST JAGADANANDAPUR, BETHUADAHARI, NAKASHIPARA, NADIA- 741126,
-              WEST BENGAL.
+              <strong>Email:</strong> <a href="mailto:contact@pnsoftware.org">contact@pnsoftware.org</a>
             </p>
           </div>
-
-          {/* <div className="policy-footer">
-            <p>
-              By using this website, you acknowledge that you have read,
-              understood, and agreed to these Privacy Policy.
-            </p>
-            <p>
-              <strong>Effective Date:</strong> 1st January 2025 &nbsp;&nbsp;
-              <strong>Last Updated:</strong> 1st January 2025
-            </p>
-          </div> */}
         </div>
       </section>
       <Footer />

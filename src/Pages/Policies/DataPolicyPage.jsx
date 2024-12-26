@@ -10,7 +10,7 @@ const DataPolicyPage = () => {
       <section className="padding-layout">
         <div className="policy-container">
           <div className="policy-header">
-            <h1>Data Use Policy</h1>
+            <h1>Legal</h1>
             <span>
               PN SOFTWARE TECH PRIVATE LIMITED. ("Company", "we", "our", or
               "us") values your privacy and is committed to responsibly using
@@ -235,10 +235,6 @@ const DataPolicyPage = () => {
                 <a href="mailto:contact@pnsoftware.org">
                   contact@pnsoftware.org
                 </a>
-              </p>
-              <p>
-                <strong>Address:</strong> WEST JAGADANANDAPUR, BETHUADAHARI,
-                NAKASHIPARA, NADIA- 741126, WEST BENGAL.
               </p>
             </div>
           </div>
