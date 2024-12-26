@@ -50,7 +50,7 @@ const router = createBrowserRouter(
       <Route path="/PayoutApi" element={<PayoutApiPage />} />
       <Route path="/PanCardApi" element={<PanCardApiPage />} />
       <Route path="/Blog" element={<Blogs />} />
-      <Route path="Contact" element={<ContactUs />} />
+      <Route path="/Contact" element={<ContactUs />} />
       <Route path="/BulkSMS" element={<BulkSMS />} />
       <Route path="/Solutions" element={<Solutions />} />
       <Route path="/OperatorFinder" element={<OperatorFinder />} />
@@ -66,10 +66,10 @@ const router = createBrowserRouter(
       <Route path="/IndoNepal" element={<IndoNepalPage />} />
       <Route path="/PrepaidCard" element={<PrepaidCardPage />} />
       <Route path="/PanUtiPage" element={<PanUtiPage />} />
-      <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
-      <Route path="/term-condition" element={<TermPage />} />
-      <Route path="/data-user-policy" element={<DataPolicyPage />} />
-      <Route path="/refund-cancellation-policy" element={<RefundPage />} />
+      <Route path="/PrivacyPolicy" element={<PrivacyPolicyPage />} />
+      <Route path="/TermCondition" element={<TermPage />} />
+      <Route path="/DataUserPolicy" element={<DataPolicyPage />} />
+      <Route path="/RefundCancellationPolicy" element={<RefundPage />} />
     </Route>
   )
 );
