@@ -59,10 +59,13 @@
 }
 
 .footer-left-nav-box{
-  gap: 8px;
+  gap:5x;
   display: flex;
   flex-wrap: wrap;
-  margin-top: 20px;
+  margin-top:60px;
+
+  justify-content:space-evenly;
+  
 }
 
 .footer-left-nav-box a{
