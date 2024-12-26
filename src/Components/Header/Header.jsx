@@ -1,106 +1,111 @@
-import React, { useState } from 'react';
-import { IoIosArrowDown } from 'react-icons/io';
-import logoimg from './Image/Logo img.png';
-import './Header.css';
+import React, { useState } from "react";
+import { IoIosArrowDown } from "react-icons/io";
+import logoimg from "./Image/logo.png";
+import "./Header.css";
+import { useLocation, useParams } from "react-router-dom";
 
 const Header = () => {
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [menuOpen, setMenuOpen] = useState(false);
   const [mobileActiveDropdown, setMobileActiveDropdown] = useState(null);
 
-  const dropdownContent = {
-    about: [
-      { title: 'Overview', link: '/About' },
-      { title: 'Career', link: '#' }
-    ],
-    apiServices: [
-      { title: 'Recharge API', link: '/RechargeApi' },
-      { title: 'Travel API', link: '/TravelApi' },
-      { title: 'Domestic Money Transfer', link: '/DmtPage' },
-      { title: 'BBPS', link: '/BbpsPage' },
-      { title: 'Payout API', link: '/PayoutApi' },
-      { title: 'Pan Card API', link: '/PanCardApi' }
-    ],
-    fintech: [
-      { title: 'AePS', link: '/AepsPage' },
-      { title: 'POS', link: '/PosPage' },
-      { title: 'Mini ATM', link: '/MatmPage' },
-      { title: 'Indo Nepal Money Transfer', link: '/IndoNepal' },
-      { title: 'Prepaid Card', link: '/PrepaidCard' },
-      { title: 'Pan Card - UTI', link: '/PanUtiPage' }
-    ],
-    itServices: [
-      { title: 'Software Development', link: '/SoftwareDevelopment' },
-      { title: 'MLM Software', link: '/MLMSoftware' },
-      { title: 'Recharge Application', link: '/RechargeApplication' },
-      { title: 'Digital Marketing', link: '/DigitalMarketing' },
-      { title: 'Blockchain Development', link: '/Blockchain' }
-    ],
-    vasServices: [
-      { title: 'Long/Short Code', link: '/Solutions' },
-      { title: 'Bulk SMS', link: '/BulkSMS' },
-      { title: 'Sim Hosting', link: '/Solutions' },
-      { title: 'HLR Lookup', link: '/OperatorFinder' },
-      { title: 'Pincode Finder', link: '/OperatorFinder' },
-      { title: 'IFSC Finder', link: '/OperatorFinder' }
-    ]
-  };
+  const { pathname } = useLocation();
+
+  const dropdownData = [
+    {
+      key: "about",
+      title: "About",
+      items: [
+        { title: "Overview", link: "/About" },
+        { title: "Career", link: "#" },
+      ],
+    },
+    {
+      key: "apiServices",
+      title: "API Service",
+      items: [
+        { title: "Recharge API", link: "/RechargeApi" },
+        { title: "Travel API", link: "/TravelApi" },
+        { title: "Domestic Money Transfer", link: "/DmtPage" },
+        { title: "BBPS", link: "/BbpsPage" },
+        { title: "Payout API", link: "/PayoutApi" },
+        { title: "Pan Card API", link: "/PanCardApi" },
+      ],
+    },
+    {
+      key: "fintech",
+      title: "FinTech",
+      items: [
+        { title: "AePS", link: "/AepsPage" },
+        { title: "POS", link: "/PosPage" },
+        { title: "Mini ATM", link: "/MatmPage" },
+        { title: "Indo Nepal Money Transfer", link: "/IndoNepal" },
+        { title: "Prepaid Card", link: "/PrepaidCard" },
+        { title: "Pan Card - UTI", link: "/PanUtiPage" },
+      ],
+    },
+    {
+      key: "itServices",
+      title: "IT Service",
+      items: [
+        { title: "Software Development", link: "/SoftwareDevelopment" },
+        { title: "MLM Software", link: "/MLMSoftware" },
+        { title: "Recharge Application", link: "/RechargeApplication" },
+        { title: "Digital Marketing", link: "/DigitalMarketing" },
+        { title: "Blockchain Development", link: "/Blockchain" },
+      ],
+    },
+    {
+      key: "vasServices",
+      title: "Vas Service",
+      items: [
+        { title: "Long/Short Code", link: "/Solutions" },
+        { title: "Bulk SMS", link: "/BulkSMS" },
+        { title: "Sim Hosting", link: "/Solutions" },
+        { title: "HLR Lookup", link: "/OperatorFinder" },
+        { title: "Pincode Finder", link: "/OperatorFinder" },
+        { title: "IFSC Finder", link: "/OperatorFinder" },
+      ],
+    },
+  ];
 
   const handleMouseEnter = (dropdown) => {
-    // Only apply hover for desktop
     if (window.innerWidth > 1024) {
       setActiveDropdown(dropdown);
     }
   };
 
   const handleMouseLeave = () => {
-    // Only apply hover for desktop
     if (window.innerWidth > 1024) {
       setActiveDropdown(null);
     }
   };
 
   const toggleMobileDropdown = (dropdown) => {
-    // Only apply for mobile
     if (window.innerWidth <= 1024) {
-      setMobileActiveDropdown(mobileActiveDropdown === dropdown ? null : dropdown);
+      setMobileActiveDropdown(
+        mobileActiveDropdown === dropdown ? null : dropdown
+      );
     }
   };
 
   const renderDropdown = (items) => (
     <div className="dropdown-content">
       {items.map((item, index) => (
-        <a key={index} href={item.link} className="dropdown-item">
+        <a
+          key={index}
+          href={item.link}
+          style={{ color: pathname === item.link ? "white" : "gray", fontSize: "15px" }}
+          className={` ${pathname === item.link ? "active" : "dropdown-item"}`}
+        >
           {item.title}
         </a>
       ))}
     </div>
   );
 
-  const renderDropdownTrigger = (text, dropdownKey) => (
-    <div
-      className="dropdown-wrapper"
-      onMouseEnter={() => handleMouseEnter(dropdownKey)}
-      onMouseLeave={handleMouseLeave}
-      onClick={() => toggleMobileDropdown(dropdownKey)}
-    >
-      <a href="#" className="dropdown-trigger">
-        {text}
-        <IoIosArrowDown
-          size={14}
-          className={`dropdown-icon ${
-            (activeDropdown === dropdownKey || mobileActiveDropdown === dropdownKey) ? 'rotated' : ''
-          }`}
-        />
-      </a>
-      {(activeDropdown === dropdownKey || mobileActiveDropdown === dropdownKey) && 
-        renderDropdown(dropdownContent[dropdownKey])}
-    </div>
-  );
-
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
-    // Reset mobile dropdown when closing menu
     if (menuOpen) {
       setMobileActiveDropdown(null);
     }
@@ -111,23 +116,46 @@ const Header = () => {
       <div className="header-container">
         {/* Logo */}
         <div className="header-logo-box">
-          <a href="/"><img src={logoimg} alt="Logo" /></a>
+          <a href="/">
+            <img src={logoimg} alt="Logo" />
+          </a>
         </div>
-        
+
         {/* Navigation Links */}
-        <div className={`header-links-box ${menuOpen ? 'active' : ''}`}>
+        <div className={`header-links-box ${menuOpen ? "active" : ""}`}>
           <a href="/">Home</a>
-          {renderDropdownTrigger('About', 'about')}
-          {renderDropdownTrigger('API Service', 'apiServices')}
-          {renderDropdownTrigger('FinTech', 'fintech')}
-          {renderDropdownTrigger('IT Service', 'itServices')}
-          {renderDropdownTrigger('Vas Service', 'vasServices')}
+          {dropdownData.map(({ key, title, items }) => (
+            <div
+              key={key}
+              className="dropdown-wrapper"
+              onMouseEnter={() => handleMouseEnter(key)}
+              onMouseLeave={handleMouseLeave}
+              onClick={() => toggleMobileDropdown(key)}
+            >
+              <a href="#" className="dropdown-trigger">
+                {title}
+                <IoIosArrowDown
+                  size={14}
+                  className={`dropdown-icon ${
+                    activeDropdown === key || mobileActiveDropdown === key
+                      ? "rotated"
+                      : ""
+                  }`}
+                />
+              </a>
+              {(activeDropdown === key || mobileActiveDropdown === key) &&
+                renderDropdown(items)}
+            </div>
+          ))}
           <a href="/Blog">Blog</a>
           <a href="/Contact">Contact</a>
         </div>
-        
+
         {/* Hamburger Menu Icon */}
-        <div className={`hamburger-menu ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}>
+        <div
+          className={`hamburger-menu ${menuOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
           <span className="line"></span>
           <span className="line"></span>
           <span className="line"></span>
