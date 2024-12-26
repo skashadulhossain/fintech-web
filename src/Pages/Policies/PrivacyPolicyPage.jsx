@@ -211,11 +211,11 @@ const PrivacyPolicyPage = () => {
               <strong>Email:</strong>{" "}
               <a href="mailto:contact@pnsoftware.org">contact@pnsoftware.org</a>
             </p>
-            <p>
+            {/* <p>
               <strong>Address:</strong>{" "}
               WEST JAGADANANDAPUR, BETHUADAHARI, NAKASHIPARA, NADIA- 741126,
               WEST BENGAL.
-            </p>
+            </p> */}
           </div>
 
           {/* <div className="policy-footer">
