@@ -26,7 +26,11 @@ const TermPage = () => {
               18 years of age and have the legal capacity to enter into a
               binding agreement. Your continued use of the website constitutes
               your acceptance of these Terms, as well as our Privacy Policy,
-              available at [Insert Privacy Policy Link].
+              available at{" "}
+              <span>
+                <a href="/privacy-policy">Privacy Policy</a>
+              </span>
+              .
             </p>
           </div>
           <div className="policy-section">
@@ -59,8 +63,8 @@ const TermPage = () => {
                 or its related systems.
               </li>
               <li>
-                Engage in any conduct that could harm the website&apos;s performance
-                or its users.
+                Engage in any conduct that could harm the website&apos;s
+                performance or its users.
               </li>
             </ul>
             <h3 style={{ display: "flex", alignItems: "center" }}>
@@ -142,8 +146,11 @@ const TermPage = () => {
             <p>
               Your use of the website is also governed by our Privacy Policy,
               which outlines how we collect, use, and protect your personal
-              information. Please review our Privacy Policy at [Privacy Policy
-              Link].
+              information. Please review our{" "}
+              <span>
+                <a href="/privacy-policy">Privacy Policy</a>
+              </span>
+              .
             </p>
           </div>
           <div className="policy-section">
@@ -159,8 +166,15 @@ const TermPage = () => {
             <p>
               These Terms shall be governed by and construed in accordance with
               the laws of India, and any disputes arising hereunder shall be
-              subject to the exclusive jurisdiction of the courts in
-              [Krishnagar, India].
+              subject to the exclusive jurisdiction of the courts in{" "}
+              <a
+                href="https://nadia.dcourts.gov.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Krishnagar, India
+              </a>
+              .
             </p>
           </div>
           <div className="policy-section">

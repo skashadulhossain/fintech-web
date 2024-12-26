@@ -42,8 +42,7 @@ const RefundPage = () => {
               <li>
                 <strong>Software Products:</strong> Refunds are only provided
                 for technical issues that cannot be resolved by our support
-                team. Refund requests must be made within [Insert Timeframe,
-                e.g., 7 days] of purchase.
+                team. Refund requests must be made within 3 days of purchase.
               </li>
               <li>
                 <strong>Subscription Services:</strong> Refunds for
