@@ -1,0 +1,122 @@
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 99999;
+  padding: 1rem;
+}
+
+.modal-content {
+  background-color: #ffffffbe;
+  backdrop-filter: blur(8px);
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #8084ff;
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+  max-height: 95vh;
+  overflow-y: auto;
+}
+
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: rgba(255, 0, 0, 0.127);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 1px solid rgba(255, 0, 0, 0.205);
+}
+
+.close:hover,
+.close:focus {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  cursor: pointer;
+  background-color: rgba(255, 0, 0, 0.573);
+}
+
+.form-group {
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+.form-sub-group {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-flex-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #6e73ff63;
+  border-radius: 8px;
+  height: 40px;
+  background-color: white;
+}
+
+.submit-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.submit-button {
+  background-color: #8084ff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  height: 45px;
+}
+
+.submit-button:hover {
+  background-color: #6e72ff;
+}
+
+@media (min-width: 640px) {
+  .form-group {
+    margin-bottom: 12px;
+  }
+
+  .form-sub-group {
+    flex-direction: row;
+  }
+
+  .form-flex-box {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}

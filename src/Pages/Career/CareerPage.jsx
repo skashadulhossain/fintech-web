@@ -5,11 +5,19 @@ import Footer from "../../Components/Footer/Footer";
 import JobDetails from "../../Components/CareerCompoents/JobDetails";
 import JobCard from "../../Components/CareerCompoents/JobCard";
 import { careerArr } from "../../js/pageOptions";
+import JobApplicationModal from "../../Components/Modals/JobApplicationModal";
 
 const CareerPage = () => {
   const [selectCard, setSelectCard] = useState(careerArr[0]);
+  const [showModal, setShowModal] = useState(false);
   return (
     <>
+      {showModal && (
+        <JobApplicationModal
+          showModal={showModal}
+          setShowModal={setShowModal}
+        />
+      )}
       <Header />
       <section className="main-career-section padding-layout">
         <div style={{ textAlign: "center", marginBottom: "2rem" }}>
@@ -36,7 +44,7 @@ const CareerPage = () => {
             ))}
           </div>
           <div className="career-details-container">
-            <JobDetails selectCard={selectCard} />
+            <JobDetails selectCard={selectCard} setShowModal={setShowModal} />
           </div>
         </div>
       </section>

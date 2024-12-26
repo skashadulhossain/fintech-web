@@ -1,17 +1,21 @@
 import React from "react";
 import "../../Pages/Career/Career.css";
 
-const JobDetails = ({ selectCard }) => {
+const JobDetails = ({ selectCard, setShowModal }) => {
   return (
     <div className="job-details">
       <div className="job-details-header">
         <div>
           <h3>{selectCard.shortTitle}</h3>
-          <p style={{fontWeight: 700, color: "#8084FF", marginTop: "1rem"}}>PN Software Tech Pvt. Ltd.</p>
+          <p style={{ fontWeight: 700, color: "#8084FF", marginTop: "1rem" }}>
+            PN Software Tech Pvt. Ltd.
+          </p>
           <p>Kolkata, West Bengal</p>
         </div>
         <div className="">
-          <button className="apply-button">Apply</button>
+          <button onClick={() => setShowModal(true)} className="apply-button">
+            Apply
+          </button>
         </div>
       </div>
       <div className="job-info">
@@ -39,7 +43,11 @@ const JobDetails = ({ selectCard }) => {
               {Array.isArray(jd.description) ? (
                 <ul className="list-disc ml-5">
                   {jd.description.map((desc, index) => (
-                    <li style={{ marginLeft: "1.1rem" }} key={index} className="description-text">
+                    <li
+                      style={{ marginLeft: "1.1rem" }}
+                      key={index}
+                      className="description-text"
+                    >
                       {desc}
                     </li>
                   ))}
@@ -62,8 +70,8 @@ const JobDetails = ({ selectCard }) => {
           If you are a talented {selectCard.shortTitle} with a passion for
           creating exceptional mobile applications, and you're ready to make a
           significant impact in the payments industry, we encourage you to
-          apply. Join PN Software Tech Pvt. Ltd., and together, we can shape the future of
-          mobile payments.
+          apply. Join PN Software Tech Pvt. Ltd., and together, we can shape the
+          future of mobile payments.
         </p>
         <p className="gradient font-semibold mt-2">
           To apply, please submit your resume, cover letter, and portfolio to
