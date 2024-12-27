@@ -27,12 +27,12 @@ h2 {
   margin: 1.5rem 0 1rem;
 }
 
-h3 {
+.policy-section h3 {
   font-size: 1.4rem;
   margin: 1.2rem 0 0.8rem;
 }
 
-p {
+.policy-section p {
   line-height: 1.6;
   margin-bottom: 1rem;
 }

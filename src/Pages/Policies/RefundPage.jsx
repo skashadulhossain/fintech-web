@@ -22,7 +22,7 @@ const RefundPage = () => {
             </span>
           </div>
 
-          <div className="policy-content">
+          <div className="policy-section">
             <h2>1. General Policy</h2>
             <p>
               Refunds and cancellations are subject to the terms outlined in
@@ -31,7 +31,7 @@ const RefundPage = () => {
             </p>
           </div>
 
-          <div className="policy-content">
+          <div className="policy-section">
             <h2>2. Eligibility for Refunds</h2>
 
             <h3 style={{ display: "flex", alignItems: "center" }}>
@@ -77,7 +77,7 @@ const RefundPage = () => {
             </ul>
           </div>
 
-          <div className="policy-content">
+          <div className="policy-section">
             <h2>3. Non-Refundable Items</h2>
             <ul>
               <li>Downloaded digital products, if delivered successfully.</li>
@@ -86,7 +86,7 @@ const RefundPage = () => {
             </ul>
           </div>
 
-          <div className="policy-content">
+          <div className="policy-section">
             <h2>4. Cancellation Policy</h2>
 
             <h3 style={{ display: "flex", alignItems: "center" }}>
@@ -118,7 +118,7 @@ const RefundPage = () => {
             </ul>
           </div>
 
-          <div className="policy-content">
+          <div className="policy-section">
             <h2>5. How to Request a Refund or Cancellation</h2>
             <p>
               To request a refund or cancellation, please follow these steps:
@@ -143,7 +143,7 @@ const RefundPage = () => {
             </ol>
           </div>
 
-          <div className="policy-content">
+          <div className="policy-section">
             <h2>6. Processing Refunds</h2>
             <ul>
               <li>
@@ -157,7 +157,7 @@ const RefundPage = () => {
             </ul>
           </div>
 
-          <div className="policy-content">
+          <div className="policy-section">
             <h2>7. Changes to This Policy</h2>
             <p>
               We reserve the right to modify this Refund and Cancellation Policy
@@ -167,7 +167,7 @@ const RefundPage = () => {
             </p>
           </div>
 
-          <div className="policy-content">
+          <div className="policy-section">
             <h2>8. Contact Us</h2>
             <p>
               If you have questions or need assistance regarding this Refund and

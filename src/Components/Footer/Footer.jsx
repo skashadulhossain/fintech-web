@@ -25,10 +25,10 @@ const Footer = () => {
             </Link>
           <div className="footer-left-nav-box">
             <a href="/PrivacyPolicy">Privacy Policy</a>
-            <a href="/TermCondition">Terms of Use</a>
-            <a href="/RefundCancellationPolicy">Sales and Refunds</a>
-            <a href="/DataUserPolicy">Legal</a>
-            <a href="#">Site Map</a>
+            <a href="/TermCondition">Terms & Conditions</a>
+            <a href="/RefundCancellationPolicy">Refunds & Cancellations</a>
+            <a href="/DataUserPolicy">Data Use Policy</a>
+            {/* <a href="#">Site Map</a> */}
           </div>
         </div>
         <div className="footer-right-container">
