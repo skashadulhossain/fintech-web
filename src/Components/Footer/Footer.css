@@ -38,6 +38,7 @@
 .footer-left-container p{
   width: 100%;
   max-width: 450px;
+  margin-bottom: 15px;
 }
 
 .footer-left-container button{

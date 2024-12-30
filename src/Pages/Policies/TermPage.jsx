@@ -10,7 +10,7 @@ const TermPage = () => {
       <section className="padding-layout">
         <div className="policy-container">
           <div className="policy-header">
-            <h1>Terms and Conditions</h1>
+            <h1>Terms of Use</h1>
             <span>
               Welcome to <a href="/">www.pnsoftware.org</a>, the official
               website of PN SOFTWARE TECH PRIVATE LIMITED. ("Company", "we",
