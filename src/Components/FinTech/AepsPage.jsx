@@ -206,7 +206,7 @@ const AepsPage = () => {
             </div>
             <div style={{ width: "100%" }}>
               <img
-                src="/images/aeps.jpg"
+                src="/images/Aeps img 1.png"
                 alt="img"
                 loading="lazy"
                 className=""
@@ -219,7 +219,7 @@ const AepsPage = () => {
           <section className="aeps-div-three">
             <div style={{ width: "100%" }}>
               <img
-                src="/images/aeps.jpg"
+                src="/images/Aeps img 2.png"
                 alt="img"
                 loading="lazy"
                 className=""
@@ -291,7 +291,7 @@ const AepsPage = () => {
               </div>
               <div style={{ width: "100%" }}>
                 <img
-                  src="/images/api.png"
+                  src="/images/Aeps img 3.png"
                   alt="img"
                   loading="lazy"
                   className=""

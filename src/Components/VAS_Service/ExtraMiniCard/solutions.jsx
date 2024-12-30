@@ -2,6 +2,7 @@ import React from 'react'
 import './solutions.css'
 import Header from '../../Header/Header';
 import Footer from '../../Footer/Footer';
+import longshortimg from './Image/Long short img.png';
 import { FaSkype, FaTelegram, FaWhatsapp } from 'react-icons/fa';
 
 
@@ -33,7 +34,7 @@ function Solutions() {
                   </ul>
                 </div>
                 <div className="long-box-img">
-                  <img src="https://roundpay.in/website-assets-22/images/our-services/longndshortcode.webp" alt="" />
+                  <img src={longshortimg} alt="" />
                 </div>
             </div>
             <p>

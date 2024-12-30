@@ -2,6 +2,7 @@ import React from "react";
 import "./DigitalMarketing.css"; // CSS file for styling
 import Footer from "../../Footer/Footer";
 import Header from "../../Header/Header";
+import digitalimg from './Image/Digital img.jpg';
 
 const DigitalMarketing = () => {
   return (
@@ -14,7 +15,7 @@ const DigitalMarketing = () => {
         <p>Digital Marketing is an umbrella term that incorporates phrasings like SEO, SEM, SMO, SMM , Paid Media and Content Marketing to advance item, administrations or brand over the web in most captivating and easy to use way in the interest of customized promoting efforts to enable our customers to prevail on the web.</p>
       </header>
       <div className="DigitalMarketing-flex-box">
-        <img src="https://roundpay.in/website-assets-22/images/our-services/seo-1.webp" alt="" />
+        <img src={digitalimg} alt="" />
         <div className="DigitalMarketing-box">
             <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
            <h2 style={{ color: "#6d72f6" }}>FEATURES</h2>

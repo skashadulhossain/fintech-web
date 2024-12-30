@@ -57,7 +57,7 @@ const IndoNepalPage = () => {
           </div>
           <div style={{ width: "100%" }}>
             <img
-              src="/images/transfer.jpg"
+              src="/images/Easy CashTransfer.png"
               alt="img"
               loading="lazy"
               className=""
@@ -69,7 +69,7 @@ const IndoNepalPage = () => {
         <section className="aeps-div-three">
           <div style={{ width: "100%" }}>
             <img
-              src="/images/send.jpg"
+              src="/images/Transaction Receipt.png"
               alt="img"
               loading="lazy"
               className=""

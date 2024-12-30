@@ -89,7 +89,7 @@ const PosPage = () => {
         <section className="pos-div-one">
           <div style={{ width: "100%" }}>
             <img
-              src="/images/aeps.jpg"
+              src="/images/posss.png"
               alt="img"
               loading="lazy"
               className=""

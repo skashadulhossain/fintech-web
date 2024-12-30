@@ -73,7 +73,7 @@ const PrepaidCardPage = () => {
           </div>
           <div style={{ width: "100%" }}>
             <img
-              src="/images/card.png"
+              src="/images/Prepaid Card.png"
               alt="img"
               loading="lazy"
               className=""

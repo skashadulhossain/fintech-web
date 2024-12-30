@@ -5,7 +5,7 @@ import Header from '../../Header/Header';
 import { FaCaretRight, FaSkype, FaTelegram, FaWhatsapp } from 'react-icons/fa';
 import { IoCheckmarkDoneSharp  } from 'react-icons/io5';
 import boximg from './Image/undraw_blog_1ca8.png';
-import boximg2 from './Image/undraw_design-notes_vwa7.png';
+import boximg2 from './Image/undraw_design-notes_vwa7.jpeg';
 
 const RechargeApplication = () => {
   return (

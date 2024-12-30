@@ -103,6 +103,11 @@ button {
   width: 50%;
 }
 
+.long-box-img img{
+  width: 100%;
+  max-width: 280px;
+}
+
 
 .long-container {
   font-family: Arial, sans-serif;

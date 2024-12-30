@@ -3,6 +3,7 @@ import "./Blockchain.css"; // CSS file for styling
 import img5 from './img/icon-5.webp'
 import Header from "../../Header/Header";
 import Footer from "../../Footer/Footer";
+import blockchainimg from './img/blockchain img.jpg';
 import { FaSkype, FaTelegram, FaWhatsapp } from "react-icons/fa";
 
 const Blockchain = () => {
@@ -181,7 +182,7 @@ const Blockchain = () => {
     <Header/>
     <main className="Blockchain">
       <div className="Blockchain-flex-box">
-        <img src="https://roundpay.in/website-assets-22/images/our-services/crypto/bg-laptop.webp" alt="" />
+        <img src={blockchainimg} alt="" />
         <div className="Blockchain-box">
             <div style={{ padding: "20px", fontFamily: "Arial, sans-serif" }}>
            <h1 style={{ color: "#6d72f6" }}>Find India’s Top Blockchain

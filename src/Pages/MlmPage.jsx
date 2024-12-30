@@ -136,7 +136,7 @@ const MlmPage = () => {
           </div>
           <div style={{ width: "100%" }}>
             <img
-              src="/images/work.webp"
+              src="/images/MLM img.png"
               alt="PN Software Pvt Ltd"
               style={{ width: "100%" }}
             />
